@@ -4,7 +4,9 @@
   box-sizing: border-box;
 }
 
-
+body{
+  font-family: 'Montserrat', sans-serif;
+}
 
 main{
   color: white;
@@ -27,7 +29,7 @@ aside{
 #products{
   height: 100%;
   width: calc(100% - 230px);
-  background: lightblue;
+  background: #141922;
 }
 @media screen and (max-width:600px){
   #products {
@@ -66,7 +68,10 @@ ul{
   background-color: black;
 }
 
-
+h3{
+  font-size: 26px;
+  font-weight: 800;
+}
 /* **************************LEFTSIDE************************** */
 aside nav{
   display: flex;
@@ -77,9 +82,18 @@ aside nav{
 .links{
   margin-bottom: 20px;
 }
-.links li{
+.links li a{
+  text-decoration: none;
+  color: white;
   display: flex;
   align-items: center;
+}
+.links li a:hover, .playlists ul li a:hover{
+  cursor: pointer;
+  color:green;
+}
+#navigazione .links li a:focus{
+  border-left: 2px solid green;
 }
 .links img{
   width: 30px;
@@ -96,9 +110,20 @@ aside nav{
 .playlists:hover{
   overflow-y: scroll;
 }
-.playlists ul li:first-child{
+.playlists ul li a{
+  text-decoration: none;
+  color: white;;
+}
+.playlists ul li a:first-child{
   display: flex;
 }
+.playlists ul li a:focus{
+  color: green;
+}
+.playlists ul li a:hover img,.playlists ul li a:focus img{
+  background-color: green;
+}
+
 .playlists img{
   background-color: white;
   width: 28px;
@@ -163,6 +188,12 @@ aside hr{
       flex-direction: column;
       align-items: center;
     }
+
+}
+@media screen and (max-height:130px){
+  aside{
+    padding: 0px;
+  }
 }
 /* ************************COVERS*************************** */
 
@@ -187,6 +218,29 @@ aside hr{
 #products::-webkit-scrollbar-thumb:hover {
   background-color: black;
 }
+.mainside>div span{
+  color:rgba(255,255,255,0.5);
+  font-size: 14px;
+}
+.layover{
+  cursor: pointer;
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top:0;
+  transition: 0.5s;
+  background: rgba(0,0,0,0.5)
+}
+.coverimg:hover .layover{
+  opacity: 1;
+
+}
 .calltoact{
   background: rgba(0,0,0,0.4);
   height: 90px;
@@ -196,6 +250,7 @@ aside hr{
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  z-index: 5;
 }
 .calltoact a{
   color: white;
@@ -203,24 +258,42 @@ aside hr{
   padding: 10px;
   border: 1px solid white;
   border-radius: 20px;
+  transition: 0.5s;
+}
+.calltoact a:hover{
+  border-radius: 50px;
+  padding: 15px;
 }
 .mainside .links ul li{
   padding: 15px;
 }
 .mainside .links ul li a{
+  height: 30px;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
+}
+.mainside .links ul li a:hover{
+  color: green;
 }
 .mainside .links ul{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
+.mainside .links ul li a:focus{
+  border-bottom: 3px solid blue;
+}
+.titles>*{
+  margin: 10px 0;
+}
 /* Recenti**************** */
 
 .recent{
   min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   padding: 20px;
 }
 .covers{
@@ -228,7 +301,26 @@ aside hr{
   display: flex;
   justify-content: space-between;
 }
+.recent .covers:hover{
+  overflow-x: scroll;
+}
+.recent .covers::-webkit-scrollbar{
+   width: 10px;
+}
+.recent .covers::-webkit-scrollbar-track {
+  box-shadow:inset 0 0 5px grey;
+  border-radius: 10px;
+}
+.recent .covers::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.3);
+  border-radius: 10px;
+
+}
+.recent .covers::-webkit-scrollbar-thumb:hover {
+  background-color: black;
+}
 .cover{
+  max-width: 200px;
   margin-right: 15px;
   text-align: center;
 }
@@ -236,11 +328,16 @@ aside hr{
   width: 100%;
 }
 .cover .coverimg{
+  overflow: hidden;
+  position: relative;
   min-width: 150px;
   max-width: 200px;
 }
 /* ***********************personal */
 .personal{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   min-height: 400px;
   padding: 20px;
 }
@@ -255,10 +352,13 @@ aside hr{
 
 }
 .popolar{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   min-height: 400px;
   padding: 20px;
 }
-.popolar .coverimg img{
+.popolar .coverimg img, .popolar .coverimg{
   border-radius: 999px;
 }
 /* ******************player */
@@ -266,6 +366,7 @@ aside hr{
   justify-content: space-between;
   display: flex;
   z-index: 10;
+  color: white;
 }
 .songrightnow{
   width: 230px;
@@ -279,6 +380,23 @@ aside hr{
 .songnow img{
   width: 100%;
 }
+.titlesnow span{
+  font-size: 10px;
+  color: rgba(255,255,255,0.5);
+}
+.titlesnow h5:hover, .titlesnow span:hover{
+  cursor: pointer;
+  color:green;
+}
+.immaginine a{
+  color: black;
+}
+.immaginine a:hover{
+  color:green;
+}
+.immaginine a:focus{
+  color: red;
+}
 /* *****************control */
 .songcontrols{
   padding: 5px 0;
@@ -291,13 +409,18 @@ aside hr{
   justify-content: center;
 }
 .controls ul li{
-  color: white;
+  cursor: pointer;
   font-size: 18px;
   padding: 0 10px;
 }
+
 .controls ul li:nth-child(3){
   font-size: 30px;
 }
+.controls ul li:nth-child(3):hover{
+  color:green;
+}
+
 .bar{
   display: flex;
   align-items: center;
