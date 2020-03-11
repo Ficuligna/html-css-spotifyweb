@@ -38,6 +38,8 @@ aside{
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
   height: 90px;
   width: 100vw;
 
@@ -187,14 +189,11 @@ aside hr{
       display: flex;
       flex-direction: column;
       align-items: center;
+      flex-shrink: 0;
     }
 
 }
-@media screen and (max-height:130px){
-  aside{
-    padding: 0px;
-  }
-}
+
 /* ************************COVERS*************************** */
 
 #products{
