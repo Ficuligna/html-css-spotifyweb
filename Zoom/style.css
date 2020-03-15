@@ -33,23 +33,46 @@ label {
   display: flex;
   justify-content: space-between;
   background-color: red;
-
+  align-items: baseline;
+  color: white;
+  background-color: black;
 }
-.footerdiv{
-  display: flex;
+.testata span{
+  color: white;
+}
+.testata button{
+  border-radius: 20px;
+  background-color: #24282b;
+}
+.size{
   justify-content: space-between;
   height: 50px;
   width: 100%;
   max-width: 1170px;
   display: flex;
-  background-color: red;
-  align-items: flex-end;
+  align-items: center;
 }
 .interazione, .exit{
   width: 150px
 }
-.footerdiv button{
-  width: 70px;
+.footerdiv{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color:#24282b;
+}
+.size button{
+  height: 100%;
+  flex-basis: 50px;
+  background-color: #24282b;
+  border:none;
+}
+.size button img{
+  height: 40px;
+  color: black;
+}
+.size button span{
+  color: red;
 }
 #primo-la{
   right: 0%;
@@ -593,7 +616,6 @@ span{
   color: rgba(255,255,255,0.5);
 }
 .blocchi{
-
   display: flex;
   justify-content: center;
   align-items: center;
