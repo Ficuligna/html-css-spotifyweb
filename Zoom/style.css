@@ -1,0 +1,5014 @@
+/***********DEFINIZIONE STRUTTURA DI LAVORO e GENERALI*****************/
+.caro{
+  height: calc(100vh - 100px);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+}
+label {
+  background-color: black;
+	display: flex;
+  justify-content: center;
+  height: calc(100% - 20px);
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	text-align: center;
+  align-items: flex-start;
+  /* overflow: auto; */
+}
+.centraturatest{
+  width: 130px;
+}
+.testata{
+  height: 50px;
+  width: 100%;
+  max-width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  background-color: red;
+
+}
+.footerdiv{
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+  max-width: 1170px;
+  display: flex;
+  background-color: red;
+  align-items: flex-end;
+}
+.interazione, .exit{
+  width: 150px
+}
+.footerdiv button{
+  width: 70px;
+}
+#primo-la{
+  right: 0%;
+}
+#secondo-la{
+
+  right: -100%;
+}
+#terzo-la{
+  right: -200%;
+}
+#quarto-la{
+  right: -300%;
+}
+#quinto-la{
+
+  right: -400%;
+}
+#sesto-la{
+  right: -500%;
+}
+#settimo-la{
+  right: -600%;
+}
+#ottavo-la{
+
+  right: -700%;
+}
+#nono-la{
+  right: -800%;
+}
+#decimo-la{
+  right: -900%;
+}
+#undicesimo-la{
+
+  right: -1000%;
+}
+#dodicesimo-la{
+  right: -1100%;
+}
+#tredicesimo-la{
+  right: -1200%;
+}
+#quattordicesimo-la{
+  right: -1300%;
+}
+#quindicesimo-la{
+
+  right: -1400%;
+}
+#sedicesimo-la{
+  right: -1500%;
+}
+
+
+.forma {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+
+	/* white-space: nowrap; */
+}
+input {
+	position: absolute;
+}
+
+
+
+
+
+input:nth-of-type(1):checked ~ label:nth-of-type(1),
+input:nth-of-type(2):checked ~ label:nth-of-type(2),
+input:nth-of-type(3):checked ~ label:nth-of-type(3),
+input:nth-of-type(4):checked ~ label:nth-of-type(4),
+input:nth-of-type(5):checked ~ label:nth-of-type(5),
+input:nth-of-type(6):checked ~ label:nth-of-type(6),
+input:nth-of-type(7):checked ~ label:nth-of-type(7),
+input:nth-of-type(8):checked ~ label:nth-of-type(8),
+input:nth-of-type(9):checked ~ label:nth-of-type(9),
+input:nth-of-type(10):checked ~ label:nth-of-type(10),
+input:nth-of-type(11):checked ~ label:nth-of-type(11),
+input:nth-of-type(12):checked ~ label:nth-of-type(12),
+input:nth-of-type(13):checked ~ label:nth-of-type(13),
+input:nth-of-type(14):checked ~ label:nth-of-type(14),
+input:nth-of-type(15):checked ~ label:nth-of-type(15),
+input:nth-of-type(16):checked ~ label:nth-of-type(16){
+
+   z-index: 0;
+}
+/* **********************MEDIA AFTER/BEFORE*********************** */
+@media screen and (min-width:1000px) and (min-height:741px){
+  label:nth-of-type(2){
+    z-index: -1;
+  }
+}
+
+@media screen and (min-width:1000px) and (max-height:740px){
+  label:nth-of-type(3){
+    z-index: -1;
+  }
+}
+@media screen and (min-width:1000px) and (max-height:570px){
+  label:nth-of-type(4){
+    z-index: -1;
+  }
+  label:nth-of-type(3){
+    z-index: 1;
+  }
+}
+@media screen and (min-width:1000px) and (max-height:400px){
+  label:nth-of-type(6){
+    z-index: -1;
+  }
+
+  label:nth-of-type(3),label:nth-of-type(4),label:nth-of-type(5){
+    z-index: 1;
+  }
+}
+@media screen and (min-height:741px) and (max-width:999px){
+  label:nth-of-type(3){
+    z-index: -1;
+  }
+}
+@media screen and (min-height:741px) and (max-width:750px){
+  label:nth-of-type(4){
+    z-index: -1;
+  }
+  label:nth-of-type(3){
+    z-index: 1;
+  }
+}
+@media screen and (min-height:741px) and (max-width:499px){
+  label:nth-of-type(6){
+    z-index: -1;
+  }
+  label:nth-of-type(3),label:nth-of-type(4),label:nth-of-type(5){
+    z-index: 1;
+  }
+}
+@media screen and (max-width:999px) and (max-height:740px){
+  label:nth-of-type(3){
+    z-index: -1;
+  }
+}
+@media screen and (max-width:999px) and (max-height:570px){
+  label:nth-of-type(4){
+    z-index: -1;
+  }
+  label:nth-of-type(3){
+    z-index: 1;
+  }
+}
+@media screen and (max-width:999px) and (max-height:400px){
+  label:nth-of-type(9){
+    z-index: -1;
+  }
+  label:nth-of-type(3),
+  label:nth-of-type(4),
+  label:nth-of-type(5),
+  label:nth-of-type(6),
+  label:nth-of-type(7),
+  label:nth-of-type(8){
+    z-index: 1;
+  }
+
+}
+@media screen and (max-width:750px) and (max-height:740px){
+  label:nth-of-type(4){
+    z-index: -1;
+  }
+
+  label:nth-of-type(3){
+    z-index: 1;
+  }
+}
+@media screen and (max-width:750px) and (max-height:570px){
+  label:nth-of-type(6){
+    z-index: -1;
+  }
+  label:nth-of-type(3),
+  label:nth-of-type(4),
+  label:nth-of-type(5){
+    z-index: 1;
+  }
+}
+@media screen and (max-width:750px) and (max-height:400px){
+  label:nth-of-type(16){
+    z-index: -1;
+  }
+  label:nth-of-type(2),
+  label:nth-of-type(3),
+  label:nth-of-type(4),
+  label:nth-of-type(5),
+  label:nth-of-type(6),
+  label:nth-of-type(7),
+  label:nth-of-type(8),
+  label:nth-of-type(9),
+  label:nth-of-type(10),
+  label:nth-of-type(11),
+  label:nth-of-type(12),
+  label:nth-of-type(13),
+  label:nth-of-type(14),
+  label:nth-of-type(15){
+    z-index: 1;
+  }
+}
+@media screen and (max-width:499px) and (max-height:740px){
+  label:nth-of-type(9){
+    z-index: -1;
+  }
+  label:nth-of-type(2),
+  label:nth-of-type(3),
+  label:nth-of-type(4),
+  label:nth-of-type(5),
+  label:nth-of-type(6),
+  label:nth-of-type(7),
+  label:nth-of-type(8){
+    z-index: 1;
+  }
+
+}
+@media screen and (max-width:499px) and (max-height:570px){
+  label:nth-of-type(16){
+    z-index: -1;
+  }
+  label:nth-of-type(2),
+  label:nth-of-type(3),
+  label:nth-of-type(4),
+  label:nth-of-type(5),
+  label:nth-of-type(6),
+  label:nth-of-type(7),
+  label:nth-of-type(8),
+  label:nth-of-type(9),
+  label:nth-of-type(10),
+  label:nth-of-type(11),
+  label:nth-of-type(12),
+  label:nth-of-type(13),
+  label:nth-of-type(14),
+  label:nth-of-type(15){
+    z-index: 1;
+  }
+}
+@media screen and (max-width:499px) and (max-height:400px){
+
+  label:nth-of-type(2),
+  label:nth-of-type(3),
+  label:nth-of-type(4),
+  label:nth-of-type(5),
+  label:nth-of-type(6),
+  label:nth-of-type(7),
+  label:nth-of-type(8),
+  label:nth-of-type(9),
+  label:nth-of-type(10),
+  label:nth-of-type(11),
+  label:nth-of-type(12),
+  label:nth-of-type(13),
+  label:nth-of-type(14),
+  label:nth-of-type(15),
+  label:nth-of-type(16){
+    z-index: 1;
+  }
+}
+
+
+/* *********************FINE QUERY AFTER/BEFORE */
+
+input:nth-of-type(1):checked ~ label {
+	transform: translate3d(0, 0, 0);
+}
+
+input:nth-of-type(2):checked ~ label {
+	transform: translate3d(-100%, 0, 0);
+}
+
+input:nth-of-type(3):checked ~ label {
+	transform: translate3d(-200%, 0, 0);
+}
+
+input:nth-of-type(4):checked ~ label {
+	transform: translate3d(-300%, 0, 0);
+}
+input:nth-of-type(5):checked ~ label {
+	transform: translate3d(-400%, 0, 0);
+}
+
+input:nth-of-type(6):checked ~ label {
+	transform: translate3d(-500%, 0, 0);
+}
+
+input:nth-of-type(7):checked ~ label {
+	transform: translate3d(-600%, 0, 0);
+}
+
+input:nth-of-type(8):checked ~ label {
+	transform: translate3d(-700%, 0, 0);
+}
+input:nth-of-type(9):checked ~ label {
+	transform: translate3d(-800%, 0, 0);
+}
+
+input:nth-of-type(10):checked ~ label {
+	transform: translate3d(-900%, 0, 0);
+}
+
+input:nth-of-type(11):checked ~ label {
+	transform: translate3d(-1000%, 0, 0);
+}
+
+input:nth-of-type(12):checked ~ label {
+	transform: translate3d(-1100%, 0, 0);
+}
+input:nth-of-type(13):checked ~ label {
+	transform: translate3d(-1200%, 0, 0);
+}
+
+input:nth-of-type(14):checked ~ label {
+	transform: translate3d(-1300%, 0, 0);
+}
+
+input:nth-of-type(15):checked ~ label {
+	transform: translate3d(-1400%, 0, 0);
+}
+
+input:nth-of-type(16):checked ~ label {
+	transform: translate3d(-1500%, 0, 0);
+}
+
+
+
+
+label:before,
+label:after {
+	color: white;
+	display: block;
+	background: rgba(255,255,255,0.2);
+	position: absolute;
+	padding: 1rem;
+	font-size: 3rem;
+	height: 10rem;
+	vertical-align: middle;
+	line-height: 10rem;
+	top: 50%;
+	transform: translate3d(0, -50%, 0);
+	cursor: pointer;
+}
+
+label:before {
+	content: "\276D";
+	right: 100%;
+	border-top-left-radius: 50%;
+	border-bottom-left-radius: 50%;
+}
+
+label:after {
+	content: "\276C";
+	left: 100%;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+}
+span{
+  display: block;
+}
+
+/* ********************************PAGINE************************* */
+.navigationpoints{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50% , 0);
+  width: 100%;
+  background-color: black;
+}
+/* ***************point QUERY********************** */
+@media screen and (max-width:999px){
+  .navigationpoints span:nth-child(1),
+  .navigationpoints span:nth-child(2){
+    display: block;
+  }
+}
+@media screen and (max-width:750px){
+  .navigationpoints span:nth-child(1),
+  .navigationpoints span:nth-child(2),
+  .navigationpoints span:nth-child(3){
+    display: block;
+  }
+}
+@media screen and (max-width:499px){
+  .navigationpoints span:nth-child(1),
+  .navigationpoints span:nth-child(2),
+  .navigationpoints span:nth-child(3),
+  .navigationpoints span:nth-child(4),
+  .navigationpoints span:nth-child(5){
+    display: block;
+  }
+}
+@media screen and (max-height:740px){
+  .navigationpoints span:nth-child(1),
+  .navigationpoints span:nth-child(2){
+    display: block;
+  }
+}
+@media screen and (max-height:570px){
+  .navigationpoints span:nth-child(1),
+  .navigationpoints span:nth-child(2),
+  .navigationpoints span:nth-child(3){
+    display: block;
+  }
+}
+@media screen and (max-height:400px){
+  .navigationpoints span:nth-child(1),
+  .navigationpoints span:nth-child(2),
+  .navigationpoints span:nth-child(3),
+  .navigationpoints span:nth-child(4),
+  .navigationpoints span:nth-child(5){
+    display: block;
+  }
+}
+@media screen and (max-width:999px) and (max-height:740px){
+  .navigationpoints span:nth-child(1),
+  .navigationpoints span:nth-child(2){
+    display: block;
+  }
+}
+@media screen and (max-width:999px) and (max-height:570px){
+  .navigationpoints span:nth-child(1),
+  .navigationpoints span:nth-child(2),
+  .navigationpoints span:nth-child(3){
+    display: block;
+  }
+}
+@media screen and (max-width:999px) and (max-height:400px){
+  .navigationpoints span:nth-child(1),
+  .navigationpoints span:nth-child(2),
+  .navigationpoints span:nth-child(3),
+  .navigationpoints span:nth-child(4),
+  .navigationpoints span:nth-child(5),
+  .navigationpoints span:nth-child(6),
+  .navigationpoints span:nth-child(7),
+  .navigationpoints span:nth-child(8){
+    display: block;
+  }
+}
+@media screen and (max-width:750px) and (max-height:740px){
+  .navigationpoints span:nth-child(1),
+  .navigationpoints span:nth-child(2),
+  .navigationpoints span:nth-child(3){
+    display: block;
+  }
+}
+@media screen and (max-width:750px) and (max-height:570px){
+  .navigationpoints span:nth-child(1),
+  .navigationpoints span:nth-child(2),
+  .navigationpoints span:nth-child(3),
+  .navigationpoints span:nth-child(4),
+  .navigationpoints span:nth-child(5){
+    display: block;
+  }
+}
+@media screen and (max-width:750px) and (max-height:400px){
+  .navigationpoints span:nth-child(1),
+  .navigationpoints span:nth-child(2),
+  .navigationpoints span:nth-child(3),
+  .navigationpoints span:nth-child(4),
+  .navigationpoints span:nth-child(5),
+  .navigationpoints span:nth-child(6),
+  .navigationpoints span:nth-child(7),
+  .navigationpoints span:nth-child(8),
+  .navigationpoints span:nth-child(9),
+  .navigationpoints span:nth-child(10),
+  .navigationpoints span:nth-child(11),
+  .navigationpoints span:nth-child(12),
+  .navigationpoints span:nth-child(13),
+  .navigationpoints span:nth-child(14),
+  .navigationpoints span:nth-child(15){
+    display: block;
+  }
+}
+@media screen and (max-width:499px) and (max-height:740px){
+  .navigationpoints span:nth-child(1),
+  .navigationpoints span:nth-child(2),
+  .navigationpoints span:nth-child(3),
+  .navigationpoints span:nth-child(4),
+  .navigationpoints span:nth-child(5),
+  .navigationpoints span:nth-child(6),
+  .navigationpoints span:nth-child(7),
+  .navigationpoints span:nth-child(8){
+    display: block;
+  }
+}
+@media screen and (max-width:499px) and (max-height:570px){
+  .navigationpoints span:nth-child(1),
+  .navigationpoints span:nth-child(2),
+  .navigationpoints span:nth-child(3),
+  .navigationpoints span:nth-child(4),
+  .navigationpoints span:nth-child(5),
+  .navigationpoints span:nth-child(6),
+  .navigationpoints span:nth-child(7),
+  .navigationpoints span:nth-child(8),
+  .navigationpoints span:nth-child(9),
+  .navigationpoints span:nth-child(10),
+  .navigationpoints span:nth-child(11),
+  .navigationpoints span:nth-child(12),
+  .navigationpoints span:nth-child(13),
+  .navigationpoints span:nth-child(14),
+  .navigationpoints span:nth-child(15){
+    display: block;
+  }
+}
+@media screen and (max-width:499px) and (max-height:400px){
+  .navigationpoints span:nth-child(1),
+  .navigationpoints span:nth-child(2),
+  .navigationpoints span:nth-child(3),
+  .navigationpoints span:nth-child(4),
+  .navigationpoints span:nth-child(5),
+  .navigationpoints span:nth-child(6),
+  .navigationpoints span:nth-child(7),
+  .navigationpoints span:nth-child(8),
+  .navigationpoints span:nth-child(9),
+  .navigationpoints span:nth-child(10),
+  .navigationpoints span:nth-child(11),
+  .navigationpoints span:nth-child(12),
+  .navigationpoints span:nth-child(13),
+  .navigationpoints span:nth-child(14),
+  .navigationpoints span:nth-child(15),
+  .navigationpoints span:nth-child(16){
+    display: block;
+  }
+}
+/* ***************FINE POINQUERY************* */
+
+.navigationpoints>span{
+  display: none;
+  margin: 0 3px;
+}
+span{
+  color: rgba(255,255,255,0.5);
+}
+.blocchi{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+  min-height: 165px;
+  box-sizing: border-box;
+  border:1px solid orange;
+  flex-basis: 25rem;
+}
+.finestra{
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: 100%;
+  height: 100%;
+  max-width: 1170px;
+  max-height: 800px;
+}
+
+/* ****************BLOCK QUERY*************** */
+/* ****************BLOCK QUERY 1 LBL*************** */
+label:nth-of-type(1) .navigationpoints span:nth-child(1){
+  color: white;
+}
+@media screen and (max-height:740px){
+  label:nth-of-type(1){
+    align-items: center;
+  }
+  label:nth-of-type(1) .blocchi{
+    height: 33.3333%;
+    max-height: none;
+  }
+  label:nth-of-type(1) .blocchi:nth-child(13),
+  label:nth-of-type(1) .blocchi:nth-child(14),
+  label:nth-of-type(1) .blocchi:nth-child(15),
+  label:nth-of-type(1) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-height:570px){
+  label:nth-of-type(1){
+    align-items: center;
+  }
+  label:nth-of-type(1) .blocchi{
+    height: 50%;
+    max-height: none;
+  }
+  label:nth-of-type(1) .blocchi:nth-child(13),
+  label:nth-of-type(1) .blocchi:nth-child(14),
+  label:nth-of-type(1) .blocchi:nth-child(15),
+  label:nth-of-type(1) .blocchi:nth-child(16),
+  label:nth-of-type(1) .blocchi:nth-child(9),
+  label:nth-of-type(1) .blocchi:nth-child(10),
+  label:nth-of-type(1) .blocchi:nth-child(11),
+  label:nth-of-type(1) .blocchi:nth-child(12){
+    display: none;
+  }
+}
+@media screen and (max-height:400px){
+  label:nth-of-type(1) .blocchi:nth-child(5),
+  label:nth-of-type(1) .blocchi:nth-child(6),
+  label:nth-of-type(1) .blocchi:nth-child(7),
+  label:nth-of-type(1) .blocchi:nth-child(8),
+  label:nth-of-type(1) .blocchi:nth-child(9),
+  label:nth-of-type(1) .blocchi:nth-child(10),
+  label:nth-of-type(1) .blocchi:nth-child(11),
+  label:nth-of-type(1) .blocchi:nth-child(12),
+  label:nth-of-type(1) .blocchi:nth-child(13),
+  label:nth-of-type(1) .blocchi:nth-child(14),
+  label:nth-of-type(1) .blocchi:nth-child(15),
+  label:nth-of-type(1) .blocchi:nth-child(16){
+    display: none;
+  }
+  label:nth-of-type(1) .blocchi{
+    height: 100%;
+  }
+}
+
+@media screen and (max-width:999px){
+
+
+  label:nth-of-type(1) .blocchi:nth-child(13),
+  label:nth-of-type(1) .blocchi:nth-child(14),
+  label:nth-of-type(1) .blocchi:nth-child(15),
+  label:nth-of-type(1) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:750px){
+  label:nth-of-type(1) .blocchi:nth-child(13),
+  label:nth-of-type(1) .blocchi:nth-child(14),
+  label:nth-of-type(1) .blocchi:nth-child(15),
+  label:nth-of-type(1) .blocchi:nth-child(16),
+  label:nth-of-type(1) .blocchi:nth-child(9),
+  label:nth-of-type(1) .blocchi:nth-child(10),
+  label:nth-of-type(1) .blocchi:nth-child(11),
+  label:nth-of-type(1) .blocchi:nth-child(12){
+    display: none;
+  }
+
+}
+@media screen and (max-width:499px){
+  label:nth-of-type(1) .blocchi:nth-child(5),
+  label:nth-of-type(1) .blocchi:nth-child(6),
+  label:nth-of-type(1) .blocchi:nth-child(7),
+  label:nth-of-type(1) .blocchi:nth-child(8),
+  label:nth-of-type(1) .blocchi:nth-child(9),
+  label:nth-of-type(1) .blocchi:nth-child(10),
+  label:nth-of-type(1) .blocchi:nth-child(11),
+  label:nth-of-type(1) .blocchi:nth-child(12),
+  label:nth-of-type(1) .blocchi:nth-child(13),
+  label:nth-of-type(1) .blocchi:nth-child(14),
+  label:nth-of-type(1) .blocchi:nth-child(15),
+  label:nth-of-type(1) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:740px){
+  label:nth-of-type(1) .blocchi:nth-child(1),
+  label:nth-of-type(1) .blocchi:nth-child(2),
+  label:nth-of-type(1) .blocchi:nth-child(3),
+  label:nth-of-type(1) .blocchi:nth-child(4),
+  label:nth-of-type(1) .blocchi:nth-child(5),
+  label:nth-of-type(1) .blocchi:nth-child(6),
+  label:nth-of-type(1) .blocchi:nth-child(7),
+  label:nth-of-type(1) .blocchi:nth-child(8),
+  label:nth-of-type(1) .blocchi:nth-child(9){
+    display: flex;
+  }
+  label:nth-of-type(1) .blocchi:nth-child(10),
+  label:nth-of-type(1) .blocchi:nth-child(11),
+  label:nth-of-type(1) .blocchi:nth-child(12),
+  label:nth-of-type(1) .blocchi:nth-child(13),
+  label:nth-of-type(1) .blocchi:nth-child(14),
+  label:nth-of-type(1) .blocchi:nth-child(15),
+  label:nth-of-type(1) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:570px){
+  label:nth-of-type(1) .blocchi:nth-child(1),
+  label:nth-of-type(1) .blocchi:nth-child(2),
+  label:nth-of-type(1) .blocchi:nth-child(3),
+  label:nth-of-type(1) .blocchi:nth-child(4),
+  label:nth-of-type(1) .blocchi:nth-child(5),
+  label:nth-of-type(1) .blocchi:nth-child(6){
+    display: flex;
+  }
+  label:nth-of-type(1) .blocchi:nth-child(7),
+  label:nth-of-type(1) .blocchi:nth-child(8),
+  label:nth-of-type(1) .blocchi:nth-child(9),
+  label:nth-of-type(1) .blocchi:nth-child(10),
+  label:nth-of-type(1) .blocchi:nth-child(11),
+  label:nth-of-type(1) .blocchi:nth-child(12),
+  label:nth-of-type(1) .blocchi:nth-child(13),
+  label:nth-of-type(1) .blocchi:nth-child(14),
+  label:nth-of-type(1) .blocchi:nth-child(15),
+  label:nth-of-type(1) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:400px){
+  label:nth-of-type(1) .blocchi:nth-child(1),
+  label:nth-of-type(1) .blocchi:nth-child(2),
+  label:nth-of-type(1) .blocchi:nth-child(3),
+{
+    display: flex;
+  }
+  label:nth-of-type(1) .blocchi:nth-child(4),
+  label:nth-of-type(1) .blocchi:nth-child(5),
+  label:nth-of-type(1) .blocchi:nth-child(6),
+  label:nth-of-type(1) .blocchi:nth-child(7),
+  label:nth-of-type(1) .blocchi:nth-child(8),
+  label:nth-of-type(1) .blocchi:nth-child(9),
+  label:nth-of-type(1) .blocchi:nth-child(10),
+  label:nth-of-type(1) .blocchi:nth-child(11),
+  label:nth-of-type(1) .blocchi:nth-child(12),
+  label:nth-of-type(1) .blocchi:nth-child(13),
+  label:nth-of-type(1) .blocchi:nth-child(14),
+  label:nth-of-type(1) .blocchi:nth-child(15),
+  label:nth-of-type(1) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:740px){
+  label:nth-of-type(1) .blocchi:nth-child(1),
+  label:nth-of-type(1) .blocchi:nth-child(2),
+  label:nth-of-type(1) .blocchi:nth-child(3),
+  label:nth-of-type(1) .blocchi:nth-child(4),
+  label:nth-of-type(1) .blocchi:nth-child(5),
+  label:nth-of-type(1) .blocchi:nth-child(6){
+    display: flex;
+  }
+
+  label:nth-of-type(1) .blocchi:nth-child(7),
+  label:nth-of-type(1) .blocchi:nth-child(8),
+  label:nth-of-type(1) .blocchi:nth-child(9),
+  label:nth-of-type(1) .blocchi:nth-child(10),
+  label:nth-of-type(1) .blocchi:nth-child(11),
+  label:nth-of-type(1) .blocchi:nth-child(12),
+  label:nth-of-type(1) .blocchi:nth-child(13),
+  label:nth-of-type(1) .blocchi:nth-child(14),
+  label:nth-of-type(1) .blocchi:nth-child(15),
+  label:nth-of-type(1) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:570px){
+  label:nth-of-type(1) .blocchi:nth-child(1),
+  label:nth-of-type(1) .blocchi:nth-child(2),
+  label:nth-of-type(1) .blocchi:nth-child(3),
+  label:nth-of-type(1) .blocchi:nth-child(4){
+    display: flex;
+  }
+  label:nth-of-type(1) .blocchi:nth-child(5),
+  label:nth-of-type(1) .blocchi:nth-child(6),
+  label:nth-of-type(1) .blocchi:nth-child(7),
+  label:nth-of-type(1) .blocchi:nth-child(8),
+  label:nth-of-type(1) .blocchi:nth-child(9),
+  label:nth-of-type(1) .blocchi:nth-child(10),
+  label:nth-of-type(1) .blocchi:nth-child(11),
+  label:nth-of-type(1) .blocchi:nth-child(12),
+  label:nth-of-type(1) .blocchi:nth-child(13),
+  label:nth-of-type(1) .blocchi:nth-child(14),
+  label:nth-of-type(1) .blocchi:nth-child(15),
+  label:nth-of-type(1) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:400px){
+  label:nth-of-type(1) .blocchi:nth-child(1),
+  label:nth-of-type(1) .blocchi:nth-child(2){
+    display: flex;
+  }
+
+  label:nth-of-type(1) .blocchi:nth-child(3),
+  label:nth-of-type(1) .blocchi:nth-child(4),
+  label:nth-of-type(1) .blocchi:nth-child(5),
+  label:nth-of-type(1) .blocchi:nth-child(6),
+  label:nth-of-type(1) .blocchi:nth-child(7),
+  label:nth-of-type(1) .blocchi:nth-child(8),
+  label:nth-of-type(1) .blocchi:nth-child(9),
+  label:nth-of-type(1) .blocchi:nth-child(10),
+  label:nth-of-type(1) .blocchi:nth-child(11),
+  label:nth-of-type(1) .blocchi:nth-child(12),
+  label:nth-of-type(1) .blocchi:nth-child(13),
+  label:nth-of-type(1) .blocchi:nth-child(14),
+  label:nth-of-type(1) .blocchi:nth-child(15),
+  label:nth-of-type(1) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:740px){
+  label:nth-of-type(1) .blocchi:nth-child(1),
+  label:nth-of-type(1) .blocchi:nth-child(2),
+  label:nth-of-type(1) .blocchi:nth-child(3),
+{
+    display: flex;
+  }
+  label:nth-of-type(1) .blocchi:nth-child(4),
+  label:nth-of-type(1) .blocchi:nth-child(5),
+  label:nth-of-type(1) .blocchi:nth-child(6),
+  label:nth-of-type(1) .blocchi:nth-child(7),
+  label:nth-of-type(1) .blocchi:nth-child(8),
+  label:nth-of-type(1) .blocchi:nth-child(9),
+  label:nth-of-type(1) .blocchi:nth-child(10),
+  label:nth-of-type(1) .blocchi:nth-child(11),
+  label:nth-of-type(1) .blocchi:nth-child(12),
+  label:nth-of-type(1) .blocchi:nth-child(13),
+  label:nth-of-type(1) .blocchi:nth-child(14),
+  label:nth-of-type(1) .blocchi:nth-child(15),
+  label:nth-of-type(1) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:570px){
+  label:nth-of-type(1) .blocchi:nth-child(1),
+  label:nth-of-type(1) .blocchi:nth-child(2){
+    display: flex;
+  }
+
+  label:nth-of-type(1) .blocchi:nth-child(3),
+  label:nth-of-type(1) .blocchi:nth-child(4),
+  label:nth-of-type(1) .blocchi:nth-child(5),
+  label:nth-of-type(1) .blocchi:nth-child(6),
+  label:nth-of-type(1) .blocchi:nth-child(7),
+  label:nth-of-type(1) .blocchi:nth-child(8),
+  label:nth-of-type(1) .blocchi:nth-child(9),
+  label:nth-of-type(1) .blocchi:nth-child(10),
+  label:nth-of-type(1) .blocchi:nth-child(11),
+  label:nth-of-type(1) .blocchi:nth-child(12),
+  label:nth-of-type(1) .blocchi:nth-child(13),
+  label:nth-of-type(1) .blocchi:nth-child(14),
+  label:nth-of-type(1) .blocchi:nth-child(15),
+  label:nth-of-type(1) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:400px){
+  label:nth-of-type(1) .blocchi:nth-child(1){
+    display: flex;
+  }
+  label:nth-of-type(1) .blocchi:nth-child(2),
+  label:nth-of-type(1) .blocchi:nth-child(3),
+  label:nth-of-type(1) .blocchi:nth-child(4),
+  label:nth-of-type(1) .blocchi:nth-child(5),
+  label:nth-of-type(1) .blocchi:nth-child(6),
+  label:nth-of-type(1) .blocchi:nth-child(7),
+  label:nth-of-type(1) .blocchi:nth-child(8),
+  label:nth-of-type(1) .blocchi:nth-child(9),
+  label:nth-of-type(1) .blocchi:nth-child(10),
+  label:nth-of-type(1) .blocchi:nth-child(11),
+  label:nth-of-type(1) .blocchi:nth-child(12),
+  label:nth-of-type(1) .blocchi:nth-child(13),
+  label:nth-of-type(1) .blocchi:nth-child(14),
+  label:nth-of-type(1) .blocchi:nth-child(15),
+  label:nth-of-type(1) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+/* ***********************QUERY BLOCK 2************************************* */
+label:nth-of-type(2) .navigationpoints span:nth-child(2){
+  color: white;
+}
+
+label:nth-of-type(2) .finestra{
+ /* height: auto; */
+ display: flex;
+ justify-content: center;
+ align-content: center;
+}
+
+label:nth-of-type(2) .blocchi{
+  display: none;
+}
+@media screen and (min-height:0px){
+  label:nth-of-type(2)  .blocchi{
+    height: 100%;
+  }
+}
+@media screen and (min-height:401px){
+  label:nth-of-type(2)  .blocchi{
+    height: 50%;
+  }
+}
+@media screen and (min-height:570px){
+  label:nth-of-type(2)  .blocchi{
+    height: 25%;
+    max-height: 25%;
+  }
+}
+@media screen and (min-width:1000px) and (max-height:740px){
+  label:nth-of-type(2) .blocchi:nth-child(1),
+  label:nth-of-type(2) .blocchi:nth-child(13),
+  label:nth-of-type(2) .blocchi:nth-child(14),
+  label:nth-of-type(2) .blocchi:nth-child(15),
+  label:nth-of-type(2) .blocchi:nth-child(16){
+    display: flex;
+  }
+
+
+
+}
+@media screen and (min-width:1000px) and (max-height:570px){
+  label:nth-of-type(2) .blocchi:nth-child(1),
+  label:nth-of-type(2) .blocchi:nth-child(9),
+  label:nth-of-type(2) .blocchi:nth-child(10),
+  label:nth-of-type(2) .blocchi:nth-child(11),
+  label:nth-of-type(2) .blocchi:nth-child(12),
+  label:nth-of-type(2) .blocchi:nth-child(13),
+  label:nth-of-type(2) .blocchi:nth-child(14),
+  label:nth-of-type(2) .blocchi:nth-child(15){
+    display: flex;
+  }
+
+
+  label:nth-of-type(2) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (min-width:1000px) and (max-height:400px){
+  label:nth-of-type(2) .blocchi:nth-child(1),
+  label:nth-of-type(2) .blocchi:nth-child(5),
+  label:nth-of-type(2) .blocchi:nth-child(6),
+  label:nth-of-type(2) .blocchi:nth-child(7){
+
+    display: flex;
+  }
+
+
+  label:nth-of-type(2) .blocchi:nth-child(9),
+  label:nth-of-type(2) .blocchi:nth-child(10),
+  label:nth-of-type(2) .blocchi:nth-child(11),
+  label:nth-of-type(2) .blocchi:nth-child(12),
+  label:nth-of-type(2) .blocchi:nth-child(13),
+  label:nth-of-type(2) .blocchi:nth-child(14),
+  label:nth-of-type(2) .blocchi:nth-child(15),
+  label:nth-of-type(2) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (min-height:741px) and (max-width:999px){
+  label:nth-of-type(2) .blocchi:nth-child(1),
+  label:nth-of-type(2) .blocchi:nth-child(13),
+  label:nth-of-type(2) .blocchi:nth-child(14),
+  label:nth-of-type(2) .blocchi:nth-child(15),
+  label:nth-of-type(2) .blocchi:nth-child(16){
+    display: flex;
+  }
+
+
+}
+@media screen and (min-height:741px) and (max-width:750px){
+  label:nth-of-type(2) .blocchi:nth-child(1),
+  label:nth-of-type(2) .blocchi:nth-child(9),
+  label:nth-of-type(2) .blocchi:nth-child(10),
+  label:nth-of-type(2) .blocchi:nth-child(11),
+  label:nth-of-type(2) .blocchi:nth-child(12),
+  label:nth-of-type(2) .blocchi:nth-child(13),
+  label:nth-of-type(2) .blocchi:nth-child(14),
+  label:nth-of-type(2) .blocchi:nth-child(15){
+    display: flex;
+  }
+
+  label:nth-of-type(2) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (min-height:741px) and (max-width:499px){
+  label:nth-of-type(2) .blocchi:nth-child(1),
+  label:nth-of-type(2) .blocchi:nth-child(5),
+  label:nth-of-type(2) .blocchi:nth-child(6),
+  label:nth-of-type(2) .blocchi:nth-child(7){
+
+    display: flex;
+  }
+
+  label:nth-of-type(2) .blocchi:nth-child(9),
+  label:nth-of-type(2) .blocchi:nth-child(10),
+  label:nth-of-type(2) .blocchi:nth-child(11),
+  label:nth-of-type(2) .blocchi:nth-child(12),
+  label:nth-of-type(2) .blocchi:nth-child(13),
+  label:nth-of-type(2) .blocchi:nth-child(14),
+  label:nth-of-type(2) .blocchi:nth-child(15),
+  label:nth-of-type(2) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:740px){
+  label:nth-of-type(2) .blocchi:nth-child(1),
+  label:nth-of-type(2) .blocchi:nth-child(10),
+  label:nth-of-type(2) .blocchi:nth-child(11),
+  label:nth-of-type(2) .blocchi:nth-child(12),
+  label:nth-of-type(2) .blocchi:nth-child(13),
+  label:nth-of-type(2) .blocchi:nth-child(14),
+  label:nth-of-type(2) .blocchi:nth-child(15),
+  label:nth-of-type(2) .blocchi:nth-child(16){
+    display: flex;
+  }
+  label:nth-of-type(2) .blocchi:nth-child(2),
+  label:nth-of-type(2) .blocchi:nth-child(3),
+  label:nth-of-type(2) .blocchi:nth-child(4),
+  label:nth-of-type(2) .blocchi:nth-child(5),
+  label:nth-of-type(2) .blocchi:nth-child(6),
+  label:nth-of-type(2) .blocchi:nth-child(7),
+  label:nth-of-type(2) .blocchi:nth-child(8),
+  label:nth-of-type(2) .blocchi:nth-child(9){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:570px){
+  label:nth-of-type(2) .blocchi:nth-child(1),
+  label:nth-of-type(2) .blocchi:nth-child(7),
+  label:nth-of-type(2) .blocchi:nth-child(8),
+  label:nth-of-type(2) .blocchi:nth-child(9),
+  label:nth-of-type(2) .blocchi:nth-child(10),
+  label:nth-of-type(2) .blocchi:nth-child(11){
+    display: flex;
+  }
+  label:nth-of-type(2) .blocchi:nth-child(2),
+  label:nth-of-type(2) .blocchi:nth-child(3),
+  label:nth-of-type(2) .blocchi:nth-child(4),
+  label:nth-of-type(2) .blocchi:nth-child(5),
+  label:nth-of-type(2) .blocchi:nth-child(6),
+  label:nth-of-type(2) .blocchi:nth-child(12),
+  label:nth-of-type(2) .blocchi:nth-child(13),
+  label:nth-of-type(2) .blocchi:nth-child(14),
+  label:nth-of-type(2) .blocchi:nth-child(15),
+  label:nth-of-type(2) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:400px){
+  label:nth-of-type(2) .blocchi:nth-child(1),
+  label:nth-of-type(2) .blocchi:nth-child(4),
+  label:nth-of-type(2) .blocchi:nth-child(5){
+    display: flex;
+  }
+  label:nth-of-type(2) .blocchi:nth-child(2),
+  label:nth-of-type(2) .blocchi:nth-child(3),
+  label:nth-of-type(2) .blocchi:nth-child(6),
+  label:nth-of-type(2) .blocchi:nth-child(7),
+  label:nth-of-type(2) .blocchi:nth-child(8),
+  label:nth-of-type(2) .blocchi:nth-child(9),
+  label:nth-of-type(2) .blocchi:nth-child(10),
+  label:nth-of-type(2) .blocchi:nth-child(11),
+  label:nth-of-type(2) .blocchi:nth-child(12),
+  label:nth-of-type(2) .blocchi:nth-child(13),
+  label:nth-of-type(2) .blocchi:nth-child(14),
+  label:nth-of-type(2) .blocchi:nth-child(15),
+  label:nth-of-type(2) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:740px){
+  label:nth-of-type(2) .blocchi:nth-child(1),
+  label:nth-of-type(2) .blocchi:nth-child(7),
+  label:nth-of-type(2) .blocchi:nth-child(8),
+  label:nth-of-type(2) .blocchi:nth-child(9),
+  label:nth-of-type(2) .blocchi:nth-child(10),
+  label:nth-of-type(2) .blocchi:nth-child(11){
+    display: flex;
+  }
+
+  label:nth-of-type(2) .blocchi:nth-child(2),
+  label:nth-of-type(2) .blocchi:nth-child(3),
+  label:nth-of-type(2) .blocchi:nth-child(4),
+  label:nth-of-type(2) .blocchi:nth-child(5),
+  label:nth-of-type(2) .blocchi:nth-child(6),
+  label:nth-of-type(2) .blocchi:nth-child(12),
+  label:nth-of-type(2) .blocchi:nth-child(13),
+  label:nth-of-type(2) .blocchi:nth-child(14),
+  label:nth-of-type(2) .blocchi:nth-child(15),
+  label:nth-of-type(2) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:570px){
+  label:nth-of-type(2) .blocchi:nth-child(1),
+  label:nth-of-type(2) .blocchi:nth-child(5),
+  label:nth-of-type(2) .blocchi:nth-child(6),
+  label:nth-of-type(2) .blocchi:nth-child(7){
+    display: flex;
+  }
+  label:nth-of-type(2) .blocchi:nth-child(2),
+  label:nth-of-type(2) .blocchi:nth-child(3),
+  label:nth-of-type(2) .blocchi:nth-child(4),
+  label:nth-of-type(2) .blocchi:nth-child(8),
+  label:nth-of-type(2) .blocchi:nth-child(9),
+  label:nth-of-type(2) .blocchi:nth-child(10),
+  label:nth-of-type(2) .blocchi:nth-child(11),
+  label:nth-of-type(2) .blocchi:nth-child(12),
+  label:nth-of-type(2) .blocchi:nth-child(13),
+  label:nth-of-type(2) .blocchi:nth-child(14),
+  label:nth-of-type(2) .blocchi:nth-child(15),
+  label:nth-of-type(2) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:400px){
+  label:nth-of-type(2) .blocchi:nth-child(1),
+  label:nth-of-type(2) .blocchi:nth-child(3){
+    display: flex;
+  }
+
+  label:nth-of-type(2) .blocchi:nth-child(2),
+  label:nth-of-type(2) .blocchi:nth-child(4),
+  label:nth-of-type(2) .blocchi:nth-child(5),
+  label:nth-of-type(2) .blocchi:nth-child(6),
+  label:nth-of-type(2) .blocchi:nth-child(7),
+  label:nth-of-type(2) .blocchi:nth-child(8),
+  label:nth-of-type(2) .blocchi:nth-child(9),
+  label:nth-of-type(2) .blocchi:nth-child(10),
+  label:nth-of-type(2) .blocchi:nth-child(11),
+  label:nth-of-type(2) .blocchi:nth-child(12),
+  label:nth-of-type(2) .blocchi:nth-child(13),
+  label:nth-of-type(2) .blocchi:nth-child(14),
+  label:nth-of-type(2) .blocchi:nth-child(15),
+  label:nth-of-type(2) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:740px){
+  label:nth-of-type(2) .blocchi:nth-child(1),
+  label:nth-of-type(2) .blocchi:nth-child(4),
+  label:nth-of-type(2) .blocchi:nth-child(5){
+    display: flex;
+  }
+  label:nth-of-type(2) .blocchi:nth-child(2),
+  label:nth-of-type(2) .blocchi:nth-child(3),
+  label:nth-of-type(2) .blocchi:nth-child(6),
+  label:nth-of-type(2) .blocchi:nth-child(7),
+  label:nth-of-type(2) .blocchi:nth-child(8),
+  label:nth-of-type(2) .blocchi:nth-child(9),
+  label:nth-of-type(2) .blocchi:nth-child(10),
+  label:nth-of-type(2) .blocchi:nth-child(11),
+  label:nth-of-type(2) .blocchi:nth-child(12),
+  label:nth-of-type(2) .blocchi:nth-child(13),
+  label:nth-of-type(2) .blocchi:nth-child(14),
+  label:nth-of-type(2) .blocchi:nth-child(15),
+  label:nth-of-type(2) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:570px){
+  label:nth-of-type(2) .blocchi:nth-child(1),
+  label:nth-of-type(2) .blocchi:nth-child(3){
+    display: flex;
+  }
+
+  label:nth-of-type(2) .blocchi:nth-child(2),
+  label:nth-of-type(2) .blocchi:nth-child(4),
+  label:nth-of-type(2) .blocchi:nth-child(5),
+  label:nth-of-type(2) .blocchi:nth-child(6),
+  label:nth-of-type(2) .blocchi:nth-child(7),
+  label:nth-of-type(2) .blocchi:nth-child(8),
+  label:nth-of-type(2) .blocchi:nth-child(9),
+  label:nth-of-type(2) .blocchi:nth-child(10),
+  label:nth-of-type(2) .blocchi:nth-child(11),
+  label:nth-of-type(2) .blocchi:nth-child(12),
+  label:nth-of-type(2) .blocchi:nth-child(13),
+  label:nth-of-type(2) .blocchi:nth-child(14),
+  label:nth-of-type(2) .blocchi:nth-child(15),
+  label:nth-of-type(2) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:400px){
+  label:nth-of-type(2) .blocchi:nth-child(2){
+    display: flex;
+  }
+  label:nth-of-type(2) .blocchi:nth-child(1),
+  label:nth-of-type(2) .blocchi:nth-child(3),
+  label:nth-of-type(2) .blocchi:nth-child(4),
+  label:nth-of-type(2) .blocchi:nth-child(5),
+  label:nth-of-type(2) .blocchi:nth-child(6),
+  label:nth-of-type(2) .blocchi:nth-child(7),
+  label:nth-of-type(2) .blocchi:nth-child(8),
+  label:nth-of-type(2) .blocchi:nth-child(9),
+  label:nth-of-type(2) .blocchi:nth-child(10),
+  label:nth-of-type(2) .blocchi:nth-child(11),
+  label:nth-of-type(2) .blocchi:nth-child(12),
+  label:nth-of-type(2) .blocchi:nth-child(13),
+  label:nth-of-type(2) .blocchi:nth-child(14),
+  label:nth-of-type(2) .blocchi:nth-child(15),
+  label:nth-of-type(2) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+/* ***********************QUERY BLOCK 3 **************** */
+label:nth-of-type(3) .navigationpoints span:nth-child(3){
+  color: white;
+}
+label:nth-of-type(3) .finestra{
+ /* height: auto; */
+ display: flex;
+ justify-content: center;
+ align-content: center;
+}
+
+label:nth-of-type(3) .blocchi{
+  display: none;
+}
+@media screen and (min-height:0px){
+  label:nth-of-type(3)  .blocchi{
+    height: 100%;
+  }
+}
+@media screen and (min-height:401px){
+  label:nth-of-type(3)  .blocchi{
+    height: 50%;
+  }
+}
+@media screen and (min-height:570px){
+  label:nth-of-type(3)  .blocchi{
+    height: 25%;
+    max-height: 25%;
+  }
+}
+
+@media screen and (min-width:1000px) and (max-height:570px){
+  label:nth-of-type(3) .blocchi:nth-child(1),
+  label:nth-of-type(3) .blocchi:nth-child(15){
+    display: flex;
+  }
+
+  label:nth-of-type(3) .blocchi:nth-child(9),
+  label:nth-of-type(3) .blocchi:nth-child(10),
+  label:nth-of-type(3) .blocchi:nth-child(11),
+  label:nth-of-type(3) .blocchi:nth-child(12),
+  label:nth-of-type(3) .blocchi:nth-child(13),
+  label:nth-of-type(3) .blocchi:nth-child(14),
+  label:nth-of-type(3) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (min-width:1000px) and (max-height:400px){
+  label:nth-of-type(3) .blocchi:nth-child(1),
+  label:nth-of-type(3) .blocchi:nth-child(8),
+  label:nth-of-type(3) .blocchi:nth-child(9),
+  label:nth-of-type(3) .blocchi:nth-child(10){
+
+    display: flex;
+  }
+
+  label:nth-of-type(3) .blocchi:nth-child(5),
+  label:nth-of-type(3) .blocchi:nth-child(6),
+  label:nth-of-type(3) .blocchi:nth-child(7),
+  label:nth-of-type(3) .blocchi:nth-child(11),
+  label:nth-of-type(3) .blocchi:nth-child(12),
+  label:nth-of-type(3) .blocchi:nth-child(13),
+  label:nth-of-type(3) .blocchi:nth-child(14),
+  label:nth-of-type(3) .blocchi:nth-child(15),
+  label:nth-of-type(3) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+
+@media screen and (min-height:741px) and (max-width:750px){
+  label:nth-of-type(3) .blocchi:nth-child(1),
+  label:nth-of-type(3) .blocchi:nth-child(16){
+    display: flex;
+  }
+  label:nth-of-type(3) .blocchi:nth-child(9),
+  label:nth-of-type(3) .blocchi:nth-child(10),
+  label:nth-of-type(3) .blocchi:nth-child(11),
+  label:nth-of-type(3) .blocchi:nth-child(12),
+  label:nth-of-type(3) .blocchi:nth-child(13),
+  label:nth-of-type(3) .blocchi:nth-child(14),
+  label:nth-of-type(3) .blocchi:nth-child(15){
+    display: none;
+  }
+}
+@media screen and (min-height:741px) and (max-width:499px){
+  label:nth-of-type(3) .blocchi:nth-child(1),
+  label:nth-of-type(3) .blocchi:nth-child(8),
+  label:nth-of-type(3) .blocchi:nth-child(9),
+  label:nth-of-type(3) .blocchi:nth-child(10){
+
+    display: flex;
+  }
+  label:nth-of-type(3) .blocchi:nth-child(5),
+  label:nth-of-type(3) .blocchi:nth-child(6),
+  label:nth-of-type(3) .blocchi:nth-child(7),
+  label:nth-of-type(3) .blocchi:nth-child(11),
+  label:nth-of-type(3) .blocchi:nth-child(12),
+  label:nth-of-type(3) .blocchi:nth-child(13),
+  label:nth-of-type(3) .blocchi:nth-child(14),
+  label:nth-of-type(3) .blocchi:nth-child(15),
+  label:nth-of-type(3) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:740px){
+
+  label:nth-of-type(3) .blocchi:nth-child(1),
+  label:nth-of-type(3) .blocchi:nth-child(10),
+  label:nth-of-type(3) .blocchi:nth-child(11),
+  label:nth-of-type(3) .blocchi:nth-child(12),
+  label:nth-of-type(3) .blocchi:nth-child(13),
+  label:nth-of-type(3) .blocchi:nth-child(14),
+  label:nth-of-type(3) .blocchi:nth-child(15),
+  label:nth-of-type(3) .blocchi:nth-child(16),
+  label:nth-of-type(3) .blocchi:nth-child(2),
+  label:nth-of-type(3) .blocchi:nth-child(3),
+  label:nth-of-type(3) .blocchi:nth-child(4),
+  label:nth-of-type(3) .blocchi:nth-child(5),
+  label:nth-of-type(3) .blocchi:nth-child(6),
+  label:nth-of-type(3) .blocchi:nth-child(7),
+  label:nth-of-type(3) .blocchi:nth-child(8),
+  label:nth-of-type(3) .blocchi:nth-child(9){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:570px){
+  label:nth-of-type(3) .blocchi:nth-child(1),
+  label:nth-of-type(3) .blocchi:nth-child(12),
+  label:nth-of-type(3) .blocchi:nth-child(13),
+  label:nth-of-type(3) .blocchi:nth-child(14),
+  label:nth-of-type(3) .blocchi:nth-child(15),
+  label:nth-of-type(3) .blocchi:nth-child(16){
+    display: flex;
+  }
+  label:nth-of-type(3) .blocchi:nth-child(7),
+  label:nth-of-type(3) .blocchi:nth-child(8),
+  label:nth-of-type(3) .blocchi:nth-child(9),
+  label:nth-of-type(3) .blocchi:nth-child(10),
+  label:nth-of-type(3) .blocchi:nth-child(11),
+  label:nth-of-type(3) .blocchi:nth-child(2),
+  label:nth-of-type(3) .blocchi:nth-child(3),
+  label:nth-of-type(3) .blocchi:nth-child(4),
+  label:nth-of-type(3) .blocchi:nth-child(5),
+  label:nth-of-type(3) .blocchi:nth-child(6),
+){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:400px){
+  label:nth-of-type(3) .blocchi:nth-child(1),
+  label:nth-of-type(3) .blocchi:nth-child(6),
+  label:nth-of-type(3) .blocchi:nth-child(7){
+    display: flex;
+  }
+  label:nth-of-type(3) .blocchi:nth-child(2),
+  label:nth-of-type(3) .blocchi:nth-child(3),
+  label:nth-of-type(3) .blocchi:nth-child(4),
+  label:nth-of-type(3) .blocchi:nth-child(5),
+  label:nth-of-type(3) .blocchi:nth-child(8),
+  label:nth-of-type(3) .blocchi:nth-child(9),
+  label:nth-of-type(3) .blocchi:nth-child(10),
+  label:nth-of-type(3) .blocchi:nth-child(11),
+  label:nth-of-type(3) .blocchi:nth-child(12),
+  label:nth-of-type(3) .blocchi:nth-child(13),
+  label:nth-of-type(3) .blocchi:nth-child(14),
+  label:nth-of-type(3) .blocchi:nth-child(15),
+  label:nth-of-type(3) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:740px){
+  label:nth-of-type(3) .blocchi:nth-child(1),
+  label:nth-of-type(3) .blocchi:nth-child(12),
+  label:nth-of-type(3) .blocchi:nth-child(13),
+  label:nth-of-type(3) .blocchi:nth-child(14),
+  label:nth-of-type(3) .blocchi:nth-child(15),
+  label:nth-of-type(3) .blocchi:nth-child(16){
+    display: flex;
+  }
+
+  label:nth-of-type(3) .blocchi:nth-child(2),
+  label:nth-of-type(3) .blocchi:nth-child(3),
+  label:nth-of-type(3) .blocchi:nth-child(4),
+  label:nth-of-type(3) .blocchi:nth-child(5),
+  label:nth-of-type(3) .blocchi:nth-child(6),
+  label:nth-of-type(3) .blocchi:nth-child(7),
+  label:nth-of-type(3) .blocchi:nth-child(8),
+  label:nth-of-type(3) .blocchi:nth-child(9),
+  label:nth-of-type(3) .blocchi:nth-child(10),
+  label:nth-of-type(3) .blocchi:nth-child(11){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:570px){
+  label:nth-of-type(3) .blocchi:nth-child(1),
+  label:nth-of-type(3) .blocchi:nth-child(8),
+  label:nth-of-type(3) .blocchi:nth-child(9),
+  label:nth-of-type(3) .blocchi:nth-child(10){
+    display: flex;
+  }
+  label:nth-of-type(3) .blocchi:nth-child(2),
+  label:nth-of-type(3) .blocchi:nth-child(3),
+  label:nth-of-type(3) .blocchi:nth-child(4),
+  label:nth-of-type(3) .blocchi:nth-child(5),
+  label:nth-of-type(3) .blocchi:nth-child(6),
+  label:nth-of-type(3) .blocchi:nth-child(7),
+  label:nth-of-type(3) .blocchi:nth-child(11),
+  label:nth-of-type(3) .blocchi:nth-child(12),
+  label:nth-of-type(3) .blocchi:nth-child(13),
+  label:nth-of-type(3) .blocchi:nth-child(14),
+  label:nth-of-type(3) .blocchi:nth-child(15),
+  label:nth-of-type(3) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:400px){
+  label:nth-of-type(3) .blocchi:nth-child(1),
+  label:nth-of-type(3) .blocchi:nth-child(4){
+    display: flex;
+  }
+
+  label:nth-of-type(3) .blocchi:nth-child(2),
+  label:nth-of-type(3) .blocchi:nth-child(3),
+  label:nth-of-type(3) .blocchi:nth-child(5),
+  label:nth-of-type(3) .blocchi:nth-child(6),
+  label:nth-of-type(3) .blocchi:nth-child(7),
+  label:nth-of-type(3) .blocchi:nth-child(8),
+  label:nth-of-type(3) .blocchi:nth-child(9),
+  label:nth-of-type(3) .blocchi:nth-child(10),
+  label:nth-of-type(3) .blocchi:nth-child(11),
+  label:nth-of-type(3) .blocchi:nth-child(12),
+  label:nth-of-type(3) .blocchi:nth-child(13),
+  label:nth-of-type(3) .blocchi:nth-child(14),
+  label:nth-of-type(3) .blocchi:nth-child(15),
+  label:nth-of-type(3) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:740px){
+  label:nth-of-type(3) .blocchi:nth-child(1),
+  label:nth-of-type(3) .blocchi:nth-child(6),
+  label:nth-of-type(3) .blocchi:nth-child(7){
+    display: flex;
+  }
+  label:nth-of-type(3) .blocchi:nth-child(2),
+  label:nth-of-type(3) .blocchi:nth-child(3),
+  label:nth-of-type(3) .blocchi:nth-child(4),
+  label:nth-of-type(3) .blocchi:nth-child(5),
+  label:nth-of-type(3) .blocchi:nth-child(8),
+  label:nth-of-type(3) .blocchi:nth-child(9),
+  label:nth-of-type(3) .blocchi:nth-child(10),
+  label:nth-of-type(3) .blocchi:nth-child(11),
+  label:nth-of-type(3) .blocchi:nth-child(12),
+  label:nth-of-type(3) .blocchi:nth-child(13),
+  label:nth-of-type(3) .blocchi:nth-child(14),
+  label:nth-of-type(3) .blocchi:nth-child(15),
+  label:nth-of-type(3) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:570px){
+  label:nth-of-type(3) .blocchi:nth-child(1),
+  label:nth-of-type(3) .blocchi:nth-child(4){
+    display: flex;
+  }
+
+  label:nth-of-type(3) .blocchi:nth-child(2),
+  label:nth-of-type(3) .blocchi:nth-child(3),
+  label:nth-of-type(3) .blocchi:nth-child(5),
+  label:nth-of-type(3) .blocchi:nth-child(6),
+  label:nth-of-type(3) .blocchi:nth-child(7),
+  label:nth-of-type(3) .blocchi:nth-child(8),
+  label:nth-of-type(3) .blocchi:nth-child(9),
+  label:nth-of-type(3) .blocchi:nth-child(10),
+  label:nth-of-type(3) .blocchi:nth-child(11),
+  label:nth-of-type(3) .blocchi:nth-child(12),
+  label:nth-of-type(3) .blocchi:nth-child(13),
+  label:nth-of-type(3) .blocchi:nth-child(14),
+  label:nth-of-type(3) .blocchi:nth-child(15),
+  label:nth-of-type(3) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:400px){
+  label:nth-of-type(3) .blocchi:nth-child(3){
+    display: flex;
+  }
+  label:nth-of-type(3) .blocchi:nth-child(1),
+  label:nth-of-type(3) .blocchi:nth-child(2),
+  label:nth-of-type(3) .blocchi:nth-child(4),
+  label:nth-of-type(3) .blocchi:nth-child(5),
+  label:nth-of-type(3) .blocchi:nth-child(6),
+  label:nth-of-type(3) .blocchi:nth-child(7),
+  label:nth-of-type(3) .blocchi:nth-child(8),
+  label:nth-of-type(3) .blocchi:nth-child(9),
+  label:nth-of-type(3) .blocchi:nth-child(10),
+  label:nth-of-type(3) .blocchi:nth-child(11),
+  label:nth-of-type(3) .blocchi:nth-child(12),
+  label:nth-of-type(3) .blocchi:nth-child(13),
+  label:nth-of-type(3) .blocchi:nth-child(14),
+  label:nth-of-type(3) .blocchi:nth-child(15),
+  label:nth-of-type(3) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+/* ************************QUERY BLOCK 4***************** */
+label:nth-of-type(4) .navigationpoints span:nth-child(4){
+  color: white;
+}
+
+label:nth-of-type(4) .finestra{
+ /* height: auto; */
+ display: flex;
+ justify-content: center;
+ align-content: center;
+}
+
+label:nth-of-type(4) .blocchi{
+  display: none;
+}
+@media screen and (min-height:0px){
+  label:nth-of-type(4)  .blocchi{
+    height: 100%;
+  }
+}
+@media screen and (min-height:401px){
+  label:nth-of-type(4)  .blocchi{
+    height: 50%;
+  }
+}
+@media screen and (min-height:570px){
+  label:nth-of-type(4)  .blocchi{
+    height: 25%;
+    max-height: 25%;
+  }
+}
+
+
+@media screen and (min-width:1000px) and (max-height:400px){
+  label:nth-of-type(4) .blocchi:nth-child(1),
+  label:nth-of-type(4) .blocchi:nth-child(11),
+  label:nth-of-type(4) .blocchi:nth-child(12),
+  label:nth-of-type(4) .blocchi:nth-child(13){
+
+    display: flex;
+  }
+
+  label:nth-of-type(4) .blocchi:nth-child(5),
+  label:nth-of-type(4) .blocchi:nth-child(6),
+  label:nth-of-type(4) .blocchi:nth-child(7),
+  label:nth-of-type(4) .blocchi:nth-child(8),
+  label:nth-of-type(4) .blocchi:nth-child(9),
+  label:nth-of-type(4) .blocchi:nth-child(10),
+  label:nth-of-type(4) .blocchi:nth-child(14),
+  label:nth-of-type(4) .blocchi:nth-child(15),
+  label:nth-of-type(4) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+
+
+@media screen and (min-height:741px) and (max-width:499px){
+  label:nth-of-type(4) .blocchi:nth-child(1),
+  label:nth-of-type(4) .blocchi:nth-child(11),
+  label:nth-of-type(4) .blocchi:nth-child(12),
+  label:nth-of-type(4) .blocchi:nth-child(13){
+
+    display: flex;
+  }
+  label:nth-of-type(4) .blocchi:nth-child(5),
+  label:nth-of-type(4) .blocchi:nth-child(6),
+  label:nth-of-type(4) .blocchi:nth-child(7),
+  label:nth-of-type(4) .blocchi:nth-child(8),
+  label:nth-of-type(4) .blocchi:nth-child(9),
+  label:nth-of-type(4) .blocchi:nth-child(10),
+  label:nth-of-type(4) .blocchi:nth-child(14),
+  label:nth-of-type(4) .blocchi:nth-child(15),
+  label:nth-of-type(4) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:740px){
+
+  label:nth-of-type(4) .blocchi:nth-child(1),
+  label:nth-of-type(4) .blocchi:nth-child(10),
+  label:nth-of-type(4) .blocchi:nth-child(11),
+  label:nth-of-type(4) .blocchi:nth-child(12),
+  label:nth-of-type(4) .blocchi:nth-child(13),
+  label:nth-of-type(4) .blocchi:nth-child(14),
+  label:nth-of-type(4) .blocchi:nth-child(15),
+  label:nth-of-type(4) .blocchi:nth-child(16),
+  label:nth-of-type(4) .blocchi:nth-child(2),
+  label:nth-of-type(4) .blocchi:nth-child(3),
+  label:nth-of-type(4) .blocchi:nth-child(4),
+  label:nth-of-type(4) .blocchi:nth-child(5),
+  label:nth-of-type(4) .blocchi:nth-child(6),
+  label:nth-of-type(4) .blocchi:nth-child(7),
+  label:nth-of-type(4) .blocchi:nth-child(8),
+  label:nth-of-type(4) .blocchi:nth-child(9){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:570px){
+
+  label:nth-of-type(4) .blocchi:nth-child(1),
+  label:nth-of-type(4) .blocchi:nth-child(12),
+  label:nth-of-type(4) .blocchi:nth-child(13),
+  label:nth-of-type(4) .blocchi:nth-child(14),
+  label:nth-of-type(4) .blocchi:nth-child(15),
+  label:nth-of-type(4) .blocchi:nth-child(16),
+  label:nth-of-type(4) .blocchi:nth-child(7),
+  label:nth-of-type(4) .blocchi:nth-child(8),
+  label:nth-of-type(4) .blocchi:nth-child(9),
+  label:nth-of-type(4) .blocchi:nth-child(10),
+  label:nth-of-type(4) .blocchi:nth-child(11),
+  label:nth-of-type(4) .blocchi:nth-child(2),
+  label:nth-of-type(4) .blocchi:nth-child(3),
+  label:nth-of-type(4) .blocchi:nth-child(4),
+  label:nth-of-type(4) .blocchi:nth-child(5),
+  label:nth-of-type(4) .blocchi:nth-child(6),
+){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:400px){
+  label:nth-of-type(4) .blocchi:nth-child(1),
+  label:nth-of-type(4) .blocchi:nth-child(8),
+  label:nth-of-type(4) .blocchi:nth-child(9){
+    display: flex;
+  }
+  label:nth-of-type(4) .blocchi:nth-child(2),
+  label:nth-of-type(4) .blocchi:nth-child(3),
+  label:nth-of-type(4) .blocchi:nth-child(4),
+  label:nth-of-type(4) .blocchi:nth-child(5),
+  label:nth-of-type(4) .blocchi:nth-child(6),
+  label:nth-of-type(4) .blocchi:nth-child(7),
+  label:nth-of-type(4) .blocchi:nth-child(10),
+  label:nth-of-type(4) .blocchi:nth-child(11),
+  label:nth-of-type(4) .blocchi:nth-child(12),
+  label:nth-of-type(4) .blocchi:nth-child(13),
+  label:nth-of-type(4) .blocchi:nth-child(14),
+  label:nth-of-type(4) .blocchi:nth-child(15),
+  label:nth-of-type(4) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:740px){
+  label:nth-of-type(4) .blocchi:nth-child(1),
+  label:nth-of-type(4) .blocchi:nth-child(12),
+  label:nth-of-type(4) .blocchi:nth-child(13),
+  label:nth-of-type(4) .blocchi:nth-child(14),
+  label:nth-of-type(4) .blocchi:nth-child(15),
+  label:nth-of-type(4) .blocchi:nth-child(16),
+  label:nth-of-type(4) .blocchi:nth-child(2),
+  label:nth-of-type(4) .blocchi:nth-child(3),
+  label:nth-of-type(4) .blocchi:nth-child(4),
+  label:nth-of-type(4) .blocchi:nth-child(5),
+  label:nth-of-type(4) .blocchi:nth-child(6),
+  label:nth-of-type(4) .blocchi:nth-child(7),
+  label:nth-of-type(4) .blocchi:nth-child(8),
+  label:nth-of-type(4) .blocchi:nth-child(9),
+  label:nth-of-type(4) .blocchi:nth-child(10),
+  label:nth-of-type(4) .blocchi:nth-child(11){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:570px){
+  label:nth-of-type(4) .blocchi:nth-child(1),
+  label:nth-of-type(4) .blocchi:nth-child(11),
+  label:nth-of-type(4) .blocchi:nth-child(12),
+  label:nth-of-type(4) .blocchi:nth-child(13){
+    display: flex;
+  }
+  label:nth-of-type(4) .blocchi:nth-child(2),
+  label:nth-of-type(4) .blocchi:nth-child(3),
+  label:nth-of-type(4) .blocchi:nth-child(4),
+  label:nth-of-type(4) .blocchi:nth-child(5),
+  label:nth-of-type(4) .blocchi:nth-child(6),
+  label:nth-of-type(4) .blocchi:nth-child(7),
+  label:nth-of-type(4) .blocchi:nth-child(8),
+  label:nth-of-type(4) .blocchi:nth-child(9),
+  label:nth-of-type(4) .blocchi:nth-child(10),
+  label:nth-of-type(4) .blocchi:nth-child(14),
+  label:nth-of-type(4) .blocchi:nth-child(15),
+  label:nth-of-type(4) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:400px){
+  label:nth-of-type(4) .blocchi:nth-child(1),
+  label:nth-of-type(4) .blocchi:nth-child(5){
+    display: flex;
+  }
+
+  label:nth-of-type(4) .blocchi:nth-child(2),
+  label:nth-of-type(4) .blocchi:nth-child(3),
+  label:nth-of-type(4) .blocchi:nth-child(4),
+  label:nth-of-type(4) .blocchi:nth-child(6),
+  label:nth-of-type(4) .blocchi:nth-child(7),
+  label:nth-of-type(4) .blocchi:nth-child(8),
+  label:nth-of-type(4) .blocchi:nth-child(9),
+  label:nth-of-type(4) .blocchi:nth-child(10),
+  label:nth-of-type(4) .blocchi:nth-child(11),
+  label:nth-of-type(4) .blocchi:nth-child(12),
+  label:nth-of-type(4) .blocchi:nth-child(13),
+  label:nth-of-type(4) .blocchi:nth-child(14),
+  label:nth-of-type(4) .blocchi:nth-child(15),
+  label:nth-of-type(4) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:740px){
+  label:nth-of-type(4) .blocchi:nth-child(1),
+  label:nth-of-type(4) .blocchi:nth-child(8),
+  label:nth-of-type(4) .blocchi:nth-child(9){
+    display: flex;
+  }
+  label:nth-of-type(4) .blocchi:nth-child(2),
+  label:nth-of-type(4) .blocchi:nth-child(3),
+  label:nth-of-type(4) .blocchi:nth-child(4),
+  label:nth-of-type(4) .blocchi:nth-child(5),
+  label:nth-of-type(4) .blocchi:nth-child(7),
+  label:nth-of-type(4) .blocchi:nth-child(10),
+  label:nth-of-type(4) .blocchi:nth-child(11),
+  label:nth-of-type(4) .blocchi:nth-child(12),
+  label:nth-of-type(4) .blocchi:nth-child(13),
+  label:nth-of-type(4) .blocchi:nth-child(14),
+  label:nth-of-type(4) .blocchi:nth-child(15),
+  label:nth-of-type(4) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:570px){
+  label:nth-of-type(4) .blocchi:nth-child(1),
+  label:nth-of-type(4) .blocchi:nth-child(5){
+    display: flex;
+  }
+
+  label:nth-of-type(4) .blocchi:nth-child(2),
+  label:nth-of-type(4) .blocchi:nth-child(3),
+  label:nth-of-type(4) .blocchi:nth-child(4),
+  label:nth-of-type(4) .blocchi:nth-child(6),
+  label:nth-of-type(4) .blocchi:nth-child(7),
+  label:nth-of-type(4) .blocchi:nth-child(8),
+  label:nth-of-type(4) .blocchi:nth-child(9),
+  label:nth-of-type(4) .blocchi:nth-child(10),
+  label:nth-of-type(4) .blocchi:nth-child(11),
+  label:nth-of-type(4) .blocchi:nth-child(12),
+  label:nth-of-type(4) .blocchi:nth-child(13),
+  label:nth-of-type(4) .blocchi:nth-child(14),
+  label:nth-of-type(4) .blocchi:nth-child(15),
+  label:nth-of-type(4) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:400px){
+  label:nth-of-type(4) .blocchi:nth-child(4){
+    display: flex;
+  }
+  label:nth-of-type(4) .blocchi:nth-child(1),
+  label:nth-of-type(4) .blocchi:nth-child(2),
+  label:nth-of-type(4) .blocchi:nth-child(3),
+  label:nth-of-type(4) .blocchi:nth-child(5),
+  label:nth-of-type(4) .blocchi:nth-child(6),
+  label:nth-of-type(4) .blocchi:nth-child(7),
+  label:nth-of-type(4) .blocchi:nth-child(8),
+  label:nth-of-type(4) .blocchi:nth-child(9),
+  label:nth-of-type(4) .blocchi:nth-child(10),
+  label:nth-of-type(4) .blocchi:nth-child(11),
+  label:nth-of-type(4) .blocchi:nth-child(12),
+  label:nth-of-type(4) .blocchi:nth-child(13),
+  label:nth-of-type(4) .blocchi:nth-child(14),
+  label:nth-of-type(4) .blocchi:nth-child(15),
+  label:nth-of-type(4) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+/* *********************BLOCK QUERY 5***************** */
+label:nth-of-type(5) .navigationpoints span:nth-child(5){
+  color: white;
+}
+
+label:nth-of-type(5) .finestra{
+ /* height: auto; */
+ display: flex;
+ justify-content: center;
+ align-content: center;
+}
+
+label:nth-of-type(5) .blocchi{
+  display: none;
+}
+@media screen and (min-height:0px){
+  label:nth-of-type(5)  .blocchi{
+    height: 100%;
+  }
+}
+@media screen and (min-height:401px){
+  label:nth-of-type(5)  .blocchi{
+    height: 50%;
+  }
+}
+@media screen and (min-height:570px){
+  label:nth-of-type(5)  .blocchi{
+    height: 25%;
+    max-height: 25%;
+  }
+}
+
+
+@media screen and (min-width:1000px) and (max-height:400px){
+  label:nth-of-type(5) .blocchi:nth-child(1),
+  label:nth-of-type(5) .blocchi:nth-child(14),
+  label:nth-of-type(5) .blocchi:nth-child(15),
+  label:nth-of-type(5) .blocchi:nth-child(16){
+
+    display: flex;
+  }
+
+  label:nth-of-type(5) .blocchi:nth-child(5),
+  label:nth-of-type(5) .blocchi:nth-child(6),
+  label:nth-of-type(5) .blocchi:nth-child(7),
+  label:nth-of-type(5) .blocchi:nth-child(8),
+  label:nth-of-type(5) .blocchi:nth-child(9),
+  label:nth-of-type(5) .blocchi:nth-child(10),
+  label:nth-of-type(5) .blocchi:nth-child(11),
+  label:nth-of-type(5) .blocchi:nth-child(12),
+  label:nth-of-type(5) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+
+
+@media screen and (min-height:741px) and (max-width:499px){
+  label:nth-of-type(5) .blocchi:nth-child(1),
+  label:nth-of-type(5) .blocchi:nth-child(14),
+  label:nth-of-type(5) .blocchi:nth-child(15),
+  label:nth-of-type(5) .blocchi:nth-child(16){
+
+    display: flex;
+  }
+  label:nth-of-type(5) .blocchi:nth-child(5),
+  label:nth-of-type(5) .blocchi:nth-child(6),
+  label:nth-of-type(5) .blocchi:nth-child(7),
+  label:nth-of-type(5) .blocchi:nth-child(8),
+  label:nth-of-type(5) .blocchi:nth-child(9),
+  label:nth-of-type(5) .blocchi:nth-child(10),
+  label:nth-of-type(5) .blocchi:nth-child(11),
+  label:nth-of-type(5) .blocchi:nth-child(12),
+  label:nth-of-type(5) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:740px){
+
+  label:nth-of-type(5) .blocchi:nth-child(1),
+  label:nth-of-type(5) .blocchi:nth-child(10),
+  label:nth-of-type(5) .blocchi:nth-child(11),
+  label:nth-of-type(5) .blocchi:nth-child(12),
+  label:nth-of-type(5) .blocchi:nth-child(13),
+  label:nth-of-type(5) .blocchi:nth-child(14),
+  label:nth-of-type(5) .blocchi:nth-child(15),
+  label:nth-of-type(5) .blocchi:nth-child(16),
+  label:nth-of-type(5) .blocchi:nth-child(2),
+  label:nth-of-type(5) .blocchi:nth-child(3),
+  label:nth-of-type(5) .blocchi:nth-child(4),
+  label:nth-of-type(5) .blocchi:nth-child(5),
+  label:nth-of-type(5) .blocchi:nth-child(6),
+  label:nth-of-type(5) .blocchi:nth-child(7),
+  label:nth-of-type(5) .blocchi:nth-child(8),
+  label:nth-of-type(5) .blocchi:nth-child(9){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:570px){
+
+  label:nth-of-type(5) .blocchi:nth-child(1),
+  label:nth-of-type(5) .blocchi:nth-child(12),
+  label:nth-of-type(5) .blocchi:nth-child(13),
+  label:nth-of-type(5) .blocchi:nth-child(14),
+  label:nth-of-type(5) .blocchi:nth-child(15),
+  label:nth-of-type(5) .blocchi:nth-child(16),
+  label:nth-of-type(5) .blocchi:nth-child(7),
+  label:nth-of-type(5) .blocchi:nth-child(8),
+  label:nth-of-type(5) .blocchi:nth-child(9),
+  label:nth-of-type(5) .blocchi:nth-child(10),
+  label:nth-of-type(5) .blocchi:nth-child(11),
+  label:nth-of-type(5) .blocchi:nth-child(2),
+  label:nth-of-type(5) .blocchi:nth-child(3),
+  label:nth-of-type(5) .blocchi:nth-child(4),
+  label:nth-of-type(5) .blocchi:nth-child(5),
+  label:nth-of-type(5) .blocchi:nth-child(6),
+){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:400px){
+  label:nth-of-type(5) .blocchi:nth-child(1),
+  label:nth-of-type(5) .blocchi:nth-child(10),
+  label:nth-of-type(5) .blocchi:nth-child(11){
+    display: flex;
+  }
+  label:nth-of-type(5) .blocchi:nth-child(2),
+  label:nth-of-type(5) .blocchi:nth-child(3),
+  label:nth-of-type(5) .blocchi:nth-child(4),
+  label:nth-of-type(5) .blocchi:nth-child(5),
+  label:nth-of-type(5) .blocchi:nth-child(6),
+  label:nth-of-type(5) .blocchi:nth-child(7),
+  label:nth-of-type(5) .blocchi:nth-child(8),
+  label:nth-of-type(5) .blocchi:nth-child(9),
+  label:nth-of-type(5) .blocchi:nth-child(12),
+  label:nth-of-type(5) .blocchi:nth-child(13),
+  label:nth-of-type(5) .blocchi:nth-child(14),
+  label:nth-of-type(5) .blocchi:nth-child(15),
+  label:nth-of-type(5) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:740px){
+  label:nth-of-type(5) .blocchi:nth-child(1),
+  label:nth-of-type(5) .blocchi:nth-child(12),
+  label:nth-of-type(5) .blocchi:nth-child(13),
+  label:nth-of-type(5) .blocchi:nth-child(14),
+  label:nth-of-type(5) .blocchi:nth-child(15),
+  label:nth-of-type(5) .blocchi:nth-child(16),
+  label:nth-of-type(5) .blocchi:nth-child(2),
+  label:nth-of-type(5) .blocchi:nth-child(3),
+  label:nth-of-type(5) .blocchi:nth-child(4),
+  label:nth-of-type(5) .blocchi:nth-child(5),
+  label:nth-of-type(5) .blocchi:nth-child(6),
+  label:nth-of-type(5) .blocchi:nth-child(7),
+  label:nth-of-type(5) .blocchi:nth-child(8),
+  label:nth-of-type(5) .blocchi:nth-child(9),
+  label:nth-of-type(5) .blocchi:nth-child(10),
+  label:nth-of-type(5) .blocchi:nth-child(11){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:570px){
+  label:nth-of-type(5) .blocchi:nth-child(1),
+  label:nth-of-type(5) .blocchi:nth-child(14),
+  label:nth-of-type(5) .blocchi:nth-child(15),
+  label:nth-of-type(5) .blocchi:nth-child(16){
+    display: flex;
+  }
+  label:nth-of-type(5) .blocchi:nth-child(2),
+  label:nth-of-type(5) .blocchi:nth-child(3),
+  label:nth-of-type(5) .blocchi:nth-child(4),
+  label:nth-of-type(5) .blocchi:nth-child(5),
+  label:nth-of-type(5) .blocchi:nth-child(6),
+  label:nth-of-type(5) .blocchi:nth-child(7),
+  label:nth-of-type(5) .blocchi:nth-child(8),
+  label:nth-of-type(5) .blocchi:nth-child(9),
+  label:nth-of-type(5) .blocchi:nth-child(10),
+  label:nth-of-type(5) .blocchi:nth-child(11),
+  label:nth-of-type(5) .blocchi:nth-child(12),
+  label:nth-of-type(5) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:400px){
+  label:nth-of-type(5) .blocchi:nth-child(1),
+  label:nth-of-type(5) .blocchi:nth-child(6){
+    display: flex;
+  }
+
+  label:nth-of-type(5) .blocchi:nth-child(2),
+  label:nth-of-type(5) .blocchi:nth-child(3),
+  label:nth-of-type(5) .blocchi:nth-child(4),
+  label:nth-of-type(5) .blocchi:nth-child(5),
+  label:nth-of-type(5) .blocchi:nth-child(7),
+  label:nth-of-type(5) .blocchi:nth-child(8),
+  label:nth-of-type(5) .blocchi:nth-child(9),
+  label:nth-of-type(5) .blocchi:nth-child(10),
+  label:nth-of-type(5) .blocchi:nth-child(11),
+  label:nth-of-type(5) .blocchi:nth-child(12),
+  label:nth-of-type(5) .blocchi:nth-child(13),
+  label:nth-of-type(5) .blocchi:nth-child(14),
+  label:nth-of-type(5) .blocchi:nth-child(15),
+  label:nth-of-type(5) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:740px){
+  label:nth-of-type(5) .blocchi:nth-child(1),
+  label:nth-of-type(5) .blocchi:nth-child(10),
+  label:nth-of-type(5) .blocchi:nth-child(11){
+    display: flex;
+  }
+  label:nth-of-type(5) .blocchi:nth-child(2),
+  label:nth-of-type(5) .blocchi:nth-child(3),
+  label:nth-of-type(5) .blocchi:nth-child(4),
+  label:nth-of-type(5) .blocchi:nth-child(5),
+  label:nth-of-type(5) .blocchi:nth-child(7),
+  label:nth-of-type(5) .blocchi:nth-child(8),
+  label:nth-of-type(5) .blocchi:nth-child(8),
+  label:nth-of-type(5) .blocchi:nth-child(9),
+  label:nth-of-type(5) .blocchi:nth-child(12),
+  label:nth-of-type(5) .blocchi:nth-child(13),
+  label:nth-of-type(5) .blocchi:nth-child(14),
+  label:nth-of-type(5) .blocchi:nth-child(15),
+  label:nth-of-type(5) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:570px){
+  label:nth-of-type(5) .blocchi:nth-child(1),
+  label:nth-of-type(5) .blocchi:nth-child(6){
+    display: flex;
+  }
+
+  label:nth-of-type(5) .blocchi:nth-child(2),
+  label:nth-of-type(5) .blocchi:nth-child(3),
+  label:nth-of-type(5) .blocchi:nth-child(4),
+  label:nth-of-type(5) .blocchi:nth-child(5),
+  label:nth-of-type(5) .blocchi:nth-child(7),
+  label:nth-of-type(5) .blocchi:nth-child(8),
+  label:nth-of-type(5) .blocchi:nth-child(9),
+  label:nth-of-type(5) .blocchi:nth-child(10),
+  label:nth-of-type(5) .blocchi:nth-child(11),
+  label:nth-of-type(5) .blocchi:nth-child(12),
+  label:nth-of-type(5) .blocchi:nth-child(13),
+  label:nth-of-type(5) .blocchi:nth-child(14),
+  label:nth-of-type(5) .blocchi:nth-child(15),
+  label:nth-of-type(5) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:400px){
+  label:nth-of-type(5) .blocchi:nth-child(5){
+    display: flex;
+  }
+  label:nth-of-type(5) .blocchi:nth-child(1),
+  label:nth-of-type(5) .blocchi:nth-child(2),
+  label:nth-of-type(5) .blocchi:nth-child(3),
+  label:nth-of-type(5) .blocchi:nth-child(4),
+  label:nth-of-type(5) .blocchi:nth-child(6),
+  label:nth-of-type(5) .blocchi:nth-child(7),
+  label:nth-of-type(5) .blocchi:nth-child(8),
+  label:nth-of-type(5) .blocchi:nth-child(9),
+  label:nth-of-type(5) .blocchi:nth-child(10),
+  label:nth-of-type(5) .blocchi:nth-child(11),
+  label:nth-of-type(5) .blocchi:nth-child(12),
+  label:nth-of-type(5) .blocchi:nth-child(13),
+  label:nth-of-type(5) .blocchi:nth-child(14),
+  label:nth-of-type(5) .blocchi:nth-child(15),
+  label:nth-of-type(5) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+/* *********************BLOCK QUERY 6******************************** */
+label:nth-of-type(6) .navigationpoints span:nth-child(6){
+  color: white;
+}
+
+label:nth-of-type(6) .finestra{
+ /* height: auto; */
+ display: flex;
+ justify-content: center;
+ align-content: center;
+}
+
+label:nth-of-type(6) .blocchi{
+  display: none;
+}
+@media screen and (min-height:0px){
+  label:nth-of-type(6)  .blocchi{
+    height: 100%;
+  }
+}
+@media screen and (min-height:401px){
+  label:nth-of-type(6)  .blocchi{
+    height: 50%;
+  }
+}
+@media screen and (min-height:570px){
+  label:nth-of-type(6)  .blocchi{
+    height: 25%;
+    max-height: 25%;
+  }
+}
+
+
+@media screen and (min-width:1000px) and (max-height:400px){
+
+  label:nth-of-type(6) .blocchi:nth-child(1),
+  label:nth-of-type(6) .blocchi:nth-child(14),
+  label:nth-of-type(6) .blocchi:nth-child(15),
+  label:nth-of-type(6) .blocchi:nth-child(16),
+  label:nth-of-type(6) .blocchi:nth-child(5),
+  label:nth-of-type(6) .blocchi:nth-child(6),
+  label:nth-of-type(6) .blocchi:nth-child(7),
+  label:nth-of-type(6) .blocchi:nth-child(8),
+  label:nth-of-type(6) .blocchi:nth-child(9),
+  label:nth-of-type(6) .blocchi:nth-child(10),
+  label:nth-of-type(6) .blocchi:nth-child(11),
+  label:nth-of-type(6) .blocchi:nth-child(12),
+  label:nth-of-type(6) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+
+
+@media screen and (min-height:741px) and (max-width:499px){
+
+  label:nth-of-type(6) .blocchi:nth-child(1),
+  label:nth-of-type(6) .blocchi:nth-child(14),
+  label:nth-of-type(6) .blocchi:nth-child(15),
+  label:nth-of-type(6) .blocchi:nth-child(16),
+  label:nth-of-type(6) .blocchi:nth-child(5),
+  label:nth-of-type(6) .blocchi:nth-child(6),
+  label:nth-of-type(6) .blocchi:nth-child(7),
+  label:nth-of-type(6) .blocchi:nth-child(8),
+  label:nth-of-type(6) .blocchi:nth-child(9),
+  label:nth-of-type(6) .blocchi:nth-child(10),
+  label:nth-of-type(6) .blocchi:nth-child(11),
+  label:nth-of-type(6) .blocchi:nth-child(12),
+  label:nth-of-type(6) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:740px){
+
+  label:nth-of-type(6) .blocchi:nth-child(1),
+  label:nth-of-type(6) .blocchi:nth-child(10),
+  label:nth-of-type(6) .blocchi:nth-child(11),
+  label:nth-of-type(6) .blocchi:nth-child(12),
+  label:nth-of-type(6) .blocchi:nth-child(13),
+  label:nth-of-type(6) .blocchi:nth-child(14),
+  label:nth-of-type(6) .blocchi:nth-child(15),
+  label:nth-of-type(6) .blocchi:nth-child(16),
+  label:nth-of-type(6) .blocchi:nth-child(2),
+  label:nth-of-type(6) .blocchi:nth-child(3),
+  label:nth-of-type(6) .blocchi:nth-child(4),
+  label:nth-of-type(6) .blocchi:nth-child(5),
+  label:nth-of-type(6) .blocchi:nth-child(6),
+  label:nth-of-type(6) .blocchi:nth-child(7),
+  label:nth-of-type(6) .blocchi:nth-child(8),
+  label:nth-of-type(6) .blocchi:nth-child(9){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:570px){
+
+  label:nth-of-type(6) .blocchi:nth-child(1),
+  label:nth-of-type(6) .blocchi:nth-child(12),
+  label:nth-of-type(6) .blocchi:nth-child(13),
+  label:nth-of-type(6) .blocchi:nth-child(14),
+  label:nth-of-type(6) .blocchi:nth-child(15),
+  label:nth-of-type(6) .blocchi:nth-child(16),
+  label:nth-of-type(6) .blocchi:nth-child(7),
+  label:nth-of-type(6) .blocchi:nth-child(8),
+  label:nth-of-type(6) .blocchi:nth-child(9),
+  label:nth-of-type(6) .blocchi:nth-child(10),
+  label:nth-of-type(6) .blocchi:nth-child(11),
+  label:nth-of-type(6) .blocchi:nth-child(2),
+  label:nth-of-type(6) .blocchi:nth-child(3),
+  label:nth-of-type(6) .blocchi:nth-child(4),
+  label:nth-of-type(6) .blocchi:nth-child(5),
+  label:nth-of-type(6) .blocchi:nth-child(6),
+){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:400px){
+  label:nth-of-type(6) .blocchi:nth-child(1),
+  label:nth-of-type(6) .blocchi:nth-child(12),
+  label:nth-of-type(6) .blocchi:nth-child(13){
+    display: flex;
+  }
+  label:nth-of-type(6) .blocchi:nth-child(2),
+  label:nth-of-type(6) .blocchi:nth-child(3),
+  label:nth-of-type(6) .blocchi:nth-child(4),
+  label:nth-of-type(6) .blocchi:nth-child(5),
+  label:nth-of-type(6) .blocchi:nth-child(6),
+  label:nth-of-type(6) .blocchi:nth-child(7),
+  label:nth-of-type(6) .blocchi:nth-child(8),
+  label:nth-of-type(6) .blocchi:nth-child(9),
+  label:nth-of-type(6) .blocchi:nth-child(10),
+  label:nth-of-type(6) .blocchi:nth-child(11),
+  label:nth-of-type(6) .blocchi:nth-child(14),
+  label:nth-of-type(6) .blocchi:nth-child(15),
+  label:nth-of-type(6) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:740px){
+  label:nth-of-type(6) .blocchi:nth-child(1),
+  label:nth-of-type(6) .blocchi:nth-child(12),
+  label:nth-of-type(6) .blocchi:nth-child(13),
+  label:nth-of-type(6) .blocchi:nth-child(14),
+  label:nth-of-type(6) .blocchi:nth-child(15),
+  label:nth-of-type(6) .blocchi:nth-child(16),
+  label:nth-of-type(6) .blocchi:nth-child(2),
+  label:nth-of-type(6) .blocchi:nth-child(3),
+  label:nth-of-type(6) .blocchi:nth-child(4),
+  label:nth-of-type(6) .blocchi:nth-child(5),
+  label:nth-of-type(6) .blocchi:nth-child(6),
+  label:nth-of-type(6) .blocchi:nth-child(7),
+  label:nth-of-type(6) .blocchi:nth-child(8),
+  label:nth-of-type(6) .blocchi:nth-child(9),
+  label:nth-of-type(6) .blocchi:nth-child(10),
+  label:nth-of-type(6) .blocchi:nth-child(11){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:570px){
+
+  label:nth-of-type(6) .blocchi:nth-child(1),
+  label:nth-of-type(6) .blocchi:nth-child(14),
+  label:nth-of-type(6) .blocchi:nth-child(15),
+  label:nth-of-type(6) .blocchi:nth-child(16),
+  label:nth-of-type(6) .blocchi:nth-child(2),
+  label:nth-of-type(6) .blocchi:nth-child(3),
+  label:nth-of-type(6) .blocchi:nth-child(4),
+  label:nth-of-type(6) .blocchi:nth-child(5),
+  label:nth-of-type(6) .blocchi:nth-child(6),
+  label:nth-of-type(6) .blocchi:nth-child(7),
+  label:nth-of-type(6) .blocchi:nth-child(8),
+  label:nth-of-type(6) .blocchi:nth-child(9),
+  label:nth-of-type(6) .blocchi:nth-child(10),
+  label:nth-of-type(6) .blocchi:nth-child(11),
+  label:nth-of-type(6) .blocchi:nth-child(12),
+  label:nth-of-type(6) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:400px){
+  label:nth-of-type(6) .blocchi:nth-child(1),
+  label:nth-of-type(6) .blocchi:nth-child(7){
+    display: flex;
+  }
+
+  label:nth-of-type(6) .blocchi:nth-child(2),
+  label:nth-of-type(6) .blocchi:nth-child(3),
+  label:nth-of-type(6) .blocchi:nth-child(4),
+  label:nth-of-type(6) .blocchi:nth-child(5),
+  label:nth-of-type(6) .blocchi:nth-child(6),
+  label:nth-of-type(6) .blocchi:nth-child(8),
+  label:nth-of-type(6) .blocchi:nth-child(9),
+  label:nth-of-type(6) .blocchi:nth-child(10),
+  label:nth-of-type(6) .blocchi:nth-child(11),
+  label:nth-of-type(6) .blocchi:nth-child(12),
+  label:nth-of-type(6) .blocchi:nth-child(13),
+  label:nth-of-type(6) .blocchi:nth-child(14),
+  label:nth-of-type(6) .blocchi:nth-child(15),
+  label:nth-of-type(6) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:740px){
+  label:nth-of-type(6) .blocchi:nth-child(1),
+  label:nth-of-type(6) .blocchi:nth-child(12),
+  label:nth-of-type(6) .blocchi:nth-child(13){
+    display: flex;
+  }
+  label:nth-of-type(6) .blocchi:nth-child(2),
+  label:nth-of-type(6) .blocchi:nth-child(3),
+  label:nth-of-type(6) .blocchi:nth-child(4),
+  label:nth-of-type(6) .blocchi:nth-child(5),
+  label:nth-of-type(6) .blocchi:nth-child(7),
+  label:nth-of-type(6) .blocchi:nth-child(8),
+  label:nth-of-type(6) .blocchi:nth-child(8),
+  label:nth-of-type(6) .blocchi:nth-child(9),
+  label:nth-of-type(6) .blocchi:nth-child(10),
+  label:nth-of-type(6) .blocchi:nth-child(11),
+  label:nth-of-type(6) .blocchi:nth-child(14),
+  label:nth-of-type(6) .blocchi:nth-child(15),
+  label:nth-of-type(6) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:570px){
+  label:nth-of-type(6) .blocchi:nth-child(1),
+  label:nth-of-type(6) .blocchi:nth-child(7){
+    display: flex;
+  }
+
+  label:nth-of-type(6) .blocchi:nth-child(2),
+  label:nth-of-type(6) .blocchi:nth-child(3),
+  label:nth-of-type(6) .blocchi:nth-child(4),
+  label:nth-of-type(6) .blocchi:nth-child(5),
+  label:nth-of-type(6) .blocchi:nth-child(6),
+  label:nth-of-type(6) .blocchi:nth-child(8),
+  label:nth-of-type(6) .blocchi:nth-child(9),
+  label:nth-of-type(6) .blocchi:nth-child(10),
+  label:nth-of-type(6) .blocchi:nth-child(11),
+  label:nth-of-type(6) .blocchi:nth-child(12),
+  label:nth-of-type(6) .blocchi:nth-child(13),
+  label:nth-of-type(6) .blocchi:nth-child(14),
+  label:nth-of-type(6) .blocchi:nth-child(15),
+  label:nth-of-type(6) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:400px){
+  label:nth-of-type(6) .blocchi:nth-child(6){
+    display: flex;
+  }
+  label:nth-of-type(6) .blocchi:nth-child(1),
+  label:nth-of-type(6) .blocchi:nth-child(2),
+  label:nth-of-type(6) .blocchi:nth-child(3),
+  label:nth-of-type(6) .blocchi:nth-child(4),
+  label:nth-of-type(6) .blocchi:nth-child(5),
+  label:nth-of-type(6) .blocchi:nth-child(7),
+  label:nth-of-type(6) .blocchi:nth-child(8),
+  label:nth-of-type(6) .blocchi:nth-child(9),
+  label:nth-of-type(6) .blocchi:nth-child(10),
+  label:nth-of-type(6) .blocchi:nth-child(11),
+  label:nth-of-type(6) .blocchi:nth-child(12),
+  label:nth-of-type(6) .blocchi:nth-child(13),
+  label:nth-of-type(6) .blocchi:nth-child(14),
+  label:nth-of-type(6) .blocchi:nth-child(15),
+  label:nth-of-type(6) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+/* *********************BLOCK QUERY 7******************************** */
+label:nth-of-type(7) .navigationpoints span:nth-child(7){
+  color: white;
+}
+
+label:nth-of-type(7) .finestra{
+ /* height: auto; */
+ display: flex;
+ justify-content: center;
+ align-content: center;
+}
+
+label:nth-of-type(7) .blocchi{
+  display: none;
+}
+@media screen and (min-height:0px){
+  label:nth-of-type(7)  .blocchi{
+    height: 100%;
+  }
+}
+@media screen and (min-height:401px){
+  label:nth-of-type(7)  .blocchi{
+    height: 50%;
+  }
+}
+@media screen and (min-height:570px){
+  label:nth-of-type(7)  .blocchi{
+    height: 25%;
+    max-height: 25%;
+  }
+}
+
+
+@media screen and (min-width:1000px) and (max-height:400px){
+
+  label:nth-of-type(7) .blocchi:nth-child(1),
+  label:nth-of-type(7) .blocchi:nth-child(14),
+  label:nth-of-type(7) .blocchi:nth-child(15),
+  label:nth-of-type(7) .blocchi:nth-child(16),
+  label:nth-of-type(7) .blocchi:nth-child(5),
+  label:nth-of-type(7) .blocchi:nth-child(6),
+  label:nth-of-type(7) .blocchi:nth-child(7),
+  label:nth-of-type(7) .blocchi:nth-child(8),
+  label:nth-of-type(7) .blocchi:nth-child(9),
+  label:nth-of-type(7) .blocchi:nth-child(10),
+  label:nth-of-type(7) .blocchi:nth-child(11),
+  label:nth-of-type(7) .blocchi:nth-child(12),
+  label:nth-of-type(7) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+
+
+@media screen and (min-height:741px) and (max-width:499px){
+
+  label:nth-of-type(7) .blocchi:nth-child(1),
+  label:nth-of-type(7) .blocchi:nth-child(14),
+  label:nth-of-type(7) .blocchi:nth-child(15),
+  label:nth-of-type(7) .blocchi:nth-child(16),
+  label:nth-of-type(7) .blocchi:nth-child(5),
+  label:nth-of-type(7) .blocchi:nth-child(6),
+  label:nth-of-type(7) .blocchi:nth-child(7),
+  label:nth-of-type(7) .blocchi:nth-child(8),
+  label:nth-of-type(7) .blocchi:nth-child(9),
+  label:nth-of-type(7) .blocchi:nth-child(10),
+  label:nth-of-type(7) .blocchi:nth-child(11),
+  label:nth-of-type(7) .blocchi:nth-child(12),
+  label:nth-of-type(7) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:740px){
+
+  label:nth-of-type(7) .blocchi:nth-child(1),
+  label:nth-of-type(7) .blocchi:nth-child(10),
+  label:nth-of-type(7) .blocchi:nth-child(11),
+  label:nth-of-type(7) .blocchi:nth-child(12),
+  label:nth-of-type(7) .blocchi:nth-child(13),
+  label:nth-of-type(7) .blocchi:nth-child(14),
+  label:nth-of-type(7) .blocchi:nth-child(15),
+  label:nth-of-type(7) .blocchi:nth-child(16),
+  label:nth-of-type(7) .blocchi:nth-child(2),
+  label:nth-of-type(7) .blocchi:nth-child(3),
+  label:nth-of-type(7) .blocchi:nth-child(4),
+  label:nth-of-type(7) .blocchi:nth-child(5),
+  label:nth-of-type(7) .blocchi:nth-child(6),
+  label:nth-of-type(7) .blocchi:nth-child(7),
+  label:nth-of-type(7) .blocchi:nth-child(8),
+  label:nth-of-type(7) .blocchi:nth-child(9){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:570px){
+
+  label:nth-of-type(7) .blocchi:nth-child(1),
+  label:nth-of-type(7) .blocchi:nth-child(12),
+  label:nth-of-type(7) .blocchi:nth-child(13),
+  label:nth-of-type(7) .blocchi:nth-child(14),
+  label:nth-of-type(7) .blocchi:nth-child(15),
+  label:nth-of-type(7) .blocchi:nth-child(16),
+  label:nth-of-type(7) .blocchi:nth-child(7),
+  label:nth-of-type(7) .blocchi:nth-child(8),
+  label:nth-of-type(7) .blocchi:nth-child(9),
+  label:nth-of-type(7) .blocchi:nth-child(10),
+  label:nth-of-type(7) .blocchi:nth-child(11),
+  label:nth-of-type(7) .blocchi:nth-child(2),
+  label:nth-of-type(7) .blocchi:nth-child(3),
+  label:nth-of-type(7) .blocchi:nth-child(4),
+  label:nth-of-type(7) .blocchi:nth-child(5),
+  label:nth-of-type(7) .blocchi:nth-child(6),
+){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:400px){
+  label:nth-of-type(7) .blocchi:nth-child(1),
+  label:nth-of-type(7) .blocchi:nth-child(14),
+  label:nth-of-type(7) .blocchi:nth-child(15){
+    display: flex;
+  }
+  label:nth-of-type(7) .blocchi:nth-child(2),
+  label:nth-of-type(7) .blocchi:nth-child(3),
+  label:nth-of-type(7) .blocchi:nth-child(4),
+  label:nth-of-type(7) .blocchi:nth-child(5),
+  label:nth-of-type(7) .blocchi:nth-child(6),
+  label:nth-of-type(7) .blocchi:nth-child(7),
+  label:nth-of-type(7) .blocchi:nth-child(8),
+  label:nth-of-type(7) .blocchi:nth-child(9),
+  label:nth-of-type(7) .blocchi:nth-child(10),
+  label:nth-of-type(7) .blocchi:nth-child(11),
+  label:nth-of-type(7) .blocchi:nth-child(12),
+  label:nth-of-type(7) .blocchi:nth-child(13),
+  label:nth-of-type(7) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:740px){
+  label:nth-of-type(7) .blocchi:nth-child(1),
+  label:nth-of-type(7) .blocchi:nth-child(12),
+  label:nth-of-type(7) .blocchi:nth-child(13),
+  label:nth-of-type(7) .blocchi:nth-child(14),
+  label:nth-of-type(7) .blocchi:nth-child(15),
+  label:nth-of-type(7) .blocchi:nth-child(16),
+  label:nth-of-type(7) .blocchi:nth-child(2),
+  label:nth-of-type(7) .blocchi:nth-child(3),
+  label:nth-of-type(7) .blocchi:nth-child(4),
+  label:nth-of-type(7) .blocchi:nth-child(5),
+  label:nth-of-type(7) .blocchi:nth-child(6),
+  label:nth-of-type(7) .blocchi:nth-child(7),
+  label:nth-of-type(7) .blocchi:nth-child(8),
+  label:nth-of-type(7) .blocchi:nth-child(9),
+  label:nth-of-type(7) .blocchi:nth-child(10),
+  label:nth-of-type(7) .blocchi:nth-child(11){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:570px){
+
+  label:nth-of-type(7) .blocchi:nth-child(1),
+  label:nth-of-type(7) .blocchi:nth-child(14),
+  label:nth-of-type(7) .blocchi:nth-child(15),
+  label:nth-of-type(7) .blocchi:nth-child(16),
+  label:nth-of-type(7) .blocchi:nth-child(2),
+  label:nth-of-type(7) .blocchi:nth-child(3),
+  label:nth-of-type(7) .blocchi:nth-child(4),
+  label:nth-of-type(7) .blocchi:nth-child(5),
+  label:nth-of-type(7) .blocchi:nth-child(6),
+  label:nth-of-type(7) .blocchi:nth-child(7),
+  label:nth-of-type(7) .blocchi:nth-child(8),
+  label:nth-of-type(7) .blocchi:nth-child(9),
+  label:nth-of-type(7) .blocchi:nth-child(10),
+  label:nth-of-type(7) .blocchi:nth-child(11),
+  label:nth-of-type(7) .blocchi:nth-child(12),
+  label:nth-of-type(7) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:400px){
+  label:nth-of-type(7) .blocchi:nth-child(1),
+  label:nth-of-type(7) .blocchi:nth-child(8){
+    display: flex;
+  }
+
+  label:nth-of-type(7) .blocchi:nth-child(2),
+  label:nth-of-type(7) .blocchi:nth-child(3),
+  label:nth-of-type(7) .blocchi:nth-child(4),
+  label:nth-of-type(7) .blocchi:nth-child(5),
+  label:nth-of-type(7) .blocchi:nth-child(6),
+  label:nth-of-type(7) .blocchi:nth-child(7),
+  label:nth-of-type(7) .blocchi:nth-child(9),
+  label:nth-of-type(7) .blocchi:nth-child(10),
+  label:nth-of-type(7) .blocchi:nth-child(11),
+  label:nth-of-type(7) .blocchi:nth-child(12),
+  label:nth-of-type(7) .blocchi:nth-child(13),
+  label:nth-of-type(7) .blocchi:nth-child(14),
+  label:nth-of-type(7) .blocchi:nth-child(15),
+  label:nth-of-type(7) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:740px){
+  label:nth-of-type(7) .blocchi:nth-child(1),
+  label:nth-of-type(7) .blocchi:nth-child(14),
+  label:nth-of-type(7) .blocchi:nth-child(15){
+    display: flex;
+  }
+  label:nth-of-type(7) .blocchi:nth-child(2),
+  label:nth-of-type(7) .blocchi:nth-child(3),
+  label:nth-of-type(7) .blocchi:nth-child(4),
+  label:nth-of-type(7) .blocchi:nth-child(5),
+  label:nth-of-type(7) .blocchi:nth-child(7),
+  label:nth-of-type(7) .blocchi:nth-child(8),
+  label:nth-of-type(7) .blocchi:nth-child(8),
+  label:nth-of-type(7) .blocchi:nth-child(9),
+  label:nth-of-type(7) .blocchi:nth-child(10),
+  label:nth-of-type(7) .blocchi:nth-child(11),
+  label:nth-of-type(7) .blocchi:nth-child(12),
+  label:nth-of-type(7) .blocchi:nth-child(13),
+  label:nth-of-type(7) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:570px){
+  label:nth-of-type(7) .blocchi:nth-child(1),
+  label:nth-of-type(7) .blocchi:nth-child(8){
+    display: flex;
+  }
+
+  label:nth-of-type(7) .blocchi:nth-child(2),
+  label:nth-of-type(7) .blocchi:nth-child(3),
+  label:nth-of-type(7) .blocchi:nth-child(4),
+  label:nth-of-type(7) .blocchi:nth-child(5),
+  label:nth-of-type(7) .blocchi:nth-child(6),
+  label:nth-of-type(7) .blocchi:nth-child(7),
+  label:nth-of-type(7) .blocchi:nth-child(9),
+  label:nth-of-type(7) .blocchi:nth-child(10),
+  label:nth-of-type(7) .blocchi:nth-child(11),
+  label:nth-of-type(7) .blocchi:nth-child(12),
+  label:nth-of-type(7) .blocchi:nth-child(13),
+  label:nth-of-type(7) .blocchi:nth-child(14),
+  label:nth-of-type(7) .blocchi:nth-child(15),
+  label:nth-of-type(7) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:400px){
+  label:nth-of-type(7) .blocchi:nth-child(7){
+    display: flex;
+  }
+  label:nth-of-type(7) .blocchi:nth-child(1),
+  label:nth-of-type(7) .blocchi:nth-child(2),
+  label:nth-of-type(7) .blocchi:nth-child(3),
+  label:nth-of-type(7) .blocchi:nth-child(4),
+  label:nth-of-type(7) .blocchi:nth-child(5),
+  label:nth-of-type(7) .blocchi:nth-child(6),
+  label:nth-of-type(7) .blocchi:nth-child(8),
+  label:nth-of-type(7) .blocchi:nth-child(9),
+  label:nth-of-type(7) .blocchi:nth-child(10),
+  label:nth-of-type(7) .blocchi:nth-child(11),
+  label:nth-of-type(7) .blocchi:nth-child(12),
+  label:nth-of-type(7) .blocchi:nth-child(13),
+  label:nth-of-type(7) .blocchi:nth-child(14),
+  label:nth-of-type(7) .blocchi:nth-child(15),
+  label:nth-of-type(7) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+/* *********************BLOCK QUERY 8******************************** */
+label:nth-of-type(8) .navigationpoints span:nth-child(8){
+  color: white;
+}
+
+label:nth-of-type(8) .finestra{
+ /* height: auto; */
+ display: flex;
+ justify-content: center;
+ align-content: center;
+}
+
+label:nth-of-type(8) .blocchi{
+  display: none;
+}
+@media screen and (min-height:0px){
+  label:nth-of-type(8)  .blocchi{
+    height: 100%;
+  }
+}
+@media screen and (min-height:401px){
+  label:nth-of-type(8)  .blocchi{
+    height: 50%;
+  }
+}
+@media screen and (min-height:570px){
+  label:nth-of-type(8)  .blocchi{
+    height: 25%;
+    max-height: 25%;
+  }
+}
+
+
+@media screen and (min-width:1000px) and (max-height:400px){
+
+  label:nth-of-type(8) .blocchi:nth-child(1),
+  label:nth-of-type(8) .blocchi:nth-child(14),
+  label:nth-of-type(8) .blocchi:nth-child(15),
+  label:nth-of-type(8) .blocchi:nth-child(16),
+  label:nth-of-type(8) .blocchi:nth-child(5),
+  label:nth-of-type(8) .blocchi:nth-child(6),
+  label:nth-of-type(8) .blocchi:nth-child(7),
+  label:nth-of-type(8) .blocchi:nth-child(8),
+  label:nth-of-type(8) .blocchi:nth-child(9),
+  label:nth-of-type(8) .blocchi:nth-child(10),
+  label:nth-of-type(8) .blocchi:nth-child(11),
+  label:nth-of-type(8) .blocchi:nth-child(12),
+  label:nth-of-type(8) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+
+
+@media screen and (min-height:741px) and (max-width:499px){
+
+  label:nth-of-type(8) .blocchi:nth-child(1),
+  label:nth-of-type(8) .blocchi:nth-child(14),
+  label:nth-of-type(8) .blocchi:nth-child(15),
+  label:nth-of-type(8) .blocchi:nth-child(16),
+  label:nth-of-type(8) .blocchi:nth-child(5),
+  label:nth-of-type(8) .blocchi:nth-child(6),
+  label:nth-of-type(8) .blocchi:nth-child(7),
+  label:nth-of-type(8) .blocchi:nth-child(8),
+  label:nth-of-type(8) .blocchi:nth-child(9),
+  label:nth-of-type(8) .blocchi:nth-child(10),
+  label:nth-of-type(8) .blocchi:nth-child(11),
+  label:nth-of-type(8) .blocchi:nth-child(12),
+  label:nth-of-type(8) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:740px){
+
+  label:nth-of-type(8) .blocchi:nth-child(1),
+  label:nth-of-type(8) .blocchi:nth-child(10),
+  label:nth-of-type(8) .blocchi:nth-child(11),
+  label:nth-of-type(8) .blocchi:nth-child(12),
+  label:nth-of-type(8) .blocchi:nth-child(13),
+  label:nth-of-type(8) .blocchi:nth-child(14),
+  label:nth-of-type(8) .blocchi:nth-child(15),
+  label:nth-of-type(8) .blocchi:nth-child(16),
+  label:nth-of-type(8) .blocchi:nth-child(2),
+  label:nth-of-type(8) .blocchi:nth-child(3),
+  label:nth-of-type(8) .blocchi:nth-child(4),
+  label:nth-of-type(8) .blocchi:nth-child(5),
+  label:nth-of-type(8) .blocchi:nth-child(6),
+  label:nth-of-type(8) .blocchi:nth-child(7),
+  label:nth-of-type(8) .blocchi:nth-child(8),
+  label:nth-of-type(8) .blocchi:nth-child(9){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:570px){
+
+  label:nth-of-type(8) .blocchi:nth-child(1),
+  label:nth-of-type(8) .blocchi:nth-child(12),
+  label:nth-of-type(8) .blocchi:nth-child(13),
+  label:nth-of-type(8) .blocchi:nth-child(14),
+  label:nth-of-type(8) .blocchi:nth-child(15),
+  label:nth-of-type(8) .blocchi:nth-child(16),
+  label:nth-of-type(8) .blocchi:nth-child(7),
+  label:nth-of-type(8) .blocchi:nth-child(8),
+  label:nth-of-type(8) .blocchi:nth-child(9),
+  label:nth-of-type(8) .blocchi:nth-child(10),
+  label:nth-of-type(8) .blocchi:nth-child(11),
+  label:nth-of-type(8) .blocchi:nth-child(2),
+  label:nth-of-type(8) .blocchi:nth-child(3),
+  label:nth-of-type(8) .blocchi:nth-child(4),
+  label:nth-of-type(8) .blocchi:nth-child(5),
+  label:nth-of-type(8) .blocchi:nth-child(6),
+){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:400px){
+  label:nth-of-type(8) .blocchi:nth-child(1),
+  label:nth-of-type(8) .blocchi:nth-child(16){
+    display: flex;
+  }
+
+  label:nth-of-type(8) .blocchi:nth-child(15),
+  label:nth-of-type(8) .blocchi:nth-child(2),
+  label:nth-of-type(8) .blocchi:nth-child(3),
+  label:nth-of-type(8) .blocchi:nth-child(4),
+  label:nth-of-type(8) .blocchi:nth-child(5),
+  label:nth-of-type(8) .blocchi:nth-child(6),
+  label:nth-of-type(8) .blocchi:nth-child(7),
+  label:nth-of-type(8) .blocchi:nth-child(8),
+  label:nth-of-type(8) .blocchi:nth-child(9),
+  label:nth-of-type(8) .blocchi:nth-child(10),
+  label:nth-of-type(8) .blocchi:nth-child(11),
+  label:nth-of-type(8) .blocchi:nth-child(12),
+  label:nth-of-type(8) .blocchi:nth-child(13),
+  label:nth-of-type(8) .blocchi:nth-child(14){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:740px){
+  label:nth-of-type(8) .blocchi:nth-child(1),
+  label:nth-of-type(8) .blocchi:nth-child(12),
+  label:nth-of-type(8) .blocchi:nth-child(13),
+  label:nth-of-type(8) .blocchi:nth-child(14),
+  label:nth-of-type(8) .blocchi:nth-child(15),
+  label:nth-of-type(8) .blocchi:nth-child(16),
+  label:nth-of-type(8) .blocchi:nth-child(2),
+  label:nth-of-type(8) .blocchi:nth-child(3),
+  label:nth-of-type(8) .blocchi:nth-child(4),
+  label:nth-of-type(8) .blocchi:nth-child(5),
+  label:nth-of-type(8) .blocchi:nth-child(6),
+  label:nth-of-type(8) .blocchi:nth-child(7),
+  label:nth-of-type(8) .blocchi:nth-child(8),
+  label:nth-of-type(8) .blocchi:nth-child(9),
+  label:nth-of-type(8) .blocchi:nth-child(10),
+  label:nth-of-type(8) .blocchi:nth-child(11){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:570px){
+
+  label:nth-of-type(8) .blocchi:nth-child(1),
+  label:nth-of-type(8) .blocchi:nth-child(14),
+  label:nth-of-type(8) .blocchi:nth-child(15),
+  label:nth-of-type(8) .blocchi:nth-child(16),
+  label:nth-of-type(8) .blocchi:nth-child(2),
+  label:nth-of-type(8) .blocchi:nth-child(3),
+  label:nth-of-type(8) .blocchi:nth-child(4),
+  label:nth-of-type(8) .blocchi:nth-child(5),
+  label:nth-of-type(8) .blocchi:nth-child(6),
+  label:nth-of-type(8) .blocchi:nth-child(7),
+  label:nth-of-type(8) .blocchi:nth-child(8),
+  label:nth-of-type(8) .blocchi:nth-child(9),
+  label:nth-of-type(8) .blocchi:nth-child(10),
+  label:nth-of-type(8) .blocchi:nth-child(11),
+  label:nth-of-type(8) .blocchi:nth-child(12),
+  label:nth-of-type(8) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:400px){
+  label:nth-of-type(8) .blocchi:nth-child(1),
+  label:nth-of-type(8) .blocchi:nth-child(9){
+    display: flex;
+  }
+
+  label:nth-of-type(8) .blocchi:nth-child(2),
+  label:nth-of-type(8) .blocchi:nth-child(3),
+  label:nth-of-type(8) .blocchi:nth-child(4),
+  label:nth-of-type(8) .blocchi:nth-child(5),
+  label:nth-of-type(8) .blocchi:nth-child(6),
+  label:nth-of-type(8) .blocchi:nth-child(7),
+  label:nth-of-type(8) .blocchi:nth-child(8),
+  label:nth-of-type(8) .blocchi:nth-child(10),
+  label:nth-of-type(8) .blocchi:nth-child(11),
+  label:nth-of-type(8) .blocchi:nth-child(12),
+  label:nth-of-type(8) .blocchi:nth-child(13),
+  label:nth-of-type(8) .blocchi:nth-child(14),
+  label:nth-of-type(8) .blocchi:nth-child(15),
+  label:nth-of-type(8) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:740px){
+  label:nth-of-type(8) .blocchi:nth-child(1),
+  label:nth-of-type(8) .blocchi:nth-child(16){
+    display: flex;
+  }
+  label:nth-of-type(8) .blocchi:nth-child(15),
+  label:nth-of-type(8) .blocchi:nth-child(2),
+  label:nth-of-type(8) .blocchi:nth-child(3),
+  label:nth-of-type(8) .blocchi:nth-child(4),
+  label:nth-of-type(8) .blocchi:nth-child(5),
+  label:nth-of-type(8) .blocchi:nth-child(7),
+  label:nth-of-type(8) .blocchi:nth-child(8),
+  label:nth-of-type(8) .blocchi:nth-child(8),
+  label:nth-of-type(8) .blocchi:nth-child(9),
+  label:nth-of-type(8) .blocchi:nth-child(10),
+  label:nth-of-type(8) .blocchi:nth-child(11),
+  label:nth-of-type(8) .blocchi:nth-child(12),
+  label:nth-of-type(8) .blocchi:nth-child(13),
+  label:nth-of-type(8) .blocchi:nth-child(14){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:570px){
+  label:nth-of-type(8) .blocchi:nth-child(1),
+  label:nth-of-type(8) .blocchi:nth-child(9){
+    display: flex;
+  }
+
+  label:nth-of-type(8) .blocchi:nth-child(2),
+  label:nth-of-type(8) .blocchi:nth-child(3),
+  label:nth-of-type(8) .blocchi:nth-child(4),
+  label:nth-of-type(8) .blocchi:nth-child(5),
+  label:nth-of-type(8) .blocchi:nth-child(6),
+  label:nth-of-type(8) .blocchi:nth-child(7),
+  label:nth-of-type(8) .blocchi:nth-child(8),
+  label:nth-of-type(8) .blocchi:nth-child(10),
+  label:nth-of-type(8) .blocchi:nth-child(11),
+  label:nth-of-type(8) .blocchi:nth-child(12),
+  label:nth-of-type(8) .blocchi:nth-child(13),
+  label:nth-of-type(8) .blocchi:nth-child(14),
+  label:nth-of-type(8) .blocchi:nth-child(15),
+  label:nth-of-type(8) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:400px){
+  label:nth-of-type(8) .blocchi:nth-child(8){
+    display: flex;
+  }
+  label:nth-of-type(8) .blocchi:nth-child(1),
+  label:nth-of-type(8) .blocchi:nth-child(2),
+  label:nth-of-type(8) .blocchi:nth-child(3),
+  label:nth-of-type(8) .blocchi:nth-child(4),
+  label:nth-of-type(8) .blocchi:nth-child(5),
+  label:nth-of-type(8) .blocchi:nth-child(6),
+  label:nth-of-type(8) .blocchi:nth-child(7),
+  label:nth-of-type(8) .blocchi:nth-child(9),
+  label:nth-of-type(8) .blocchi:nth-child(10),
+  label:nth-of-type(8) .blocchi:nth-child(11),
+  label:nth-of-type(8) .blocchi:nth-child(12),
+  label:nth-of-type(8) .blocchi:nth-child(13),
+  label:nth-of-type(8) .blocchi:nth-child(14),
+  label:nth-of-type(8) .blocchi:nth-child(15),
+  label:nth-of-type(8) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+/* *********************BLOCK QUERY 9******************************** */
+label:nth-of-type(9) .navigationpoints span:nth-child(9){
+  color: white;
+}
+
+label:nth-of-type(9) .finestra{
+ /* height: auto; */
+ display: flex;
+ justify-content: center;
+ align-content: center;
+}
+
+label:nth-of-type(9) .blocchi{
+  display: none;
+}
+@media screen and (min-height:0px){
+  label:nth-of-type(9)  .blocchi{
+    height: 100%;
+  }
+}
+@media screen and (min-height:401px){
+  label:nth-of-type(9)  .blocchi{
+    height: 50%;
+  }
+}
+@media screen and (min-height:570px){
+  label:nth-of-type(9)  .blocchi{
+    height: 25%;
+    max-height: 25%;
+  }
+}
+
+
+@media screen and (min-width:1000px) and (max-height:400px){
+
+  label:nth-of-type(9) .blocchi:nth-child(1),
+  label:nth-of-type(9) .blocchi:nth-child(14),
+  label:nth-of-type(9) .blocchi:nth-child(15),
+  label:nth-of-type(9) .blocchi:nth-child(16),
+  label:nth-of-type(9) .blocchi:nth-child(5),
+  label:nth-of-type(9) .blocchi:nth-child(6),
+  label:nth-of-type(9) .blocchi:nth-child(7),
+  label:nth-of-type(9) .blocchi:nth-child(8),
+  label:nth-of-type(9) .blocchi:nth-child(9),
+  label:nth-of-type(9) .blocchi:nth-child(10),
+  label:nth-of-type(9) .blocchi:nth-child(11),
+  label:nth-of-type(9) .blocchi:nth-child(12),
+  label:nth-of-type(9) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+
+
+@media screen and (min-height:741px) and (max-width:499px){
+
+  label:nth-of-type(9) .blocchi:nth-child(1),
+  label:nth-of-type(9) .blocchi:nth-child(14),
+  label:nth-of-type(9) .blocchi:nth-child(15),
+  label:nth-of-type(9) .blocchi:nth-child(16),
+  label:nth-of-type(9) .blocchi:nth-child(5),
+  label:nth-of-type(9) .blocchi:nth-child(6),
+  label:nth-of-type(9) .blocchi:nth-child(7),
+  label:nth-of-type(9) .blocchi:nth-child(8),
+  label:nth-of-type(9) .blocchi:nth-child(9),
+  label:nth-of-type(9) .blocchi:nth-child(10),
+  label:nth-of-type(9) .blocchi:nth-child(11),
+  label:nth-of-type(9) .blocchi:nth-child(12),
+  label:nth-of-type(9) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:740px){
+
+  label:nth-of-type(9) .blocchi:nth-child(1),
+  label:nth-of-type(9) .blocchi:nth-child(10),
+  label:nth-of-type(9) .blocchi:nth-child(11),
+  label:nth-of-type(9) .blocchi:nth-child(12),
+  label:nth-of-type(9) .blocchi:nth-child(13),
+  label:nth-of-type(9) .blocchi:nth-child(14),
+  label:nth-of-type(9) .blocchi:nth-child(15),
+  label:nth-of-type(9) .blocchi:nth-child(16),
+  label:nth-of-type(9) .blocchi:nth-child(2),
+  label:nth-of-type(9) .blocchi:nth-child(3),
+  label:nth-of-type(9) .blocchi:nth-child(4),
+  label:nth-of-type(9) .blocchi:nth-child(5),
+  label:nth-of-type(9) .blocchi:nth-child(6),
+  label:nth-of-type(9) .blocchi:nth-child(7),
+  label:nth-of-type(9) .blocchi:nth-child(8),
+  label:nth-of-type(9) .blocchi:nth-child(9){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:570px){
+
+  label:nth-of-type(9) .blocchi:nth-child(1),
+  label:nth-of-type(9) .blocchi:nth-child(12),
+  label:nth-of-type(9) .blocchi:nth-child(13),
+  label:nth-of-type(9) .blocchi:nth-child(14),
+  label:nth-of-type(9) .blocchi:nth-child(15),
+  label:nth-of-type(9) .blocchi:nth-child(16),
+  label:nth-of-type(9) .blocchi:nth-child(7),
+  label:nth-of-type(9) .blocchi:nth-child(8),
+  label:nth-of-type(9) .blocchi:nth-child(9),
+  label:nth-of-type(9) .blocchi:nth-child(10),
+  label:nth-of-type(9) .blocchi:nth-child(11),
+  label:nth-of-type(9) .blocchi:nth-child(2),
+  label:nth-of-type(9) .blocchi:nth-child(3),
+  label:nth-of-type(9) .blocchi:nth-child(4),
+  label:nth-of-type(9) .blocchi:nth-child(5),
+  label:nth-of-type(9) .blocchi:nth-child(6),
+){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:400px){
+
+  label:nth-of-type(9) .blocchi:nth-child(1),
+  label:nth-of-type(9) .blocchi:nth-child(16),
+  label:nth-of-type(9) .blocchi:nth-child(15),
+  label:nth-of-type(9) .blocchi:nth-child(2),
+  label:nth-of-type(9) .blocchi:nth-child(3),
+  label:nth-of-type(9) .blocchi:nth-child(4),
+  label:nth-of-type(9) .blocchi:nth-child(5),
+  label:nth-of-type(9) .blocchi:nth-child(6),
+  label:nth-of-type(9) .blocchi:nth-child(7),
+  label:nth-of-type(9) .blocchi:nth-child(8),
+  label:nth-of-type(9) .blocchi:nth-child(9),
+  label:nth-of-type(9) .blocchi:nth-child(10),
+  label:nth-of-type(9) .blocchi:nth-child(11),
+  label:nth-of-type(9) .blocchi:nth-child(12),
+  label:nth-of-type(9) .blocchi:nth-child(13),
+  label:nth-of-type(9) .blocchi:nth-child(14){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:740px){
+  label:nth-of-type(9) .blocchi:nth-child(1),
+  label:nth-of-type(9) .blocchi:nth-child(12),
+  label:nth-of-type(9) .blocchi:nth-child(13),
+  label:nth-of-type(9) .blocchi:nth-child(14),
+  label:nth-of-type(9) .blocchi:nth-child(15),
+  label:nth-of-type(9) .blocchi:nth-child(16),
+  label:nth-of-type(9) .blocchi:nth-child(2),
+  label:nth-of-type(9) .blocchi:nth-child(3),
+  label:nth-of-type(9) .blocchi:nth-child(4),
+  label:nth-of-type(9) .blocchi:nth-child(5),
+  label:nth-of-type(9) .blocchi:nth-child(6),
+  label:nth-of-type(9) .blocchi:nth-child(7),
+  label:nth-of-type(9) .blocchi:nth-child(8),
+  label:nth-of-type(9) .blocchi:nth-child(9),
+  label:nth-of-type(9) .blocchi:nth-child(10),
+  label:nth-of-type(9) .blocchi:nth-child(11){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:570px){
+
+  label:nth-of-type(9) .blocchi:nth-child(1),
+  label:nth-of-type(9) .blocchi:nth-child(14),
+  label:nth-of-type(9) .blocchi:nth-child(15),
+  label:nth-of-type(9) .blocchi:nth-child(16),
+  label:nth-of-type(9) .blocchi:nth-child(2),
+  label:nth-of-type(9) .blocchi:nth-child(3),
+  label:nth-of-type(9) .blocchi:nth-child(4),
+  label:nth-of-type(9) .blocchi:nth-child(5),
+  label:nth-of-type(9) .blocchi:nth-child(6),
+  label:nth-of-type(9) .blocchi:nth-child(7),
+  label:nth-of-type(9) .blocchi:nth-child(8),
+  label:nth-of-type(9) .blocchi:nth-child(9),
+  label:nth-of-type(9) .blocchi:nth-child(10),
+  label:nth-of-type(9) .blocchi:nth-child(11),
+  label:nth-of-type(9) .blocchi:nth-child(12),
+  label:nth-of-type(9) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:400px){
+  label:nth-of-type(9) .blocchi:nth-child(1),
+  label:nth-of-type(9) .blocchi:nth-child(10){
+    display: flex;
+  }
+
+  label:nth-of-type(9) .blocchi:nth-child(2),
+  label:nth-of-type(9) .blocchi:nth-child(3),
+  label:nth-of-type(9) .blocchi:nth-child(4),
+  label:nth-of-type(9) .blocchi:nth-child(5),
+  label:nth-of-type(9) .blocchi:nth-child(6),
+  label:nth-of-type(9) .blocchi:nth-child(7),
+  label:nth-of-type(9) .blocchi:nth-child(8),
+  label:nth-of-type(9) .blocchi:nth-child(9),
+  label:nth-of-type(9) .blocchi:nth-child(11),
+  label:nth-of-type(9) .blocchi:nth-child(12),
+  label:nth-of-type(9) .blocchi:nth-child(13),
+  label:nth-of-type(9) .blocchi:nth-child(14),
+  label:nth-of-type(9) .blocchi:nth-child(15),
+  label:nth-of-type(9) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:740px){
+
+  label:nth-of-type(9) .blocchi:nth-child(1),
+  label:nth-of-type(9) .blocchi:nth-child(16),
+  label:nth-of-type(9) .blocchi:nth-child(15),
+  label:nth-of-type(9) .blocchi:nth-child(2),
+  label:nth-of-type(9) .blocchi:nth-child(3),
+  label:nth-of-type(9) .blocchi:nth-child(4),
+  label:nth-of-type(9) .blocchi:nth-child(5),
+  label:nth-of-type(9) .blocchi:nth-child(7),
+  label:nth-of-type(9) .blocchi:nth-child(8),
+  label:nth-of-type(9) .blocchi:nth-child(8),
+  label:nth-of-type(9) .blocchi:nth-child(9),
+  label:nth-of-type(9) .blocchi:nth-child(10),
+  label:nth-of-type(9) .blocchi:nth-child(11),
+  label:nth-of-type(9) .blocchi:nth-child(12),
+  label:nth-of-type(9) .blocchi:nth-child(13),
+  label:nth-of-type(9) .blocchi:nth-child(14){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:570px){
+  label:nth-of-type(9) .blocchi:nth-child(1),
+  label:nth-of-type(9) .blocchi:nth-child(10){
+    display: flex;
+  }
+
+  label:nth-of-type(9) .blocchi:nth-child(2),
+  label:nth-of-type(9) .blocchi:nth-child(3),
+  label:nth-of-type(9) .blocchi:nth-child(4),
+  label:nth-of-type(9) .blocchi:nth-child(5),
+  label:nth-of-type(9) .blocchi:nth-child(6),
+  label:nth-of-type(9) .blocchi:nth-child(7),
+  label:nth-of-type(9) .blocchi:nth-child(8),
+  label:nth-of-type(9) .blocchi:nth-child(9),
+  label:nth-of-type(9) .blocchi:nth-child(11),
+  label:nth-of-type(9) .blocchi:nth-child(12),
+  label:nth-of-type(9) .blocchi:nth-child(13),
+  label:nth-of-type(9) .blocchi:nth-child(14),
+  label:nth-of-type(9) .blocchi:nth-child(15),
+  label:nth-of-type(9) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:400px){
+  label:nth-of-type(9) .blocchi:nth-child(9){
+    display: flex;
+  }
+  label:nth-of-type(9) .blocchi:nth-child(1),
+  label:nth-of-type(9) .blocchi:nth-child(2),
+  label:nth-of-type(9) .blocchi:nth-child(3),
+  label:nth-of-type(9) .blocchi:nth-child(4),
+  label:nth-of-type(9) .blocchi:nth-child(5),
+  label:nth-of-type(9) .blocchi:nth-child(6),
+  label:nth-of-type(9) .blocchi:nth-child(7),
+  label:nth-of-type(9) .blocchi:nth-child(8),
+  label:nth-of-type(9) .blocchi:nth-child(10),
+  label:nth-of-type(9) .blocchi:nth-child(11),
+  label:nth-of-type(9) .blocchi:nth-child(12),
+  label:nth-of-type(9) .blocchi:nth-child(13),
+  label:nth-of-type(9) .blocchi:nth-child(14),
+  label:nth-of-type(9) .blocchi:nth-child(15),
+  label:nth-of-type(9) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+/* *********************BLOCK QUERY 10******************************** */
+label:nth-of-type(10) .navigationpoints span:nth-child(10){
+  color: white;
+}
+
+label:nth-of-type(10) .finestra{
+ /* height: auto; */
+ display: flex;
+ justify-content: center;
+ align-content: center;
+}
+
+label:nth-of-type(10) .blocchi{
+  display: none;
+}
+@media screen and (min-height:0px){
+  label:nth-of-type(10)  .blocchi{
+    height: 100%;
+  }
+}
+@media screen and (min-height:401px){
+  label:nth-of-type(10)  .blocchi{
+    height: 50%;
+  }
+}
+@media screen and (min-height:570px){
+  label:nth-of-type(10)  .blocchi{
+    height: 25%;
+    max-height: 25%;
+  }
+}
+
+
+@media screen and (min-width:1000px) and (max-height:400px){
+
+  label:nth-of-type(10) .blocchi:nth-child(1),
+  label:nth-of-type(10) .blocchi:nth-child(14),
+  label:nth-of-type(10) .blocchi:nth-child(15),
+  label:nth-of-type(10) .blocchi:nth-child(16),
+  label:nth-of-type(10) .blocchi:nth-child(5),
+  label:nth-of-type(10) .blocchi:nth-child(6),
+  label:nth-of-type(10) .blocchi:nth-child(7),
+  label:nth-of-type(10) .blocchi:nth-child(8),
+  label:nth-of-type(10) .blocchi:nth-child(9),
+  label:nth-of-type(10) .blocchi:nth-child(10),
+  label:nth-of-type(10) .blocchi:nth-child(11),
+  label:nth-of-type(10) .blocchi:nth-child(12),
+  label:nth-of-type(10) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+
+
+@media screen and (min-height:741px) and (max-width:499px){
+
+  label:nth-of-type(10) .blocchi:nth-child(1),
+  label:nth-of-type(10) .blocchi:nth-child(14),
+  label:nth-of-type(10) .blocchi:nth-child(15),
+  label:nth-of-type(10) .blocchi:nth-child(16),
+  label:nth-of-type(10) .blocchi:nth-child(5),
+  label:nth-of-type(10) .blocchi:nth-child(6),
+  label:nth-of-type(10) .blocchi:nth-child(7),
+  label:nth-of-type(10) .blocchi:nth-child(8),
+  label:nth-of-type(10) .blocchi:nth-child(9),
+  label:nth-of-type(10) .blocchi:nth-child(10),
+  label:nth-of-type(10) .blocchi:nth-child(11),
+  label:nth-of-type(10) .blocchi:nth-child(12),
+  label:nth-of-type(10) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:740px){
+
+  label:nth-of-type(10) .blocchi:nth-child(1),
+  label:nth-of-type(10) .blocchi:nth-child(10),
+  label:nth-of-type(10) .blocchi:nth-child(11),
+  label:nth-of-type(10) .blocchi:nth-child(12),
+  label:nth-of-type(10) .blocchi:nth-child(13),
+  label:nth-of-type(10) .blocchi:nth-child(14),
+  label:nth-of-type(10) .blocchi:nth-child(15),
+  label:nth-of-type(10) .blocchi:nth-child(16),
+  label:nth-of-type(10) .blocchi:nth-child(2),
+  label:nth-of-type(10) .blocchi:nth-child(3),
+  label:nth-of-type(10) .blocchi:nth-child(4),
+  label:nth-of-type(10) .blocchi:nth-child(5),
+  label:nth-of-type(10) .blocchi:nth-child(6),
+  label:nth-of-type(10) .blocchi:nth-child(7),
+  label:nth-of-type(10) .blocchi:nth-child(8),
+  label:nth-of-type(10) .blocchi:nth-child(9){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:570px){
+
+  label:nth-of-type(10) .blocchi:nth-child(1),
+  label:nth-of-type(10) .blocchi:nth-child(12),
+  label:nth-of-type(10) .blocchi:nth-child(13),
+  label:nth-of-type(10) .blocchi:nth-child(14),
+  label:nth-of-type(10) .blocchi:nth-child(15),
+  label:nth-of-type(10) .blocchi:nth-child(16),
+  label:nth-of-type(10) .blocchi:nth-child(7),
+  label:nth-of-type(10) .blocchi:nth-child(8),
+  label:nth-of-type(10) .blocchi:nth-child(9),
+  label:nth-of-type(10) .blocchi:nth-child(10),
+  label:nth-of-type(10) .blocchi:nth-child(11),
+  label:nth-of-type(10) .blocchi:nth-child(2),
+  label:nth-of-type(10) .blocchi:nth-child(3),
+  label:nth-of-type(10) .blocchi:nth-child(4),
+  label:nth-of-type(10) .blocchi:nth-child(5),
+  label:nth-of-type(10) .blocchi:nth-child(6),
+){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:400px){
+
+  label:nth-of-type(10) .blocchi:nth-child(1),
+  label:nth-of-type(10) .blocchi:nth-child(16),
+  label:nth-of-type(10) .blocchi:nth-child(15),
+  label:nth-of-type(10) .blocchi:nth-child(2),
+  label:nth-of-type(10) .blocchi:nth-child(3),
+  label:nth-of-type(10) .blocchi:nth-child(4),
+  label:nth-of-type(10) .blocchi:nth-child(5),
+  label:nth-of-type(10) .blocchi:nth-child(6),
+  label:nth-of-type(10) .blocchi:nth-child(7),
+  label:nth-of-type(10) .blocchi:nth-child(8),
+  label:nth-of-type(10) .blocchi:nth-child(9),
+  label:nth-of-type(10) .blocchi:nth-child(10),
+  label:nth-of-type(10) .blocchi:nth-child(11),
+  label:nth-of-type(10) .blocchi:nth-child(12),
+  label:nth-of-type(10) .blocchi:nth-child(13),
+  label:nth-of-type(10) .blocchi:nth-child(14){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:740px){
+  label:nth-of-type(10) .blocchi:nth-child(1),
+  label:nth-of-type(10) .blocchi:nth-child(12),
+  label:nth-of-type(10) .blocchi:nth-child(13),
+  label:nth-of-type(10) .blocchi:nth-child(14),
+  label:nth-of-type(10) .blocchi:nth-child(15),
+  label:nth-of-type(10) .blocchi:nth-child(16),
+  label:nth-of-type(10) .blocchi:nth-child(2),
+  label:nth-of-type(10) .blocchi:nth-child(3),
+  label:nth-of-type(10) .blocchi:nth-child(4),
+  label:nth-of-type(10) .blocchi:nth-child(5),
+  label:nth-of-type(10) .blocchi:nth-child(6),
+  label:nth-of-type(10) .blocchi:nth-child(7),
+  label:nth-of-type(10) .blocchi:nth-child(8),
+  label:nth-of-type(10) .blocchi:nth-child(9),
+  label:nth-of-type(10) .blocchi:nth-child(10),
+  label:nth-of-type(10) .blocchi:nth-child(11){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:570px){
+
+  label:nth-of-type(10) .blocchi:nth-child(1),
+  label:nth-of-type(10) .blocchi:nth-child(14),
+  label:nth-of-type(10) .blocchi:nth-child(15),
+  label:nth-of-type(10) .blocchi:nth-child(16),
+  label:nth-of-type(10) .blocchi:nth-child(2),
+  label:nth-of-type(10) .blocchi:nth-child(3),
+  label:nth-of-type(10) .blocchi:nth-child(4),
+  label:nth-of-type(10) .blocchi:nth-child(5),
+  label:nth-of-type(10) .blocchi:nth-child(6),
+  label:nth-of-type(10) .blocchi:nth-child(7),
+  label:nth-of-type(10) .blocchi:nth-child(8),
+  label:nth-of-type(10) .blocchi:nth-child(9),
+  label:nth-of-type(10) .blocchi:nth-child(10),
+  label:nth-of-type(10) .blocchi:nth-child(11),
+  label:nth-of-type(10) .blocchi:nth-child(12),
+  label:nth-of-type(10) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:400px){
+  label:nth-of-type(10) .blocchi:nth-child(1),
+  label:nth-of-type(10) .blocchi:nth-child(11){
+    display: flex;
+  }
+
+  label:nth-of-type(10) .blocchi:nth-child(2),
+  label:nth-of-type(10) .blocchi:nth-child(3),
+  label:nth-of-type(10) .blocchi:nth-child(4),
+  label:nth-of-type(10) .blocchi:nth-child(5),
+  label:nth-of-type(10) .blocchi:nth-child(6),
+  label:nth-of-type(10) .blocchi:nth-child(7),
+  label:nth-of-type(10) .blocchi:nth-child(8),
+  label:nth-of-type(10) .blocchi:nth-child(9),
+  label:nth-of-type(10) .blocchi:nth-child(10),
+  label:nth-of-type(10) .blocchi:nth-child(12),
+  label:nth-of-type(10) .blocchi:nth-child(13),
+  label:nth-of-type(10) .blocchi:nth-child(14),
+  label:nth-of-type(10) .blocchi:nth-child(15),
+  label:nth-of-type(10) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:740px){
+
+  label:nth-of-type(10) .blocchi:nth-child(1),
+  label:nth-of-type(10) .blocchi:nth-child(16),
+  label:nth-of-type(10) .blocchi:nth-child(15),
+  label:nth-of-type(10) .blocchi:nth-child(2),
+  label:nth-of-type(10) .blocchi:nth-child(3),
+  label:nth-of-type(10) .blocchi:nth-child(4),
+  label:nth-of-type(10) .blocchi:nth-child(5),
+  label:nth-of-type(10) .blocchi:nth-child(7),
+  label:nth-of-type(10) .blocchi:nth-child(8),
+  label:nth-of-type(10) .blocchi:nth-child(8),
+  label:nth-of-type(10) .blocchi:nth-child(9),
+  label:nth-of-type(10) .blocchi:nth-child(10),
+  label:nth-of-type(10) .blocchi:nth-child(11),
+  label:nth-of-type(10) .blocchi:nth-child(12),
+  label:nth-of-type(10) .blocchi:nth-child(13),
+  label:nth-of-type(10) .blocchi:nth-child(14){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:570px){
+  label:nth-of-type(10) .blocchi:nth-child(1),
+  label:nth-of-type(10) .blocchi:nth-child(11){
+    display: flex;
+  }
+
+  label:nth-of-type(10) .blocchi:nth-child(2),
+  label:nth-of-type(10) .blocchi:nth-child(3),
+  label:nth-of-type(10) .blocchi:nth-child(4),
+  label:nth-of-type(10) .blocchi:nth-child(5),
+  label:nth-of-type(10) .blocchi:nth-child(6),
+  label:nth-of-type(10) .blocchi:nth-child(7),
+  label:nth-of-type(10) .blocchi:nth-child(8),
+  label:nth-of-type(10) .blocchi:nth-child(9),
+  label:nth-of-type(10) .blocchi:nth-child(10),
+  label:nth-of-type(10) .blocchi:nth-child(12),
+  label:nth-of-type(10) .blocchi:nth-child(13),
+  label:nth-of-type(10) .blocchi:nth-child(14),
+  label:nth-of-type(10) .blocchi:nth-child(15),
+  label:nth-of-type(10) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:400px){
+  label:nth-of-type(10) .blocchi:nth-child(10){
+    display: flex;
+  }
+  label:nth-of-type(10) .blocchi:nth-child(1),
+  label:nth-of-type(10) .blocchi:nth-child(2),
+  label:nth-of-type(10) .blocchi:nth-child(3),
+  label:nth-of-type(10) .blocchi:nth-child(4),
+  label:nth-of-type(10) .blocchi:nth-child(5),
+  label:nth-of-type(10) .blocchi:nth-child(6),
+  label:nth-of-type(10) .blocchi:nth-child(7),
+  label:nth-of-type(10) .blocchi:nth-child(8),
+  label:nth-of-type(10) .blocchi:nth-child(9),
+  label:nth-of-type(10) .blocchi:nth-child(11),
+  label:nth-of-type(10) .blocchi:nth-child(12),
+  label:nth-of-type(10) .blocchi:nth-child(13),
+  label:nth-of-type(10) .blocchi:nth-child(14),
+  label:nth-of-type(10) .blocchi:nth-child(15),
+  label:nth-of-type(10) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+/* *********************BLOCK QUERY 11******************************** */
+label:nth-of-type(11) .navigationpoints span:nth-child(11){
+  color: white;
+}
+
+label:nth-of-type(11) .finestra{
+ /* height: auto; */
+ display: flex;
+ justify-content: center;
+ align-content: center;
+}
+
+label:nth-of-type(11) .blocchi{
+  display: none;
+}
+@media screen and (min-height:0px){
+  label:nth-of-type(11)  .blocchi{
+    height: 100%;
+  }
+}
+@media screen and (min-height:401px){
+  label:nth-of-type(11)  .blocchi{
+    height: 50%;
+  }
+}
+@media screen and (min-height:570px){
+  label:nth-of-type(11)  .blocchi{
+    height: 25%;
+    max-height: 25%;
+  }
+}
+
+
+@media screen and (min-width:1000px) and (max-height:400px){
+
+  label:nth-of-type(11) .blocchi:nth-child(1),
+  label:nth-of-type(11) .blocchi:nth-child(14),
+  label:nth-of-type(11) .blocchi:nth-child(15),
+  label:nth-of-type(11) .blocchi:nth-child(16),
+  label:nth-of-type(11) .blocchi:nth-child(5),
+  label:nth-of-type(11) .blocchi:nth-child(6),
+  label:nth-of-type(11) .blocchi:nth-child(7),
+  label:nth-of-type(11) .blocchi:nth-child(8),
+  label:nth-of-type(11) .blocchi:nth-child(9),
+  label:nth-of-type(11) .blocchi:nth-child(10),
+  label:nth-of-type(11) .blocchi:nth-child(11),
+  label:nth-of-type(11) .blocchi:nth-child(12),
+  label:nth-of-type(11) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+
+
+@media screen and (min-height:741px) and (max-width:499px){
+
+  label:nth-of-type(11) .blocchi:nth-child(1),
+  label:nth-of-type(11) .blocchi:nth-child(14),
+  label:nth-of-type(11) .blocchi:nth-child(15),
+  label:nth-of-type(11) .blocchi:nth-child(16),
+  label:nth-of-type(11) .blocchi:nth-child(5),
+  label:nth-of-type(11) .blocchi:nth-child(6),
+  label:nth-of-type(11) .blocchi:nth-child(7),
+  label:nth-of-type(11) .blocchi:nth-child(8),
+  label:nth-of-type(11) .blocchi:nth-child(9),
+  label:nth-of-type(11) .blocchi:nth-child(10),
+  label:nth-of-type(11) .blocchi:nth-child(11),
+  label:nth-of-type(11) .blocchi:nth-child(12),
+  label:nth-of-type(11) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:740px){
+
+  label:nth-of-type(11) .blocchi:nth-child(1),
+  label:nth-of-type(11) .blocchi:nth-child(10),
+  label:nth-of-type(11) .blocchi:nth-child(11),
+  label:nth-of-type(11) .blocchi:nth-child(12),
+  label:nth-of-type(11) .blocchi:nth-child(13),
+  label:nth-of-type(11) .blocchi:nth-child(14),
+  label:nth-of-type(11) .blocchi:nth-child(15),
+  label:nth-of-type(11) .blocchi:nth-child(16),
+  label:nth-of-type(11) .blocchi:nth-child(2),
+  label:nth-of-type(11) .blocchi:nth-child(3),
+  label:nth-of-type(11) .blocchi:nth-child(4),
+  label:nth-of-type(11) .blocchi:nth-child(5),
+  label:nth-of-type(11) .blocchi:nth-child(6),
+  label:nth-of-type(11) .blocchi:nth-child(7),
+  label:nth-of-type(11) .blocchi:nth-child(8),
+  label:nth-of-type(11) .blocchi:nth-child(9){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:570px){
+
+  label:nth-of-type(11) .blocchi:nth-child(1),
+  label:nth-of-type(11) .blocchi:nth-child(12),
+  label:nth-of-type(11) .blocchi:nth-child(13),
+  label:nth-of-type(11) .blocchi:nth-child(14),
+  label:nth-of-type(11) .blocchi:nth-child(15),
+  label:nth-of-type(11) .blocchi:nth-child(16),
+  label:nth-of-type(11) .blocchi:nth-child(7),
+  label:nth-of-type(11) .blocchi:nth-child(8),
+  label:nth-of-type(11) .blocchi:nth-child(9),
+  label:nth-of-type(11) .blocchi:nth-child(10),
+  label:nth-of-type(11) .blocchi:nth-child(11),
+  label:nth-of-type(11) .blocchi:nth-child(2),
+  label:nth-of-type(11) .blocchi:nth-child(3),
+  label:nth-of-type(11) .blocchi:nth-child(4),
+  label:nth-of-type(11) .blocchi:nth-child(5),
+  label:nth-of-type(11) .blocchi:nth-child(6),
+){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:400px){
+
+  label:nth-of-type(11) .blocchi:nth-child(1),
+  label:nth-of-type(11) .blocchi:nth-child(16),
+  label:nth-of-type(11) .blocchi:nth-child(15),
+  label:nth-of-type(11) .blocchi:nth-child(2),
+  label:nth-of-type(11) .blocchi:nth-child(3),
+  label:nth-of-type(11) .blocchi:nth-child(4),
+  label:nth-of-type(11) .blocchi:nth-child(5),
+  label:nth-of-type(11) .blocchi:nth-child(6),
+  label:nth-of-type(11) .blocchi:nth-child(7),
+  label:nth-of-type(11) .blocchi:nth-child(8),
+  label:nth-of-type(11) .blocchi:nth-child(9),
+  label:nth-of-type(11) .blocchi:nth-child(10),
+  label:nth-of-type(11) .blocchi:nth-child(11),
+  label:nth-of-type(11) .blocchi:nth-child(12),
+  label:nth-of-type(11) .blocchi:nth-child(13),
+  label:nth-of-type(11) .blocchi:nth-child(14){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:740px){
+  label:nth-of-type(11) .blocchi:nth-child(1),
+  label:nth-of-type(11) .blocchi:nth-child(12),
+  label:nth-of-type(11) .blocchi:nth-child(13),
+  label:nth-of-type(11) .blocchi:nth-child(14),
+  label:nth-of-type(11) .blocchi:nth-child(15),
+  label:nth-of-type(11) .blocchi:nth-child(16),
+  label:nth-of-type(11) .blocchi:nth-child(2),
+  label:nth-of-type(11) .blocchi:nth-child(3),
+  label:nth-of-type(11) .blocchi:nth-child(4),
+  label:nth-of-type(11) .blocchi:nth-child(5),
+  label:nth-of-type(11) .blocchi:nth-child(6),
+  label:nth-of-type(11) .blocchi:nth-child(7),
+  label:nth-of-type(11) .blocchi:nth-child(8),
+  label:nth-of-type(11) .blocchi:nth-child(9),
+  label:nth-of-type(11) .blocchi:nth-child(10),
+  label:nth-of-type(11) .blocchi:nth-child(11){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:570px){
+
+  label:nth-of-type(11) .blocchi:nth-child(1),
+  label:nth-of-type(11) .blocchi:nth-child(14),
+  label:nth-of-type(11) .blocchi:nth-child(15),
+  label:nth-of-type(11) .blocchi:nth-child(16),
+  label:nth-of-type(11) .blocchi:nth-child(2),
+  label:nth-of-type(11) .blocchi:nth-child(3),
+  label:nth-of-type(11) .blocchi:nth-child(4),
+  label:nth-of-type(11) .blocchi:nth-child(5),
+  label:nth-of-type(11) .blocchi:nth-child(6),
+  label:nth-of-type(11) .blocchi:nth-child(7),
+  label:nth-of-type(11) .blocchi:nth-child(8),
+  label:nth-of-type(11) .blocchi:nth-child(9),
+  label:nth-of-type(11) .blocchi:nth-child(10),
+  label:nth-of-type(11) .blocchi:nth-child(11),
+  label:nth-of-type(11) .blocchi:nth-child(12),
+  label:nth-of-type(11) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:400px){
+  label:nth-of-type(11) .blocchi:nth-child(1),
+  label:nth-of-type(11) .blocchi:nth-child(12){
+    display: flex;
+  }
+
+  label:nth-of-type(11) .blocchi:nth-child(2),
+  label:nth-of-type(11) .blocchi:nth-child(3),
+  label:nth-of-type(11) .blocchi:nth-child(4),
+  label:nth-of-type(11) .blocchi:nth-child(5),
+  label:nth-of-type(11) .blocchi:nth-child(6),
+  label:nth-of-type(11) .blocchi:nth-child(7),
+  label:nth-of-type(11) .blocchi:nth-child(8),
+  label:nth-of-type(11) .blocchi:nth-child(9),
+  label:nth-of-type(11) .blocchi:nth-child(10),
+  label:nth-of-type(11) .blocchi:nth-child(11),
+  label:nth-of-type(11) .blocchi:nth-child(13),
+  label:nth-of-type(11) .blocchi:nth-child(14),
+  label:nth-of-type(11) .blocchi:nth-child(15),
+  label:nth-of-type(11) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:740px){
+
+  label:nth-of-type(11) .blocchi:nth-child(1),
+  label:nth-of-type(11) .blocchi:nth-child(16),
+  label:nth-of-type(11) .blocchi:nth-child(15),
+  label:nth-of-type(11) .blocchi:nth-child(2),
+  label:nth-of-type(11) .blocchi:nth-child(3),
+  label:nth-of-type(11) .blocchi:nth-child(4),
+  label:nth-of-type(11) .blocchi:nth-child(5),
+  label:nth-of-type(11) .blocchi:nth-child(7),
+  label:nth-of-type(11) .blocchi:nth-child(8),
+  label:nth-of-type(11) .blocchi:nth-child(8),
+  label:nth-of-type(11) .blocchi:nth-child(9),
+  label:nth-of-type(11) .blocchi:nth-child(10),
+  label:nth-of-type(11) .blocchi:nth-child(11),
+  label:nth-of-type(11) .blocchi:nth-child(12),
+  label:nth-of-type(11) .blocchi:nth-child(13),
+  label:nth-of-type(11) .blocchi:nth-child(14){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:570px){
+  label:nth-of-type(11) .blocchi:nth-child(1),
+  label:nth-of-type(11) .blocchi:nth-child(12){
+    display: flex;
+  }
+
+  label:nth-of-type(11) .blocchi:nth-child(2),
+  label:nth-of-type(11) .blocchi:nth-child(3),
+  label:nth-of-type(11) .blocchi:nth-child(4),
+  label:nth-of-type(11) .blocchi:nth-child(5),
+  label:nth-of-type(11) .blocchi:nth-child(6),
+  label:nth-of-type(11) .blocchi:nth-child(7),
+  label:nth-of-type(11) .blocchi:nth-child(8),
+  label:nth-of-type(11) .blocchi:nth-child(9),
+  label:nth-of-type(11) .blocchi:nth-child(10),
+  label:nth-of-type(11) .blocchi:nth-child(11),
+  label:nth-of-type(11) .blocchi:nth-child(13),
+  label:nth-of-type(11) .blocchi:nth-child(14),
+  label:nth-of-type(11) .blocchi:nth-child(15),
+  label:nth-of-type(11) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:400px){
+  label:nth-of-type(11) .blocchi:nth-child(11){
+    display: flex;
+  }
+  label:nth-of-type(11) .blocchi:nth-child(1),
+  label:nth-of-type(11) .blocchi:nth-child(2),
+  label:nth-of-type(11) .blocchi:nth-child(3),
+  label:nth-of-type(11) .blocchi:nth-child(4),
+  label:nth-of-type(11) .blocchi:nth-child(5),
+  label:nth-of-type(11) .blocchi:nth-child(6),
+  label:nth-of-type(11) .blocchi:nth-child(7),
+  label:nth-of-type(11) .blocchi:nth-child(8),
+  label:nth-of-type(11) .blocchi:nth-child(9),
+  label:nth-of-type(11) .blocchi:nth-child(10),
+  label:nth-of-type(11) .blocchi:nth-child(12),
+  label:nth-of-type(11) .blocchi:nth-child(13),
+  label:nth-of-type(11) .blocchi:nth-child(14),
+  label:nth-of-type(11) .blocchi:nth-child(15),
+  label:nth-of-type(11) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+/* *********************BLOCK QUERY 12******************************** */
+label:nth-of-type(12) .navigationpoints span:nth-child(12){
+  color: white;
+}
+
+label:nth-of-type(12) .finestra{
+ /* height: auto; */
+ display: flex;
+ justify-content: center;
+ align-content: center;
+}
+
+label:nth-of-type(12) .blocchi{
+  display: none;
+}
+@media screen and (min-height:0px){
+  label:nth-of-type(12)  .blocchi{
+    height: 100%;
+  }
+}
+@media screen and (min-height:401px){
+  label:nth-of-type(12)  .blocchi{
+    height: 50%;
+  }
+}
+@media screen and (min-height:570px){
+  label:nth-of-type(12)  .blocchi{
+    height: 25%;
+    max-height: 25%;
+  }
+}
+
+
+@media screen and (min-width:1000px) and (max-height:400px){
+
+  label:nth-of-type(12) .blocchi:nth-child(1),
+  label:nth-of-type(12) .blocchi:nth-child(14),
+  label:nth-of-type(12) .blocchi:nth-child(15),
+  label:nth-of-type(12) .blocchi:nth-child(16),
+  label:nth-of-type(12) .blocchi:nth-child(5),
+  label:nth-of-type(12) .blocchi:nth-child(6),
+  label:nth-of-type(12) .blocchi:nth-child(7),
+  label:nth-of-type(12) .blocchi:nth-child(8),
+  label:nth-of-type(12) .blocchi:nth-child(9),
+  label:nth-of-type(12) .blocchi:nth-child(10),
+  label:nth-of-type(12) .blocchi:nth-child(11),
+  label:nth-of-type(12) .blocchi:nth-child(12),
+  label:nth-of-type(12) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+
+
+@media screen and (min-height:741px) and (max-width:499px){
+
+  label:nth-of-type(12) .blocchi:nth-child(1),
+  label:nth-of-type(12) .blocchi:nth-child(14),
+  label:nth-of-type(12) .blocchi:nth-child(15),
+  label:nth-of-type(12) .blocchi:nth-child(16),
+  label:nth-of-type(12) .blocchi:nth-child(5),
+  label:nth-of-type(12) .blocchi:nth-child(6),
+  label:nth-of-type(12) .blocchi:nth-child(7),
+  label:nth-of-type(12) .blocchi:nth-child(8),
+  label:nth-of-type(12) .blocchi:nth-child(9),
+  label:nth-of-type(12) .blocchi:nth-child(10),
+  label:nth-of-type(12) .blocchi:nth-child(11),
+  label:nth-of-type(12) .blocchi:nth-child(12),
+  label:nth-of-type(12) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:740px){
+
+  label:nth-of-type(12) .blocchi:nth-child(1),
+  label:nth-of-type(12) .blocchi:nth-child(10),
+  label:nth-of-type(12) .blocchi:nth-child(11),
+  label:nth-of-type(12) .blocchi:nth-child(12),
+  label:nth-of-type(12) .blocchi:nth-child(13),
+  label:nth-of-type(12) .blocchi:nth-child(14),
+  label:nth-of-type(12) .blocchi:nth-child(15),
+  label:nth-of-type(12) .blocchi:nth-child(16),
+  label:nth-of-type(12) .blocchi:nth-child(2),
+  label:nth-of-type(12) .blocchi:nth-child(3),
+  label:nth-of-type(12) .blocchi:nth-child(4),
+  label:nth-of-type(12) .blocchi:nth-child(5),
+  label:nth-of-type(12) .blocchi:nth-child(6),
+  label:nth-of-type(12) .blocchi:nth-child(7),
+  label:nth-of-type(12) .blocchi:nth-child(8),
+  label:nth-of-type(12) .blocchi:nth-child(9){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:570px){
+
+  label:nth-of-type(12) .blocchi:nth-child(1),
+  label:nth-of-type(12) .blocchi:nth-child(12),
+  label:nth-of-type(12) .blocchi:nth-child(13),
+  label:nth-of-type(12) .blocchi:nth-child(14),
+  label:nth-of-type(12) .blocchi:nth-child(15),
+  label:nth-of-type(12) .blocchi:nth-child(16),
+  label:nth-of-type(12) .blocchi:nth-child(7),
+  label:nth-of-type(12) .blocchi:nth-child(8),
+  label:nth-of-type(12) .blocchi:nth-child(9),
+  label:nth-of-type(12) .blocchi:nth-child(10),
+  label:nth-of-type(12) .blocchi:nth-child(11),
+  label:nth-of-type(12) .blocchi:nth-child(2),
+  label:nth-of-type(12) .blocchi:nth-child(3),
+  label:nth-of-type(12) .blocchi:nth-child(4),
+  label:nth-of-type(12) .blocchi:nth-child(5),
+  label:nth-of-type(12) .blocchi:nth-child(6),
+){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:400px){
+
+  label:nth-of-type(12) .blocchi:nth-child(1),
+  label:nth-of-type(12) .blocchi:nth-child(16),
+  label:nth-of-type(12) .blocchi:nth-child(15),
+  label:nth-of-type(12) .blocchi:nth-child(2),
+  label:nth-of-type(12) .blocchi:nth-child(3),
+  label:nth-of-type(12) .blocchi:nth-child(4),
+  label:nth-of-type(12) .blocchi:nth-child(5),
+  label:nth-of-type(12) .blocchi:nth-child(6),
+  label:nth-of-type(12) .blocchi:nth-child(7),
+  label:nth-of-type(12) .blocchi:nth-child(8),
+  label:nth-of-type(12) .blocchi:nth-child(9),
+  label:nth-of-type(12) .blocchi:nth-child(10),
+  label:nth-of-type(12) .blocchi:nth-child(11),
+  label:nth-of-type(12) .blocchi:nth-child(12),
+  label:nth-of-type(12) .blocchi:nth-child(13),
+  label:nth-of-type(12) .blocchi:nth-child(14){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:740px){
+  label:nth-of-type(12) .blocchi:nth-child(1),
+  label:nth-of-type(12) .blocchi:nth-child(12),
+  label:nth-of-type(12) .blocchi:nth-child(13),
+  label:nth-of-type(12) .blocchi:nth-child(14),
+  label:nth-of-type(12) .blocchi:nth-child(15),
+  label:nth-of-type(12) .blocchi:nth-child(16),
+  label:nth-of-type(12) .blocchi:nth-child(2),
+  label:nth-of-type(12) .blocchi:nth-child(3),
+  label:nth-of-type(12) .blocchi:nth-child(4),
+  label:nth-of-type(12) .blocchi:nth-child(5),
+  label:nth-of-type(12) .blocchi:nth-child(6),
+  label:nth-of-type(12) .blocchi:nth-child(7),
+  label:nth-of-type(12) .blocchi:nth-child(8),
+  label:nth-of-type(12) .blocchi:nth-child(9),
+  label:nth-of-type(12) .blocchi:nth-child(10),
+  label:nth-of-type(12) .blocchi:nth-child(11){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:570px){
+
+  label:nth-of-type(12) .blocchi:nth-child(1),
+  label:nth-of-type(12) .blocchi:nth-child(14),
+  label:nth-of-type(12) .blocchi:nth-child(15),
+  label:nth-of-type(12) .blocchi:nth-child(16),
+  label:nth-of-type(12) .blocchi:nth-child(2),
+  label:nth-of-type(12) .blocchi:nth-child(3),
+  label:nth-of-type(12) .blocchi:nth-child(4),
+  label:nth-of-type(12) .blocchi:nth-child(5),
+  label:nth-of-type(12) .blocchi:nth-child(6),
+  label:nth-of-type(12) .blocchi:nth-child(7),
+  label:nth-of-type(12) .blocchi:nth-child(8),
+  label:nth-of-type(12) .blocchi:nth-child(9),
+  label:nth-of-type(12) .blocchi:nth-child(10),
+  label:nth-of-type(12) .blocchi:nth-child(11),
+  label:nth-of-type(12) .blocchi:nth-child(12),
+  label:nth-of-type(12) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:400px){
+  label:nth-of-type(12) .blocchi:nth-child(1),
+  label:nth-of-type(12) .blocchi:nth-child(13){
+    display: flex;
+  }
+
+  label:nth-of-type(12) .blocchi:nth-child(2),
+  label:nth-of-type(12) .blocchi:nth-child(3),
+  label:nth-of-type(12) .blocchi:nth-child(4),
+  label:nth-of-type(12) .blocchi:nth-child(5),
+  label:nth-of-type(12) .blocchi:nth-child(6),
+  label:nth-of-type(12) .blocchi:nth-child(7),
+  label:nth-of-type(12) .blocchi:nth-child(8),
+  label:nth-of-type(12) .blocchi:nth-child(9),
+  label:nth-of-type(12) .blocchi:nth-child(10),
+  label:nth-of-type(12) .blocchi:nth-child(11),
+  label:nth-of-type(12) .blocchi:nth-child(12),
+  label:nth-of-type(12) .blocchi:nth-child(14),
+  label:nth-of-type(12) .blocchi:nth-child(15),
+  label:nth-of-type(12) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:740px){
+
+  label:nth-of-type(12) .blocchi:nth-child(1),
+  label:nth-of-type(12) .blocchi:nth-child(16),
+  label:nth-of-type(12) .blocchi:nth-child(15),
+  label:nth-of-type(12) .blocchi:nth-child(2),
+  label:nth-of-type(12) .blocchi:nth-child(3),
+  label:nth-of-type(12) .blocchi:nth-child(4),
+  label:nth-of-type(12) .blocchi:nth-child(5),
+  label:nth-of-type(12) .blocchi:nth-child(7),
+  label:nth-of-type(12) .blocchi:nth-child(8),
+  label:nth-of-type(12) .blocchi:nth-child(8),
+  label:nth-of-type(12) .blocchi:nth-child(9),
+  label:nth-of-type(12) .blocchi:nth-child(10),
+  label:nth-of-type(12) .blocchi:nth-child(11),
+  label:nth-of-type(12) .blocchi:nth-child(12),
+  label:nth-of-type(12) .blocchi:nth-child(13),
+  label:nth-of-type(12) .blocchi:nth-child(14){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:570px){
+  label:nth-of-type(12) .blocchi:nth-child(1),
+  label:nth-of-type(12) .blocchi:nth-child(13){
+    display: flex;
+  }
+
+  label:nth-of-type(12) .blocchi:nth-child(2),
+  label:nth-of-type(12) .blocchi:nth-child(3),
+  label:nth-of-type(12) .blocchi:nth-child(4),
+  label:nth-of-type(12) .blocchi:nth-child(5),
+  label:nth-of-type(12) .blocchi:nth-child(6),
+  label:nth-of-type(12) .blocchi:nth-child(7),
+  label:nth-of-type(12) .blocchi:nth-child(8),
+  label:nth-of-type(12) .blocchi:nth-child(9),
+  label:nth-of-type(12) .blocchi:nth-child(10),
+  label:nth-of-type(12) .blocchi:nth-child(11),
+  label:nth-of-type(12) .blocchi:nth-child(12),
+  label:nth-of-type(12) .blocchi:nth-child(14),
+  label:nth-of-type(12) .blocchi:nth-child(15),
+  label:nth-of-type(12) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:400px){
+  label:nth-of-type(12) .blocchi:nth-child(12){
+    display: flex;
+  }
+  label:nth-of-type(12) .blocchi:nth-child(1),
+  label:nth-of-type(12) .blocchi:nth-child(2),
+  label:nth-of-type(12) .blocchi:nth-child(3),
+  label:nth-of-type(12) .blocchi:nth-child(4),
+  label:nth-of-type(12) .blocchi:nth-child(5),
+  label:nth-of-type(12) .blocchi:nth-child(6),
+  label:nth-of-type(12) .blocchi:nth-child(7),
+  label:nth-of-type(12) .blocchi:nth-child(8),
+  label:nth-of-type(12) .blocchi:nth-child(9),
+  label:nth-of-type(12) .blocchi:nth-child(10),
+  label:nth-of-type(12) .blocchi:nth-child(11),
+  label:nth-of-type(12) .blocchi:nth-child(13),
+  label:nth-of-type(12) .blocchi:nth-child(14),
+  label:nth-of-type(12) .blocchi:nth-child(15),
+  label:nth-of-type(12) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+/* *********************BLOCK QUERY 13******************************** */
+label:nth-of-type(13) .navigationpoints span:nth-child(13){
+  color: white;
+}
+
+label:nth-of-type(13) .finestra{
+ /* height: auto; */
+ display: flex;
+ justify-content: center;
+ align-content: center;
+}
+
+label:nth-of-type(13) .blocchi{
+  display: none;
+}
+@media screen and (min-height:0px){
+  label:nth-of-type(13)  .blocchi{
+    height: 100%;
+  }
+}
+@media screen and (min-height:401px){
+  label:nth-of-type(13)  .blocchi{
+    height: 50%;
+  }
+}
+@media screen and (min-height:570px){
+  label:nth-of-type(13)  .blocchi{
+    height: 25%;
+    max-height: 25%;
+  }
+}
+
+
+@media screen and (min-width:1000px) and (max-height:400px){
+
+  label:nth-of-type(13) .blocchi:nth-child(1),
+  label:nth-of-type(13) .blocchi:nth-child(14),
+  label:nth-of-type(13) .blocchi:nth-child(15),
+  label:nth-of-type(13) .blocchi:nth-child(16),
+  label:nth-of-type(13) .blocchi:nth-child(5),
+  label:nth-of-type(13) .blocchi:nth-child(6),
+  label:nth-of-type(13) .blocchi:nth-child(7),
+  label:nth-of-type(13) .blocchi:nth-child(8),
+  label:nth-of-type(13) .blocchi:nth-child(9),
+  label:nth-of-type(13) .blocchi:nth-child(10),
+  label:nth-of-type(13) .blocchi:nth-child(11),
+  label:nth-of-type(13) .blocchi:nth-child(12),
+  label:nth-of-type(13) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+
+
+@media screen and (min-height:741px) and (max-width:499px){
+
+  label:nth-of-type(13) .blocchi:nth-child(1),
+  label:nth-of-type(13) .blocchi:nth-child(14),
+  label:nth-of-type(13) .blocchi:nth-child(15),
+  label:nth-of-type(13) .blocchi:nth-child(16),
+  label:nth-of-type(13) .blocchi:nth-child(5),
+  label:nth-of-type(13) .blocchi:nth-child(6),
+  label:nth-of-type(13) .blocchi:nth-child(7),
+  label:nth-of-type(13) .blocchi:nth-child(8),
+  label:nth-of-type(13) .blocchi:nth-child(9),
+  label:nth-of-type(13) .blocchi:nth-child(10),
+  label:nth-of-type(13) .blocchi:nth-child(11),
+  label:nth-of-type(13) .blocchi:nth-child(12),
+  label:nth-of-type(13) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:740px){
+
+  label:nth-of-type(13) .blocchi:nth-child(1),
+  label:nth-of-type(13) .blocchi:nth-child(10),
+  label:nth-of-type(13) .blocchi:nth-child(11),
+  label:nth-of-type(13) .blocchi:nth-child(12),
+  label:nth-of-type(13) .blocchi:nth-child(13),
+  label:nth-of-type(13) .blocchi:nth-child(14),
+  label:nth-of-type(13) .blocchi:nth-child(15),
+  label:nth-of-type(13) .blocchi:nth-child(16),
+  label:nth-of-type(13) .blocchi:nth-child(2),
+  label:nth-of-type(13) .blocchi:nth-child(3),
+  label:nth-of-type(13) .blocchi:nth-child(4),
+  label:nth-of-type(13) .blocchi:nth-child(5),
+  label:nth-of-type(13) .blocchi:nth-child(6),
+  label:nth-of-type(13) .blocchi:nth-child(7),
+  label:nth-of-type(13) .blocchi:nth-child(8),
+  label:nth-of-type(13) .blocchi:nth-child(9){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:570px){
+
+  label:nth-of-type(13) .blocchi:nth-child(1),
+  label:nth-of-type(13) .blocchi:nth-child(12),
+  label:nth-of-type(13) .blocchi:nth-child(13),
+  label:nth-of-type(13) .blocchi:nth-child(14),
+  label:nth-of-type(13) .blocchi:nth-child(15),
+  label:nth-of-type(13) .blocchi:nth-child(16),
+  label:nth-of-type(13) .blocchi:nth-child(7),
+  label:nth-of-type(13) .blocchi:nth-child(8),
+  label:nth-of-type(13) .blocchi:nth-child(9),
+  label:nth-of-type(13) .blocchi:nth-child(10),
+  label:nth-of-type(13) .blocchi:nth-child(11),
+  label:nth-of-type(13) .blocchi:nth-child(2),
+  label:nth-of-type(13) .blocchi:nth-child(3),
+  label:nth-of-type(13) .blocchi:nth-child(4),
+  label:nth-of-type(13) .blocchi:nth-child(5),
+  label:nth-of-type(13) .blocchi:nth-child(6),
+){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:400px){
+
+  label:nth-of-type(13) .blocchi:nth-child(1),
+  label:nth-of-type(13) .blocchi:nth-child(16),
+  label:nth-of-type(13) .blocchi:nth-child(15),
+  label:nth-of-type(13) .blocchi:nth-child(2),
+  label:nth-of-type(13) .blocchi:nth-child(3),
+  label:nth-of-type(13) .blocchi:nth-child(4),
+  label:nth-of-type(13) .blocchi:nth-child(5),
+  label:nth-of-type(13) .blocchi:nth-child(6),
+  label:nth-of-type(13) .blocchi:nth-child(7),
+  label:nth-of-type(13) .blocchi:nth-child(8),
+  label:nth-of-type(13) .blocchi:nth-child(9),
+  label:nth-of-type(13) .blocchi:nth-child(10),
+  label:nth-of-type(13) .blocchi:nth-child(11),
+  label:nth-of-type(13) .blocchi:nth-child(12),
+  label:nth-of-type(13) .blocchi:nth-child(13),
+  label:nth-of-type(13) .blocchi:nth-child(14){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:740px){
+  label:nth-of-type(13) .blocchi:nth-child(1),
+  label:nth-of-type(13) .blocchi:nth-child(12),
+  label:nth-of-type(13) .blocchi:nth-child(13),
+  label:nth-of-type(13) .blocchi:nth-child(14),
+  label:nth-of-type(13) .blocchi:nth-child(15),
+  label:nth-of-type(13) .blocchi:nth-child(16),
+  label:nth-of-type(13) .blocchi:nth-child(2),
+  label:nth-of-type(13) .blocchi:nth-child(3),
+  label:nth-of-type(13) .blocchi:nth-child(4),
+  label:nth-of-type(13) .blocchi:nth-child(5),
+  label:nth-of-type(13) .blocchi:nth-child(6),
+  label:nth-of-type(13) .blocchi:nth-child(7),
+  label:nth-of-type(13) .blocchi:nth-child(8),
+  label:nth-of-type(13) .blocchi:nth-child(9),
+  label:nth-of-type(13) .blocchi:nth-child(10),
+  label:nth-of-type(13) .blocchi:nth-child(11){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:570px){
+
+  label:nth-of-type(13) .blocchi:nth-child(1),
+  label:nth-of-type(13) .blocchi:nth-child(14),
+  label:nth-of-type(13) .blocchi:nth-child(15),
+  label:nth-of-type(13) .blocchi:nth-child(16),
+  label:nth-of-type(13) .blocchi:nth-child(2),
+  label:nth-of-type(13) .blocchi:nth-child(3),
+  label:nth-of-type(13) .blocchi:nth-child(4),
+  label:nth-of-type(13) .blocchi:nth-child(5),
+  label:nth-of-type(13) .blocchi:nth-child(6),
+  label:nth-of-type(13) .blocchi:nth-child(7),
+  label:nth-of-type(13) .blocchi:nth-child(8),
+  label:nth-of-type(13) .blocchi:nth-child(9),
+  label:nth-of-type(13) .blocchi:nth-child(10),
+  label:nth-of-type(13) .blocchi:nth-child(11),
+  label:nth-of-type(13) .blocchi:nth-child(12),
+  label:nth-of-type(13) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:400px){
+  label:nth-of-type(13) .blocchi:nth-child(1),
+  label:nth-of-type(13) .blocchi:nth-child(14){
+    display: flex;
+  }
+
+  label:nth-of-type(13) .blocchi:nth-child(2),
+  label:nth-of-type(13) .blocchi:nth-child(3),
+  label:nth-of-type(13) .blocchi:nth-child(4),
+  label:nth-of-type(13) .blocchi:nth-child(5),
+  label:nth-of-type(13) .blocchi:nth-child(6),
+  label:nth-of-type(13) .blocchi:nth-child(7),
+  label:nth-of-type(13) .blocchi:nth-child(8),
+  label:nth-of-type(13) .blocchi:nth-child(9),
+  label:nth-of-type(13) .blocchi:nth-child(10),
+  label:nth-of-type(13) .blocchi:nth-child(11),
+  label:nth-of-type(13) .blocchi:nth-child(12),
+  label:nth-of-type(13) .blocchi:nth-child(13),
+  label:nth-of-type(13) .blocchi:nth-child(15),
+  label:nth-of-type(13) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:740px){
+
+  label:nth-of-type(13) .blocchi:nth-child(1),
+  label:nth-of-type(13) .blocchi:nth-child(16),
+  label:nth-of-type(13) .blocchi:nth-child(15),
+  label:nth-of-type(13) .blocchi:nth-child(2),
+  label:nth-of-type(13) .blocchi:nth-child(3),
+  label:nth-of-type(13) .blocchi:nth-child(4),
+  label:nth-of-type(13) .blocchi:nth-child(5),
+  label:nth-of-type(13) .blocchi:nth-child(7),
+  label:nth-of-type(13) .blocchi:nth-child(8),
+  label:nth-of-type(13) .blocchi:nth-child(8),
+  label:nth-of-type(13) .blocchi:nth-child(9),
+  label:nth-of-type(13) .blocchi:nth-child(10),
+  label:nth-of-type(13) .blocchi:nth-child(11),
+  label:nth-of-type(13) .blocchi:nth-child(12),
+  label:nth-of-type(13) .blocchi:nth-child(13),
+  label:nth-of-type(13) .blocchi:nth-child(14){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:570px){
+  label:nth-of-type(13) .blocchi:nth-child(1),
+  label:nth-of-type(13) .blocchi:nth-child(14){
+    display: flex;
+  }
+
+  label:nth-of-type(13) .blocchi:nth-child(2),
+  label:nth-of-type(13) .blocchi:nth-child(3),
+  label:nth-of-type(13) .blocchi:nth-child(4),
+  label:nth-of-type(13) .blocchi:nth-child(5),
+  label:nth-of-type(13) .blocchi:nth-child(6),
+  label:nth-of-type(13) .blocchi:nth-child(7),
+  label:nth-of-type(13) .blocchi:nth-child(8),
+  label:nth-of-type(13) .blocchi:nth-child(9),
+  label:nth-of-type(13) .blocchi:nth-child(10),
+  label:nth-of-type(13) .blocchi:nth-child(11),
+  label:nth-of-type(13) .blocchi:nth-child(12),
+  label:nth-of-type(13) .blocchi:nth-child(13),
+  label:nth-of-type(13) .blocchi:nth-child(15),
+  label:nth-of-type(13) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:400px){
+  label:nth-of-type(13) .blocchi:nth-child(13){
+    display: flex;
+  }
+  label:nth-of-type(13) .blocchi:nth-child(1),
+  label:nth-of-type(13) .blocchi:nth-child(2),
+  label:nth-of-type(13) .blocchi:nth-child(3),
+  label:nth-of-type(13) .blocchi:nth-child(4),
+  label:nth-of-type(13) .blocchi:nth-child(5),
+  label:nth-of-type(13) .blocchi:nth-child(6),
+  label:nth-of-type(13) .blocchi:nth-child(7),
+  label:nth-of-type(13) .blocchi:nth-child(8),
+  label:nth-of-type(13) .blocchi:nth-child(9),
+  label:nth-of-type(13) .blocchi:nth-child(10),
+  label:nth-of-type(13) .blocchi:nth-child(11),
+  label:nth-of-type(13) .blocchi:nth-child(12),
+  label:nth-of-type(13) .blocchi:nth-child(14),
+  label:nth-of-type(13) .blocchi:nth-child(15),
+  label:nth-of-type(13) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+/* *********************BLOCK QUERY 14******************************** */
+label:nth-of-type(14) .navigationpoints span:nth-child(14){
+  color: white;
+}
+
+label:nth-of-type(14) .finestra{
+ /* height: auto; */
+ display: flex;
+ justify-content: center;
+ align-content: center;
+}
+
+label:nth-of-type(14) .blocchi{
+  display: none;
+}
+@media screen and (min-height:0px){
+  label:nth-of-type(14)  .blocchi{
+    height: 100%;
+  }
+}
+@media screen and (min-height:401px){
+  label:nth-of-type(14)  .blocchi{
+    height: 50%;
+  }
+}
+@media screen and (min-height:570px){
+  label:nth-of-type(14)  .blocchi{
+    height: 25%;
+    max-height: 25%;
+  }
+}
+
+
+@media screen and (min-width:1000px) and (max-height:400px){
+
+  label:nth-of-type(14) .blocchi:nth-child(1),
+  label:nth-of-type(14) .blocchi:nth-child(14),
+  label:nth-of-type(14) .blocchi:nth-child(15),
+  label:nth-of-type(14) .blocchi:nth-child(16),
+  label:nth-of-type(14) .blocchi:nth-child(5),
+  label:nth-of-type(14) .blocchi:nth-child(6),
+  label:nth-of-type(14) .blocchi:nth-child(7),
+  label:nth-of-type(14) .blocchi:nth-child(8),
+  label:nth-of-type(14) .blocchi:nth-child(9),
+  label:nth-of-type(14) .blocchi:nth-child(10),
+  label:nth-of-type(14) .blocchi:nth-child(11),
+  label:nth-of-type(14) .blocchi:nth-child(12),
+  label:nth-of-type(14) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+
+
+@media screen and (min-height:741px) and (max-width:499px){
+
+  label:nth-of-type(14) .blocchi:nth-child(1),
+  label:nth-of-type(14) .blocchi:nth-child(14),
+  label:nth-of-type(14) .blocchi:nth-child(15),
+  label:nth-of-type(14) .blocchi:nth-child(16),
+  label:nth-of-type(14) .blocchi:nth-child(5),
+  label:nth-of-type(14) .blocchi:nth-child(6),
+  label:nth-of-type(14) .blocchi:nth-child(7),
+  label:nth-of-type(14) .blocchi:nth-child(8),
+  label:nth-of-type(14) .blocchi:nth-child(9),
+  label:nth-of-type(14) .blocchi:nth-child(10),
+  label:nth-of-type(14) .blocchi:nth-child(11),
+  label:nth-of-type(14) .blocchi:nth-child(12),
+  label:nth-of-type(14) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:740px){
+
+  label:nth-of-type(14) .blocchi:nth-child(1),
+  label:nth-of-type(14) .blocchi:nth-child(10),
+  label:nth-of-type(14) .blocchi:nth-child(11),
+  label:nth-of-type(14) .blocchi:nth-child(12),
+  label:nth-of-type(14) .blocchi:nth-child(13),
+  label:nth-of-type(14) .blocchi:nth-child(14),
+  label:nth-of-type(14) .blocchi:nth-child(15),
+  label:nth-of-type(14) .blocchi:nth-child(16),
+  label:nth-of-type(14) .blocchi:nth-child(2),
+  label:nth-of-type(14) .blocchi:nth-child(3),
+  label:nth-of-type(14) .blocchi:nth-child(4),
+  label:nth-of-type(14) .blocchi:nth-child(5),
+  label:nth-of-type(14) .blocchi:nth-child(6),
+  label:nth-of-type(14) .blocchi:nth-child(7),
+  label:nth-of-type(14) .blocchi:nth-child(8),
+  label:nth-of-type(14) .blocchi:nth-child(9){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:570px){
+
+  label:nth-of-type(14) .blocchi:nth-child(1),
+  label:nth-of-type(14) .blocchi:nth-child(12),
+  label:nth-of-type(14) .blocchi:nth-child(13),
+  label:nth-of-type(14) .blocchi:nth-child(14),
+  label:nth-of-type(14) .blocchi:nth-child(15),
+  label:nth-of-type(14) .blocchi:nth-child(16),
+  label:nth-of-type(14) .blocchi:nth-child(7),
+  label:nth-of-type(14) .blocchi:nth-child(8),
+  label:nth-of-type(14) .blocchi:nth-child(9),
+  label:nth-of-type(14) .blocchi:nth-child(10),
+  label:nth-of-type(14) .blocchi:nth-child(11),
+  label:nth-of-type(14) .blocchi:nth-child(2),
+  label:nth-of-type(14) .blocchi:nth-child(3),
+  label:nth-of-type(14) .blocchi:nth-child(4),
+  label:nth-of-type(14) .blocchi:nth-child(5),
+  label:nth-of-type(14) .blocchi:nth-child(6),
+){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:400px){
+
+  label:nth-of-type(14) .blocchi:nth-child(1),
+  label:nth-of-type(14) .blocchi:nth-child(16),
+  label:nth-of-type(14) .blocchi:nth-child(15),
+  label:nth-of-type(14) .blocchi:nth-child(2),
+  label:nth-of-type(14) .blocchi:nth-child(3),
+  label:nth-of-type(14) .blocchi:nth-child(4),
+  label:nth-of-type(14) .blocchi:nth-child(5),
+  label:nth-of-type(14) .blocchi:nth-child(6),
+  label:nth-of-type(14) .blocchi:nth-child(7),
+  label:nth-of-type(14) .blocchi:nth-child(8),
+  label:nth-of-type(14) .blocchi:nth-child(9),
+  label:nth-of-type(14) .blocchi:nth-child(10),
+  label:nth-of-type(14) .blocchi:nth-child(11),
+  label:nth-of-type(14) .blocchi:nth-child(12),
+  label:nth-of-type(14) .blocchi:nth-child(13),
+  label:nth-of-type(14) .blocchi:nth-child(14){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:740px){
+  label:nth-of-type(14) .blocchi:nth-child(1),
+  label:nth-of-type(14) .blocchi:nth-child(12),
+  label:nth-of-type(14) .blocchi:nth-child(13),
+  label:nth-of-type(14) .blocchi:nth-child(14),
+  label:nth-of-type(14) .blocchi:nth-child(15),
+  label:nth-of-type(14) .blocchi:nth-child(16),
+  label:nth-of-type(14) .blocchi:nth-child(2),
+  label:nth-of-type(14) .blocchi:nth-child(3),
+  label:nth-of-type(14) .blocchi:nth-child(4),
+  label:nth-of-type(14) .blocchi:nth-child(5),
+  label:nth-of-type(14) .blocchi:nth-child(6),
+  label:nth-of-type(14) .blocchi:nth-child(7),
+  label:nth-of-type(14) .blocchi:nth-child(8),
+  label:nth-of-type(14) .blocchi:nth-child(9),
+  label:nth-of-type(14) .blocchi:nth-child(10),
+  label:nth-of-type(14) .blocchi:nth-child(11){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:570px){
+
+  label:nth-of-type(14) .blocchi:nth-child(1),
+  label:nth-of-type(14) .blocchi:nth-child(14),
+  label:nth-of-type(14) .blocchi:nth-child(15),
+  label:nth-of-type(14) .blocchi:nth-child(16),
+  label:nth-of-type(14) .blocchi:nth-child(2),
+  label:nth-of-type(14) .blocchi:nth-child(3),
+  label:nth-of-type(14) .blocchi:nth-child(4),
+  label:nth-of-type(14) .blocchi:nth-child(5),
+  label:nth-of-type(14) .blocchi:nth-child(6),
+  label:nth-of-type(14) .blocchi:nth-child(7),
+  label:nth-of-type(14) .blocchi:nth-child(8),
+  label:nth-of-type(14) .blocchi:nth-child(9),
+  label:nth-of-type(14) .blocchi:nth-child(10),
+  label:nth-of-type(14) .blocchi:nth-child(11),
+  label:nth-of-type(14) .blocchi:nth-child(12),
+  label:nth-of-type(14) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:400px){
+  label:nth-of-type(14) .blocchi:nth-child(1),
+  label:nth-of-type(14) .blocchi:nth-child(15){
+    display: flex;
+  }
+
+  label:nth-of-type(14) .blocchi:nth-child(2),
+  label:nth-of-type(14) .blocchi:nth-child(3),
+  label:nth-of-type(14) .blocchi:nth-child(4),
+  label:nth-of-type(14) .blocchi:nth-child(5),
+  label:nth-of-type(14) .blocchi:nth-child(6),
+  label:nth-of-type(14) .blocchi:nth-child(7),
+  label:nth-of-type(14) .blocchi:nth-child(8),
+  label:nth-of-type(14) .blocchi:nth-child(9),
+  label:nth-of-type(14) .blocchi:nth-child(10),
+  label:nth-of-type(14) .blocchi:nth-child(11),
+  label:nth-of-type(14) .blocchi:nth-child(12),
+  label:nth-of-type(14) .blocchi:nth-child(13),
+  label:nth-of-type(14) .blocchi:nth-child(14),
+  label:nth-of-type(14) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:740px){
+
+  label:nth-of-type(14) .blocchi:nth-child(1),
+  label:nth-of-type(14) .blocchi:nth-child(16),
+  label:nth-of-type(14) .blocchi:nth-child(15),
+  label:nth-of-type(14) .blocchi:nth-child(2),
+  label:nth-of-type(14) .blocchi:nth-child(3),
+  label:nth-of-type(14) .blocchi:nth-child(4),
+  label:nth-of-type(14) .blocchi:nth-child(5),
+  label:nth-of-type(14) .blocchi:nth-child(7),
+  label:nth-of-type(14) .blocchi:nth-child(8),
+  label:nth-of-type(14) .blocchi:nth-child(8),
+  label:nth-of-type(14) .blocchi:nth-child(9),
+  label:nth-of-type(14) .blocchi:nth-child(10),
+  label:nth-of-type(14) .blocchi:nth-child(11),
+  label:nth-of-type(14) .blocchi:nth-child(12),
+  label:nth-of-type(14) .blocchi:nth-child(13),
+  label:nth-of-type(14) .blocchi:nth-child(14){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:570px){
+  label:nth-of-type(14) .blocchi:nth-child(1),
+  label:nth-of-type(14) .blocchi:nth-child(15){
+    display: flex;
+  }
+
+  label:nth-of-type(14) .blocchi:nth-child(2),
+  label:nth-of-type(14) .blocchi:nth-child(3),
+  label:nth-of-type(14) .blocchi:nth-child(4),
+  label:nth-of-type(14) .blocchi:nth-child(5),
+  label:nth-of-type(14) .blocchi:nth-child(6),
+  label:nth-of-type(14) .blocchi:nth-child(7),
+  label:nth-of-type(14) .blocchi:nth-child(8),
+  label:nth-of-type(14) .blocchi:nth-child(9),
+  label:nth-of-type(14) .blocchi:nth-child(10),
+  label:nth-of-type(14) .blocchi:nth-child(11),
+  label:nth-of-type(14) .blocchi:nth-child(12),
+  label:nth-of-type(14) .blocchi:nth-child(13),
+  label:nth-of-type(14) .blocchi:nth-child(14),
+  label:nth-of-type(14) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:400px){
+  label:nth-of-type(14) .blocchi:nth-child(14){
+    display: flex;
+  }
+  label:nth-of-type(14) .blocchi:nth-child(1),
+  label:nth-of-type(14) .blocchi:nth-child(2),
+  label:nth-of-type(14) .blocchi:nth-child(3),
+  label:nth-of-type(14) .blocchi:nth-child(4),
+  label:nth-of-type(14) .blocchi:nth-child(5),
+  label:nth-of-type(14) .blocchi:nth-child(6),
+  label:nth-of-type(14) .blocchi:nth-child(7),
+  label:nth-of-type(14) .blocchi:nth-child(8),
+  label:nth-of-type(14) .blocchi:nth-child(9),
+  label:nth-of-type(14) .blocchi:nth-child(10),
+  label:nth-of-type(14) .blocchi:nth-child(11),
+  label:nth-of-type(14) .blocchi:nth-child(12),
+  label:nth-of-type(14) .blocchi:nth-child(13),
+  label:nth-of-type(14) .blocchi:nth-child(15),
+  label:nth-of-type(14) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+/* *********************BLOCK QUERY 15******************************** */
+label:nth-of-type(15) .navigationpoints span:nth-child(15){
+  color: white;
+}
+
+label:nth-of-type(15) .finestra{
+ /* height: auto; */
+ display: flex;
+ justify-content: center;
+ align-content: center;
+}
+
+label:nth-of-type(15) .blocchi{
+  display: none;
+}
+@media screen and (min-height:0px){
+  label:nth-of-type(15)  .blocchi{
+    height: 100%;
+  }
+}
+@media screen and (min-height:401px){
+  label:nth-of-type(15)  .blocchi{
+    height: 50%;
+  }
+}
+@media screen and (min-height:570px){
+  label:nth-of-type(15)  .blocchi{
+    height: 25%;
+    max-height: 25%;
+  }
+}
+
+
+@media screen and (min-width:1000px) and (max-height:400px){
+
+  label:nth-of-type(15) .blocchi:nth-child(1),
+  label:nth-of-type(15) .blocchi:nth-child(14),
+  label:nth-of-type(15) .blocchi:nth-child(15),
+  label:nth-of-type(15) .blocchi:nth-child(16),
+  label:nth-of-type(15) .blocchi:nth-child(5),
+  label:nth-of-type(15) .blocchi:nth-child(6),
+  label:nth-of-type(15) .blocchi:nth-child(7),
+  label:nth-of-type(15) .blocchi:nth-child(8),
+  label:nth-of-type(15) .blocchi:nth-child(9),
+  label:nth-of-type(15) .blocchi:nth-child(10),
+  label:nth-of-type(15) .blocchi:nth-child(11),
+  label:nth-of-type(15) .blocchi:nth-child(12),
+  label:nth-of-type(15) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+
+
+@media screen and (min-height:741px) and (max-width:499px){
+
+  label:nth-of-type(15) .blocchi:nth-child(1),
+  label:nth-of-type(15) .blocchi:nth-child(14),
+  label:nth-of-type(15) .blocchi:nth-child(15),
+  label:nth-of-type(15) .blocchi:nth-child(16),
+  label:nth-of-type(15) .blocchi:nth-child(5),
+  label:nth-of-type(15) .blocchi:nth-child(6),
+  label:nth-of-type(15) .blocchi:nth-child(7),
+  label:nth-of-type(15) .blocchi:nth-child(8),
+  label:nth-of-type(15) .blocchi:nth-child(9),
+  label:nth-of-type(15) .blocchi:nth-child(10),
+  label:nth-of-type(15) .blocchi:nth-child(11),
+  label:nth-of-type(15) .blocchi:nth-child(12),
+  label:nth-of-type(15) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:740px){
+
+  label:nth-of-type(15) .blocchi:nth-child(1),
+  label:nth-of-type(15) .blocchi:nth-child(10),
+  label:nth-of-type(15) .blocchi:nth-child(11),
+  label:nth-of-type(15) .blocchi:nth-child(12),
+  label:nth-of-type(15) .blocchi:nth-child(13),
+  label:nth-of-type(15) .blocchi:nth-child(14),
+  label:nth-of-type(15) .blocchi:nth-child(15),
+  label:nth-of-type(15) .blocchi:nth-child(16),
+  label:nth-of-type(15) .blocchi:nth-child(2),
+  label:nth-of-type(15) .blocchi:nth-child(3),
+  label:nth-of-type(15) .blocchi:nth-child(4),
+  label:nth-of-type(15) .blocchi:nth-child(5),
+  label:nth-of-type(15) .blocchi:nth-child(6),
+  label:nth-of-type(15) .blocchi:nth-child(7),
+  label:nth-of-type(15) .blocchi:nth-child(8),
+  label:nth-of-type(15) .blocchi:nth-child(9){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:570px){
+
+  label:nth-of-type(15) .blocchi:nth-child(1),
+  label:nth-of-type(15) .blocchi:nth-child(12),
+  label:nth-of-type(15) .blocchi:nth-child(13),
+  label:nth-of-type(15) .blocchi:nth-child(14),
+  label:nth-of-type(15) .blocchi:nth-child(15),
+  label:nth-of-type(15) .blocchi:nth-child(16),
+  label:nth-of-type(15) .blocchi:nth-child(7),
+  label:nth-of-type(15) .blocchi:nth-child(8),
+  label:nth-of-type(15) .blocchi:nth-child(9),
+  label:nth-of-type(15) .blocchi:nth-child(10),
+  label:nth-of-type(15) .blocchi:nth-child(11),
+  label:nth-of-type(15) .blocchi:nth-child(2),
+  label:nth-of-type(15) .blocchi:nth-child(3),
+  label:nth-of-type(15) .blocchi:nth-child(4),
+  label:nth-of-type(15) .blocchi:nth-child(5),
+  label:nth-of-type(15) .blocchi:nth-child(6),
+){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:400px){
+
+  label:nth-of-type(15) .blocchi:nth-child(1),
+  label:nth-of-type(15) .blocchi:nth-child(16),
+  label:nth-of-type(15) .blocchi:nth-child(15),
+  label:nth-of-type(15) .blocchi:nth-child(2),
+  label:nth-of-type(15) .blocchi:nth-child(3),
+  label:nth-of-type(15) .blocchi:nth-child(4),
+  label:nth-of-type(15) .blocchi:nth-child(5),
+  label:nth-of-type(15) .blocchi:nth-child(6),
+  label:nth-of-type(15) .blocchi:nth-child(7),
+  label:nth-of-type(15) .blocchi:nth-child(8),
+  label:nth-of-type(15) .blocchi:nth-child(9),
+  label:nth-of-type(15) .blocchi:nth-child(10),
+  label:nth-of-type(15) .blocchi:nth-child(11),
+  label:nth-of-type(15) .blocchi:nth-child(12),
+  label:nth-of-type(15) .blocchi:nth-child(13),
+  label:nth-of-type(15) .blocchi:nth-child(14){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:740px){
+  label:nth-of-type(15) .blocchi:nth-child(1),
+  label:nth-of-type(15) .blocchi:nth-child(12),
+  label:nth-of-type(15) .blocchi:nth-child(13),
+  label:nth-of-type(15) .blocchi:nth-child(14),
+  label:nth-of-type(15) .blocchi:nth-child(15),
+  label:nth-of-type(15) .blocchi:nth-child(16),
+  label:nth-of-type(15) .blocchi:nth-child(2),
+  label:nth-of-type(15) .blocchi:nth-child(3),
+  label:nth-of-type(15) .blocchi:nth-child(4),
+  label:nth-of-type(15) .blocchi:nth-child(5),
+  label:nth-of-type(15) .blocchi:nth-child(6),
+  label:nth-of-type(15) .blocchi:nth-child(7),
+  label:nth-of-type(15) .blocchi:nth-child(8),
+  label:nth-of-type(15) .blocchi:nth-child(9),
+  label:nth-of-type(15) .blocchi:nth-child(10),
+  label:nth-of-type(15) .blocchi:nth-child(11){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:570px){
+
+  label:nth-of-type(15) .blocchi:nth-child(1),
+  label:nth-of-type(15) .blocchi:nth-child(14),
+  label:nth-of-type(15) .blocchi:nth-child(15),
+  label:nth-of-type(15) .blocchi:nth-child(16),
+  label:nth-of-type(15) .blocchi:nth-child(2),
+  label:nth-of-type(15) .blocchi:nth-child(3),
+  label:nth-of-type(15) .blocchi:nth-child(4),
+  label:nth-of-type(15) .blocchi:nth-child(5),
+  label:nth-of-type(15) .blocchi:nth-child(6),
+  label:nth-of-type(15) .blocchi:nth-child(7),
+  label:nth-of-type(15) .blocchi:nth-child(8),
+  label:nth-of-type(15) .blocchi:nth-child(9),
+  label:nth-of-type(15) .blocchi:nth-child(10),
+  label:nth-of-type(15) .blocchi:nth-child(11),
+  label:nth-of-type(15) .blocchi:nth-child(12),
+  label:nth-of-type(15) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:400px){
+  label:nth-of-type(15) .blocchi:nth-child(1),
+  label:nth-of-type(15) .blocchi:nth-child(16){
+    display: flex;
+  }
+
+  label:nth-of-type(15) .blocchi:nth-child(2),
+  label:nth-of-type(15) .blocchi:nth-child(3),
+  label:nth-of-type(15) .blocchi:nth-child(4),
+  label:nth-of-type(15) .blocchi:nth-child(5),
+  label:nth-of-type(15) .blocchi:nth-child(6),
+  label:nth-of-type(15) .blocchi:nth-child(7),
+  label:nth-of-type(15) .blocchi:nth-child(8),
+  label:nth-of-type(15) .blocchi:nth-child(9),
+  label:nth-of-type(15) .blocchi:nth-child(10),
+  label:nth-of-type(15) .blocchi:nth-child(11),
+  label:nth-of-type(15) .blocchi:nth-child(12),
+  label:nth-of-type(15) .blocchi:nth-child(13),
+  label:nth-of-type(15) .blocchi:nth-child(14),
+  label:nth-of-type(15) .blocchi:nth-child(15){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:740px){
+
+  label:nth-of-type(15) .blocchi:nth-child(1),
+  label:nth-of-type(15) .blocchi:nth-child(16),
+  label:nth-of-type(15) .blocchi:nth-child(15),
+  label:nth-of-type(15) .blocchi:nth-child(2),
+  label:nth-of-type(15) .blocchi:nth-child(3),
+  label:nth-of-type(15) .blocchi:nth-child(4),
+  label:nth-of-type(15) .blocchi:nth-child(5),
+  label:nth-of-type(15) .blocchi:nth-child(7),
+  label:nth-of-type(15) .blocchi:nth-child(8),
+  label:nth-of-type(15) .blocchi:nth-child(8),
+  label:nth-of-type(15) .blocchi:nth-child(9),
+  label:nth-of-type(15) .blocchi:nth-child(10),
+  label:nth-of-type(15) .blocchi:nth-child(11),
+  label:nth-of-type(15) .blocchi:nth-child(12),
+  label:nth-of-type(15) .blocchi:nth-child(13),
+  label:nth-of-type(15) .blocchi:nth-child(14){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:570px){
+  label:nth-of-type(15) .blocchi:nth-child(1),
+  label:nth-of-type(15) .blocchi:nth-child(16){
+    display: flex;
+  }
+
+  label:nth-of-type(15) .blocchi:nth-child(2),
+  label:nth-of-type(15) .blocchi:nth-child(3),
+  label:nth-of-type(15) .blocchi:nth-child(4),
+  label:nth-of-type(15) .blocchi:nth-child(5),
+  label:nth-of-type(15) .blocchi:nth-child(6),
+  label:nth-of-type(15) .blocchi:nth-child(7),
+  label:nth-of-type(15) .blocchi:nth-child(8),
+  label:nth-of-type(15) .blocchi:nth-child(9),
+  label:nth-of-type(15) .blocchi:nth-child(10),
+  label:nth-of-type(15) .blocchi:nth-child(11),
+  label:nth-of-type(15) .blocchi:nth-child(12),
+  label:nth-of-type(15) .blocchi:nth-child(13),
+  label:nth-of-type(15) .blocchi:nth-child(14),
+  label:nth-of-type(15) .blocchi:nth-child(15){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:400px){
+  label:nth-of-type(15) .blocchi:nth-child(15){
+    display: flex;
+  }
+  label:nth-of-type(15) .blocchi:nth-child(1),
+  label:nth-of-type(15) .blocchi:nth-child(2),
+  label:nth-of-type(15) .blocchi:nth-child(3),
+  label:nth-of-type(15) .blocchi:nth-child(4),
+  label:nth-of-type(15) .blocchi:nth-child(5),
+  label:nth-of-type(15) .blocchi:nth-child(6),
+  label:nth-of-type(15) .blocchi:nth-child(7),
+  label:nth-of-type(15) .blocchi:nth-child(8),
+  label:nth-of-type(15) .blocchi:nth-child(9),
+  label:nth-of-type(15) .blocchi:nth-child(10),
+  label:nth-of-type(15) .blocchi:nth-child(11),
+  label:nth-of-type(15) .blocchi:nth-child(12),
+  label:nth-of-type(15) .blocchi:nth-child(13),
+  label:nth-of-type(15) .blocchi:nth-child(14),
+  label:nth-of-type(15) .blocchi:nth-child(16){
+    display: none;
+  }
+}
+/* *********************BLOCK QUERY 15******************************** */
+label:nth-of-type(16) .navigationpoints span:nth-child(16){
+  color: white;
+}
+
+label:nth-of-type(16) .finestra{
+ /* height: auto; */
+ display: flex;
+ justify-content: center;
+ align-content: center;
+}
+
+label:nth-of-type(16) .blocchi{
+  display: none;
+}
+@media screen and (min-height:0px){
+  label:nth-of-type(16)  .blocchi{
+    height: 100%;
+  }
+}
+@media screen and (min-height:401px){
+  label:nth-of-type(16)  .blocchi{
+    height: 50%;
+  }
+}
+@media screen and (min-height:570px){
+  label:nth-of-type(16)  .blocchi{
+    height: 25%;
+    max-height: 25%;
+  }
+}
+
+
+@media screen and (min-width:1000px) and (max-height:400px){
+
+  label:nth-of-type(16) .blocchi:nth-child(1),
+  label:nth-of-type(16) .blocchi:nth-child(14),
+  label:nth-of-type(16) .blocchi:nth-child(15),
+  label:nth-of-type(16) .blocchi:nth-child(16),
+  label:nth-of-type(16) .blocchi:nth-child(5),
+  label:nth-of-type(16) .blocchi:nth-child(6),
+  label:nth-of-type(16) .blocchi:nth-child(7),
+  label:nth-of-type(16) .blocchi:nth-child(8),
+  label:nth-of-type(16) .blocchi:nth-child(9),
+  label:nth-of-type(16) .blocchi:nth-child(10),
+  label:nth-of-type(16) .blocchi:nth-child(11),
+  label:nth-of-type(16) .blocchi:nth-child(12),
+  label:nth-of-type(16) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+
+
+@media screen and (min-height:741px) and (max-width:499px){
+
+  label:nth-of-type(16) .blocchi:nth-child(1),
+  label:nth-of-type(16) .blocchi:nth-child(14),
+  label:nth-of-type(16) .blocchi:nth-child(15),
+  label:nth-of-type(16) .blocchi:nth-child(16),
+  label:nth-of-type(16) .blocchi:nth-child(5),
+  label:nth-of-type(16) .blocchi:nth-child(6),
+  label:nth-of-type(16) .blocchi:nth-child(7),
+  label:nth-of-type(16) .blocchi:nth-child(8),
+  label:nth-of-type(16) .blocchi:nth-child(9),
+  label:nth-of-type(16) .blocchi:nth-child(10),
+  label:nth-of-type(16) .blocchi:nth-child(11),
+  label:nth-of-type(16) .blocchi:nth-child(12),
+  label:nth-of-type(16) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:740px){
+
+  label:nth-of-type(16) .blocchi:nth-child(1),
+  label:nth-of-type(16) .blocchi:nth-child(10),
+  label:nth-of-type(16) .blocchi:nth-child(11),
+  label:nth-of-type(16) .blocchi:nth-child(12),
+  label:nth-of-type(16) .blocchi:nth-child(13),
+  label:nth-of-type(16) .blocchi:nth-child(14),
+  label:nth-of-type(16) .blocchi:nth-child(15),
+  label:nth-of-type(16) .blocchi:nth-child(16),
+  label:nth-of-type(16) .blocchi:nth-child(2),
+  label:nth-of-type(16) .blocchi:nth-child(3),
+  label:nth-of-type(16) .blocchi:nth-child(4),
+  label:nth-of-type(16) .blocchi:nth-child(5),
+  label:nth-of-type(16) .blocchi:nth-child(6),
+  label:nth-of-type(16) .blocchi:nth-child(7),
+  label:nth-of-type(16) .blocchi:nth-child(8),
+  label:nth-of-type(16) .blocchi:nth-child(9){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:570px){
+
+  label:nth-of-type(16) .blocchi:nth-child(1),
+  label:nth-of-type(16) .blocchi:nth-child(12),
+  label:nth-of-type(16) .blocchi:nth-child(13),
+  label:nth-of-type(16) .blocchi:nth-child(14),
+  label:nth-of-type(16) .blocchi:nth-child(15),
+  label:nth-of-type(16) .blocchi:nth-child(16),
+  label:nth-of-type(16) .blocchi:nth-child(7),
+  label:nth-of-type(16) .blocchi:nth-child(8),
+  label:nth-of-type(16) .blocchi:nth-child(9),
+  label:nth-of-type(16) .blocchi:nth-child(10),
+  label:nth-of-type(16) .blocchi:nth-child(11),
+  label:nth-of-type(16) .blocchi:nth-child(2),
+  label:nth-of-type(16) .blocchi:nth-child(3),
+  label:nth-of-type(16) .blocchi:nth-child(4),
+  label:nth-of-type(16) .blocchi:nth-child(5),
+  label:nth-of-type(16) .blocchi:nth-child(6),
+){
+    display: none;
+  }
+}
+@media screen and (max-width:999px) and (max-height:400px){
+
+  label:nth-of-type(16) .blocchi:nth-child(1),
+  label:nth-of-type(16) .blocchi:nth-child(16),
+  label:nth-of-type(16) .blocchi:nth-child(15),
+  label:nth-of-type(16) .blocchi:nth-child(2),
+  label:nth-of-type(16) .blocchi:nth-child(3),
+  label:nth-of-type(16) .blocchi:nth-child(4),
+  label:nth-of-type(16) .blocchi:nth-child(5),
+  label:nth-of-type(16) .blocchi:nth-child(6),
+  label:nth-of-type(16) .blocchi:nth-child(7),
+  label:nth-of-type(16) .blocchi:nth-child(8),
+  label:nth-of-type(16) .blocchi:nth-child(9),
+  label:nth-of-type(16) .blocchi:nth-child(10),
+  label:nth-of-type(16) .blocchi:nth-child(11),
+  label:nth-of-type(16) .blocchi:nth-child(12),
+  label:nth-of-type(16) .blocchi:nth-child(13),
+  label:nth-of-type(16) .blocchi:nth-child(14){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:740px){
+  label:nth-of-type(16) .blocchi:nth-child(1),
+  label:nth-of-type(16) .blocchi:nth-child(12),
+  label:nth-of-type(16) .blocchi:nth-child(13),
+  label:nth-of-type(16) .blocchi:nth-child(14),
+  label:nth-of-type(16) .blocchi:nth-child(15),
+  label:nth-of-type(16) .blocchi:nth-child(16),
+  label:nth-of-type(16) .blocchi:nth-child(2),
+  label:nth-of-type(16) .blocchi:nth-child(3),
+  label:nth-of-type(16) .blocchi:nth-child(4),
+  label:nth-of-type(16) .blocchi:nth-child(5),
+  label:nth-of-type(16) .blocchi:nth-child(6),
+  label:nth-of-type(16) .blocchi:nth-child(7),
+  label:nth-of-type(16) .blocchi:nth-child(8),
+  label:nth-of-type(16) .blocchi:nth-child(9),
+  label:nth-of-type(16) .blocchi:nth-child(10),
+  label:nth-of-type(16) .blocchi:nth-child(11){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:570px){
+
+  label:nth-of-type(16) .blocchi:nth-child(1),
+  label:nth-of-type(16) .blocchi:nth-child(14),
+  label:nth-of-type(16) .blocchi:nth-child(15),
+  label:nth-of-type(16) .blocchi:nth-child(16),
+  label:nth-of-type(16) .blocchi:nth-child(2),
+  label:nth-of-type(16) .blocchi:nth-child(3),
+  label:nth-of-type(16) .blocchi:nth-child(4),
+  label:nth-of-type(16) .blocchi:nth-child(5),
+  label:nth-of-type(16) .blocchi:nth-child(6),
+  label:nth-of-type(16) .blocchi:nth-child(7),
+  label:nth-of-type(16) .blocchi:nth-child(8),
+  label:nth-of-type(16) .blocchi:nth-child(9),
+  label:nth-of-type(16) .blocchi:nth-child(10),
+  label:nth-of-type(16) .blocchi:nth-child(11),
+  label:nth-of-type(16) .blocchi:nth-child(12),
+  label:nth-of-type(16) .blocchi:nth-child(13){
+    display: none;
+  }
+}
+@media screen and (max-width:750px) and (max-height:400px){
+
+  label:nth-of-type(16) .blocchi:nth-child(1),
+  label:nth-of-type(16) .blocchi:nth-child(16),
+  label:nth-of-type(16) .blocchi:nth-child(2),
+  label:nth-of-type(16) .blocchi:nth-child(3),
+  label:nth-of-type(16) .blocchi:nth-child(4),
+  label:nth-of-type(16) .blocchi:nth-child(5),
+  label:nth-of-type(16) .blocchi:nth-child(6),
+  label:nth-of-type(16) .blocchi:nth-child(7),
+  label:nth-of-type(16) .blocchi:nth-child(8),
+  label:nth-of-type(16) .blocchi:nth-child(9),
+  label:nth-of-type(16) .blocchi:nth-child(10),
+  label:nth-of-type(16) .blocchi:nth-child(11),
+  label:nth-of-type(16) .blocchi:nth-child(12),
+  label:nth-of-type(16) .blocchi:nth-child(13),
+  label:nth-of-type(16) .blocchi:nth-child(14),
+  label:nth-of-type(16) .blocchi:nth-child(15){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:740px){
+
+  label:nth-of-type(16) .blocchi:nth-child(1),
+  label:nth-of-type(16) .blocchi:nth-child(16),
+  label:nth-of-type(16) .blocchi:nth-child(15),
+  label:nth-of-type(16) .blocchi:nth-child(2),
+  label:nth-of-type(16) .blocchi:nth-child(3),
+  label:nth-of-type(16) .blocchi:nth-child(4),
+  label:nth-of-type(16) .blocchi:nth-child(5),
+  label:nth-of-type(16) .blocchi:nth-child(7),
+  label:nth-of-type(16) .blocchi:nth-child(8),
+  label:nth-of-type(16) .blocchi:nth-child(8),
+  label:nth-of-type(16) .blocchi:nth-child(9),
+  label:nth-of-type(16) .blocchi:nth-child(10),
+  label:nth-of-type(16) .blocchi:nth-child(11),
+  label:nth-of-type(16) .blocchi:nth-child(12),
+  label:nth-of-type(16) .blocchi:nth-child(13),
+  label:nth-of-type(16) .blocchi:nth-child(14){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:570px){
+
+  label:nth-of-type(16) .blocchi:nth-child(1),
+  label:nth-of-type(16) .blocchi:nth-child(16),
+  label:nth-of-type(16) .blocchi:nth-child(2),
+  label:nth-of-type(16) .blocchi:nth-child(3),
+  label:nth-of-type(16) .blocchi:nth-child(4),
+  label:nth-of-type(16) .blocchi:nth-child(5),
+  label:nth-of-type(16) .blocchi:nth-child(6),
+  label:nth-of-type(16) .blocchi:nth-child(7),
+  label:nth-of-type(16) .blocchi:nth-child(8),
+  label:nth-of-type(16) .blocchi:nth-child(9),
+  label:nth-of-type(16) .blocchi:nth-child(10),
+  label:nth-of-type(16) .blocchi:nth-child(11),
+  label:nth-of-type(16) .blocchi:nth-child(12),
+  label:nth-of-type(16) .blocchi:nth-child(13),
+  label:nth-of-type(16) .blocchi:nth-child(14),
+  label:nth-of-type(16) .blocchi:nth-child(15){
+    display: none;
+  }
+}
+@media screen and (max-width:499px) and (max-height:400px){
+  label:nth-of-type(16) .blocchi:nth-child(16){
+    display: flex;
+  }
+  label:nth-of-type(16) .blocchi:nth-child(1),
+  label:nth-of-type(16) .blocchi:nth-child(2),
+  label:nth-of-type(16) .blocchi:nth-child(3),
+  label:nth-of-type(16) .blocchi:nth-child(4),
+  label:nth-of-type(16) .blocchi:nth-child(5),
+  label:nth-of-type(16) .blocchi:nth-child(6),
+  label:nth-of-type(16) .blocchi:nth-child(7),
+  label:nth-of-type(16) .blocchi:nth-child(8),
+  label:nth-of-type(16) .blocchi:nth-child(9),
+  label:nth-of-type(16) .blocchi:nth-child(10),
+  label:nth-of-type(16) .blocchi:nth-child(11),
+  label:nth-of-type(16) .blocchi:nth-child(12),
+  label:nth-of-type(16) .blocchi:nth-child(13),
+  label:nth-of-type(16) .blocchi:nth-child(14),
+  label:nth-of-type(16) .blocchi:nth-child(15){
+    display: none;
+  }
+}

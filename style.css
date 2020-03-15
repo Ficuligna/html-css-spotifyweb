@@ -106,12 +106,12 @@ aside nav{
   margin-bottom: 20px;
 }
 .playlists{
-  overflow-y: hidden;
+  overflow-y: auto;
   line-height: 2;
 }
-.playlists:hover{
+/* .playlists:hover{
   overflow-y: scroll;
-}
+} */
 .playlists ul li a{
   text-decoration: none;
   color: white;;
@@ -296,13 +296,12 @@ aside hr{
   padding: 20px;
 }
 .covers{
-  overflow-x:hidden;
+  overflow-x:auto;
   display: flex;
-  justify-content: space-between;
 }
-.recent .covers:hover{
+/* .recent .covers:hover{
   overflow-x: scroll;
-}
+} */
 .recent .covers::-webkit-scrollbar{
    width: 10px;
 }
@@ -488,4 +487,14 @@ aside hr{
   right: 0;
   top: 50%;
   transform: translate(50% , -50%);
+}
+
+/* modifiche simone */
+aside nav {
+    /* min-height: initial; /* annulliamo il tuo line-height */ */
+    /* overflow: hidden; /* questo causa il taglio dell'elemento in basso e anche il taglio dell'elemento quando chiudiamo tutta la pagina in altezza */ */
+}
+.playlists ul {
+    /* overflow: auto; /* indica all'elemento che è lui che deve scrollare */ */
+    /* height: calc(100% - 32px); /*32px è l'altezza del titolo Playlist che non scrolla */ */
 }
