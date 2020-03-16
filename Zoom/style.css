@@ -44,6 +44,16 @@ label {
   border-radius: 20px;
   background-color: #24282b;
 }
+@media screen and (max-width:450px){
+  .testata button:nth-child(1){
+    display: none;
+  }
+  .centraturatest{
+    width: 26px;
+  }
+
+}
+
 .size{
   justify-content: space-between;
   height: 50px;
