@@ -67,6 +67,12 @@ label {
   background-color: #24282b;
   border:none;
 }
+@media screen and (max-width:595px){
+  .comandichat{
+    display:none;
+  }
+}
+
 .size button img{
   height: 40px;
   color: black;
